@@ -8,7 +8,9 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace FCT_FUJI_FLORA
@@ -18,12 +20,15 @@ namespace FCT_FUJI_FLORA
         private FileSystemWatcher watcher;
         private PVSServiceReferences.PVSWebServiceSoapClient _pvs_service = new PVSServiceReferences.PVSWebServiceSoapClient();
         private bool _isStart = false;
+        private bool _isFileChanged = false;
+        private string _pathFileChanged = "";
         private DataTable dt;
         private int total = 0;
         private int ng = 0;
         private int pass = 0;
         private DateTime lastRead = DateTime.MinValue;
         private BackgroundWorker bgrwSoftInfo;
+        private System.Timers.Timer timer;
 
         public FormMain()
         {
@@ -62,16 +67,21 @@ namespace FCT_FUJI_FLORA
             try
             {
                 watcher = new FileSystemWatcher();
-                string path = Ultils.GetValueRegistryKey(KeyName.PATH_INPUT);
+                string path = Ultils.GetValueRegistryKey(KeyName.PATH_INPUT_CHANGE);
                 DateTime currentDate = DateTime.Now;
                 string dateConvert = currentDate.ToString("yyyyMMdd");
                 path += "\\" + dateConvert;
                 watcher.Path = path;
-                watcher.NotifyFilter = NotifyFilters.LastWrite;
-
+                watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.CreationTime
+                                             | NotifyFilters.FileName | NotifyFilters.DirectoryName;
                 watcher.Filter = Constants.FILE_INPUT_EXTENSION;
-                //watcher.Created += OnChanged;
+                watcher.IncludeSubdirectories = false;
+                // watcher.Created += OnChanged;
                 watcher.Changed += OnChanged;
+                timer = new System.Timers.Timer(100);
+                timer.Elapsed += OnTimedEvent;
+                timer.AutoReset = true;
+                timer.Enabled = true;
             }
             catch (Exception)
             {
@@ -80,10 +90,12 @@ namespace FCT_FUJI_FLORA
             }
             ShowMessage("STOP", "", "");
         }
-        private void checkFileLog(FileSystemEventArgs e)
+
+
+
+        private void checkFileLog(string fullPath)
         {
             System.Threading.Thread.Sleep(int.Parse(Ultils.GetValueRegistryKey(KeyName.SLEEP_TIME)));
-            string fullPath = e.FullPath;
             BeginInvoke(new Action(() => { lblPathLog.Text = fullPath; }));
             string fileName = Path.GetFileName(fullPath);
             int indexOfUnderscore = fileName.IndexOf("_");
@@ -102,28 +114,30 @@ namespace FCT_FUJI_FLORA
         }
         private void OnChanged(object source, FileSystemEventArgs e)
         {
-            if (_isStart)
+
+            try
             {
-                try
-                {
+                _isFileChanged = true;
+                _pathFileChanged = e.FullPath;
+            }
+            catch (Exception ex)
+            {
+                ShowMessage("FAIL", "NG", ex.Message.ToString());
+            }
 
-                    DateTime lastWriteTime = File.GetLastWriteTime(e.FullPath);
-                    TimeSpan span = lastWriteTime - lastRead;
-                    if (span.Seconds > 1)
-                    {
-                        checkFileLog(e);
-                        lastRead = lastWriteTime;
-                    }
+        }
 
-                }
-                catch (Exception ex)
-                {
-                    ShowMessage("FAIL", "NG", ex.Message.ToString());
-                }
+        private void OnTimedEvent(Object source, ElapsedEventArgs e)
+        {
+            if (_isStart && _isFileChanged)
+            {
+                _isFileChanged = false;
+                checkFileLog(_pathFileChanged);
 
             }
         }
 
+        private string _timeChangedFile = "";
         private void ReadFileLog(string fullPath)
         {
             try
@@ -131,6 +145,9 @@ namespace FCT_FUJI_FLORA
                 string line = Ultils.ReadLastLine(fullPath);
                 var lines = line.Split(',');
                 var barcode = lines[0];
+                var timeChangeFile = lines[2];
+                if (timeChangeFile == _timeChangedFile) return;
+                _timeChangedFile = timeChangeFile;
                 string stationCurrent = Ultils.GetValueRegistryKey(KeyName.STATION_NO);
                 int indexOfUnderscore = barcode.IndexOf("_");
                 var productId = barcode.Substring(indexOfUnderscore + 1, barcode.Length - indexOfUnderscore - 1);
@@ -196,7 +213,11 @@ namespace FCT_FUJI_FLORA
             var frmSetting = new frmSetting();
             frmSetting.updateAfterSetting = new Action(() =>
             {
-                InitWatcher();
+                string path = Ultils.GetValueRegistryKey(KeyName.PATH_INPUT_CHANGE);
+                DateTime currentDate = DateTime.Now;
+                string dateConvert = currentDate.ToString("yyyyMMdd");
+                path += "\\" + dateConvert;
+                watcher.Path = path;
             });
             frmSetting.ShowDialog();
         }
@@ -204,7 +225,6 @@ namespace FCT_FUJI_FLORA
 
         private void resetTable()
         {
-
             dt.Clear();
             dgrvResult.Refresh();
         }

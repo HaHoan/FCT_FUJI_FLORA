@@ -44,6 +44,9 @@ namespace FCT_FUJI_FLORA
             this.lblPathInput = new System.Windows.Forms.Label();
             this.txtInputPath = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.rb100 = new System.Windows.Forms.RadioButton();
+            this.rb200 = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtMilliseconds
@@ -126,7 +129,7 @@ namespace FCT_FUJI_FLORA
             this.btnSaveChanged.ForeColor = System.Drawing.Color.White;
             this.btnSaveChanged.Image = global::FCT_FUJI_FLORA.Properties.Resources.Save;
             this.btnSaveChanged.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveChanged.Location = new System.Drawing.Point(232, 198);
+            this.btnSaveChanged.Location = new System.Drawing.Point(232, 257);
             this.btnSaveChanged.Name = "btnSaveChanged";
             this.btnSaveChanged.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnSaveChanged.Size = new System.Drawing.Size(86, 30);
@@ -172,11 +175,46 @@ namespace FCT_FUJI_FLORA
             this.label3.TabIndex = 39;
             this.label3.Text = "FCT Path Log:";
             // 
+            // rb100
+            // 
+            this.rb100.AutoSize = true;
+            this.rb100.Checked = true;
+            this.rb100.Location = new System.Drawing.Point(102, 203);
+            this.rb100.Name = "rb100";
+            this.rb100.Size = new System.Drawing.Size(43, 17);
+            this.rb100.TabIndex = 43;
+            this.rb100.TabStop = true;
+            this.rb100.Text = "100";
+            this.rb100.UseVisualStyleBackColor = true;
+            this.rb100.CheckedChanged += new System.EventHandler(this.rb100_CheckedChanged);
+            // 
+            // rb200
+            // 
+            this.rb200.AutoSize = true;
+            this.rb200.Location = new System.Drawing.Point(252, 203);
+            this.rb200.Name = "rb200";
+            this.rb200.Size = new System.Drawing.Size(43, 17);
+            this.rb200.TabIndex = 44;
+            this.rb200.Text = "200";
+            this.rb200.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(327, 203);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 13);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "(V)";
+            // 
             // frmSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 239);
+            this.ClientSize = new System.Drawing.Size(388, 314);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.rb200);
+            this.Controls.Add(this.rb100);
             this.Controls.Add(this.lblPathInput);
             this.Controls.Add(this.txtInputPath);
             this.Controls.Add(this.label3);
@@ -218,6 +256,8 @@ namespace FCT_FUJI_FLORA
         private System.Windows.Forms.Label lblPathInput;
         private System.Windows.Forms.TextBox txtInputPath;
         private System.Windows.Forms.Label label3;
-
+        private System.Windows.Forms.RadioButton rb100;
+        private System.Windows.Forms.RadioButton rb200;
+        private System.Windows.Forms.Label label2;
     }
 }

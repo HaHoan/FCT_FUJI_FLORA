@@ -15,10 +15,12 @@ namespace FCT_FUJI_FLORA
     public partial class frmSetting : Form
     {
         public Action updateAfterSetting;
+        private string pathInputWhenChanged;
         public frmSetting()
         {
             InitializeComponent();
             BinDataToControls();
+            SetPathInputChange();
         }
 
         private void BinDataToControls()
@@ -28,6 +30,12 @@ namespace FCT_FUJI_FLORA
             txtInputPath.Text = Ultils.GetValueRegistryKey(KeyName.PATH_INPUT);
             txtOutputLog.Text = Ultils.GetValueRegistryKey(KeyName.PATH_OUTPUT);
             txtMilliseconds.Text = Ultils.GetValueRegistryKey(KeyName.SLEEP_TIME);
+            string vol = Ultils.GetValueRegistryKey(KeyName.VOL);
+            if (vol == "100")
+            {
+                rb100.Checked = true;
+            }
+            else rb200.Checked = true;
         }
 
         private void lblPathInput_Click(object sender, EventArgs e)
@@ -85,20 +93,37 @@ namespace FCT_FUJI_FLORA
                 MessageBox.Show("Không tồn tại folder: " + inputFolder);
                 return;
             }
-
+            if (!Directory.Exists(pathInputWhenChanged))
+            {
+                MessageBox.Show("Không tồn tại folder: " + pathInputWhenChanged);
+                return;
+            }
             string outputFolder = txtOutputLog.Text.Trim();
             if (!Directory.Exists(outputFolder))
             {
                 MessageBox.Show("Không tồn tại folder: " + outputFolder);
                 return;
             }
-            Ultils.WriteRegistry(KeyName.PATH_INPUT,inputFolder );
+
+            Ultils.WriteRegistry(KeyName.PATH_INPUT_CHANGE, pathInputWhenChanged);
+            Ultils.WriteRegistry(KeyName.PATH_INPUT, inputFolder);
             Ultils.WriteRegistry(KeyName.PATH_OUTPUT, outputFolder);
             Ultils.WriteRegistry(KeyName.STATION_NO, txtStationNo.Text.Trim());
             Ultils.WriteRegistry(KeyName.SLEEP_TIME, txtMilliseconds.Text.Trim());
+            Ultils.WriteRegistry(KeyName.VOL, rb100.Checked ? "100" : "200");
             MessageBox.Show("Save sucess!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             updateAfterSetting();
             this.Dispose();
+        }
+
+        private void rb100_CheckedChanged(object sender, EventArgs e)
+        {
+            SetPathInputChange();
+        }
+        private void SetPathInputChange()
+        {
+            pathInputWhenChanged = txtInputPath.Text.Trim();
+            pathInputWhenChanged += @"\" + Constants.FILE_NAME(rb100.Checked ? "100" : "200");
         }
     }
 }
