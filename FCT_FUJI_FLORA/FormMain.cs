@@ -1,4 +1,5 @@
 ﻿using FCT_FUJI_FLORA.Business;
+using FCT_FUJI_FLORA.PVSServiceReferences;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,7 @@ namespace FCT_FUJI_FLORA
         private int ng = 0;
         private int pass = 0;
         private DateTime lastRead = DateTime.MinValue;
+        private BackgroundWorker bgrwSoftInfo;
 
         public FormMain()
         {
@@ -117,12 +119,12 @@ namespace FCT_FUJI_FLORA
                 var barcode = lines[0];
                 string stationBefore = "N/A";
                 string stationCurrent = Ultils.GetValueRegistryKey(KeyName.STATION_NO);
-                //var check = checkStation(barcode, stationCurrent, out stationBefore);
-                //if (!check)
-                //{
-                //    ShowMessage("FAIL", "NG", $"Không tìm thấy dữ liệu tại trạm [{stationBefore}] | [{stationCurrent}]");
-                //    return;
-                //}
+                var check = checkStation(barcode, stationCurrent, out stationBefore);
+                if (!check)
+                {
+                    ShowMessage("FAIL", "NG", $"Không tìm thấy dữ liệu tại trạm [{stationBefore}] | [{stationCurrent}]");
+                    return;
+                }
                 int indexOfUnderscore = barcode.IndexOf("_");
                 var productId = barcode.Substring(indexOfUnderscore + 1, barcode.Length - indexOfUnderscore - 1);
                 var boardState = lines[4].ToUpper();
@@ -203,9 +205,37 @@ namespace FCT_FUJI_FLORA
         private void frmMain_Load(object sender, EventArgs e)
         {
             InitWatcher();
+            bgrwSoftInfo = new BackgroundWorker();
+            bgrwSoftInfo.DoWork += BgrwSoftInfo_DoWork;
+            bgrwSoftInfo.RunWorkerCompleted += BgrwSoftInfo_RunWorkerCompleted;
+            bgrwSoftInfo.RunWorkerAsync();
         }
 
 
+        private void BgrwSoftInfo_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            var result = e.Result as Base_Soft_InfoEntity;
+            _pvs_service.RegisterSoftInfo(result);
+        }
+
+        private void BgrwSoftInfo_DoWork(object sender, DoWorkEventArgs e)
+        {
+            var param = new Base_Soft_InfoEntity()
+            {
+                ID = Common.GetGUIID(),
+                HOST_NAME = Environment.MachineName,
+                MAC_ADDRESS = Common.GetMACAddress(),
+                IP_ADDRESS = Common.GetLocalIPAddress(),
+                IS_WINDOWS_64 = Environment.Is64BitOperatingSystem,
+                LOCAL_USER = Environment.UserName,
+                SOFT_NAME = Text,
+                UPDATE_TIME = _pvs_service.GetDateTime(),
+                VERSION = Common.GetRunningVersion(),
+                WINDOWS_EDITION = Common.GetOSFriendlyName(),
+                IS_WINDOWS_ACTIVE = Common.IsWindowsActivated()
+            };
+            e.Result = param;
+        }
         public bool checkStation(string item, string stationNo, out string stationBefore)
         {
 
