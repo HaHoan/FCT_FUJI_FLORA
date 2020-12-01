@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4E2A791-D9B9-4E37-BF64-0B596F12EFEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FCT_FUJI_FLORA</RootNamespace>
+    <AssemblyName>FCT_FUJI_FLORA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\172.28.10.12\Share\18 IT\U34811%28hoanht%29\FUJ\FCT_FUJI_FLORA\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FD60EF0C3F6D8C06823A83D211A87CC525C3CAFA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FCT_FUJI_FLORA_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\KeyName.cs" />
+    <Compile Include="Business\Utils.cs" />
+    <Compile Include="Connected Services\PVSServiceReferences\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.BARCODE_RULESEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.BARCODE_RULE_ITEMSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.Base_ModelsEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.BOARD_BIND_STATUSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.CheckPartExistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.CheckUserLoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetBarcodeRuleEntityByRuleNOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetBarodeRuleItemsByRuleNoJsonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetBarodeRuleItemsByRuleNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetBarodeRuleItemsLikeNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetBarodeRulesLikeNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetBoardBinStatusByBoardNoAndOrderNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetBoardBinStatusByBoardNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetEntityINSPECTION_PROCESSESResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetLineStartByLineIdJsonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetLineStartByLineIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetListBarodeRuleItemsStartWidthResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetListBoardBinStatusByBaseNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetListBoardBinStatusByOrderNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetListINSPECTION_PROCESSESLikeKeywordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetListINSPECTION_PROCESSESStartWidthResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetListModelLikeKeywordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetListModelStartWidthResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetListOrderItemsByIdJsonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetListOrderItemsByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetMacResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetMaterialByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetMaterialWithParamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetModelInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetModelInfosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetModelsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetOperationLogsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetRoleMemberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetRuleByProductResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetScanningLogsByBoardNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetScanningLogsByQueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetScanningLogsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetScanningLogsWithParamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetStationNoLikeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetUserByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetUserToJsonByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetWorkOrderItemByBoardNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetWorkOrderItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetWorkOrderProcedureResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.GetWorkOrdersByOrderNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.INSPECTION_PROCESSESEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.INSPECTION_STATIONSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.KYOCERAEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.KyoGetBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.KyoGetMacResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.KyoMacEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.KyoRemoveBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.KyoSaveBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.MACHINESEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.MaterialAllLinesStartedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.MaterialGetOperationLogsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.MaterialLinesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.MATERIAL_DOCUMENTSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.MATERIAL_ORDERSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.MATERIAL_ORDER_ITEMSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.ModelSavesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.ModelsEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.OPERATION_LOGSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.RegisterSoftInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.RemoveModelInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.ROLE_MEMBERSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.SaveModelInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.SCANNING_LOGSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.SearchProductsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.USERSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.WORK_ORDERSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.WORK_ORDER_ITEMSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\FCT_FUJI_FLORA.PVSServiceReferences.WORK_ORDER_PROCEDURESEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\PVSWebService.wsdl" />
+    <None Include="FCT_FUJI_FLORA_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\umc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-saved-search-161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward_Arrow_16px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refesh-161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools-161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refesh-162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools-162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\PVSServiceReferences\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\PVSServiceReferences\configuration.svcinfo" />
+    <None Include="Connected Services\PVSServiceReferences\configuration91.svcinfo" />
+    <None Include="Connected Services\PVSServiceReferences\PVSWebService.disco" />
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\PVSServiceReferences\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

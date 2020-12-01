@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCT_FUJI_FLORA", "FCT_FUJI_FLORA\FCT_FUJI_FLORA.csproj", "{C4E2A791-D9B9-4E37-BF64-0B596F12EFEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FujiXerox_FCT_Support_WIP", "..\FujiXerox_FCT_Support_WIP\FujiXerox_FCT_Support_WIP.csproj", "{8D7B3472-4BFC-49F9-91AC-FC9534C36E5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4E2A791-D9B9-4E37-BF64-0B596F12EFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E2A791-D9B9-4E37-BF64-0B596F12EFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E2A791-D9B9-4E37-BF64-0B596F12EFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E2A791-D9B9-4E37-BF64-0B596F12EFEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7B3472-4BFC-49F9-91AC-FC9534C36E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7B3472-4BFC-49F9-91AC-FC9534C36E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7B3472-4BFC-49F9-91AC-FC9534C36E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7B3472-4BFC-49F9-91AC-FC9534C36E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B9F3B6F-B691-4703-9832-C41E2F6E4E94}
+	EndGlobalSection
+EndGlobal
