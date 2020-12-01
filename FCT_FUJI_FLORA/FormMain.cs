@@ -41,6 +41,20 @@ namespace FCT_FUJI_FLORA
                         new DataColumn("STATE",typeof(string)),
                         new DataColumn("DATE",typeof(string)), });
             dgrvResult.DataSource = dt;
+            changeWidthColumnAtIndex(0, 260);
+            changeWidthColumnAtIndex(1, 140);
+            changeWidthColumnAtIndex(2, 100);
+            changeWidthColumnAtIndex(3, 60);
+        }
+        private void changeWidthColumnAtIndex(int i, int width)
+        {
+            try
+            {
+                DataGridViewColumn column = dgrvResult.Columns[i];
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                column.Width = width;
+            }
+            catch { }
         }
 
         private void InitWatcher()
@@ -56,7 +70,7 @@ namespace FCT_FUJI_FLORA
                 watcher.NotifyFilter = NotifyFilters.LastWrite;
 
                 watcher.Filter = Constants.FILE_INPUT_EXTENSION;
-                watcher.Created += OnChanged;
+                //watcher.Created += OnChanged;
                 watcher.Changed += OnChanged;
             }
             catch (Exception)
@@ -90,9 +104,9 @@ namespace FCT_FUJI_FLORA
         {
             if (_isStart)
             {
-
                 try
                 {
+
                     DateTime lastWriteTime = File.GetLastWriteTime(e.FullPath);
                     TimeSpan span = lastWriteTime - lastRead;
                     if (span.Seconds > 1)
@@ -117,14 +131,7 @@ namespace FCT_FUJI_FLORA
                 string line = Ultils.ReadLastLine(fullPath);
                 var lines = line.Split(',');
                 var barcode = lines[0];
-                string stationBefore = "N/A";
                 string stationCurrent = Ultils.GetValueRegistryKey(KeyName.STATION_NO);
-                var check = checkStation(barcode, stationCurrent, out stationBefore);
-                if (!check)
-                {
-                    ShowMessage("FAIL", "NG", $"Không tìm thấy dữ liệu tại trạm [{stationBefore}] | [{stationCurrent}]");
-                    return;
-                }
                 int indexOfUnderscore = barcode.IndexOf("_");
                 var productId = barcode.Substring(indexOfUnderscore + 1, barcode.Length - indexOfUnderscore - 1);
                 var boardState = lines[4].ToUpper();

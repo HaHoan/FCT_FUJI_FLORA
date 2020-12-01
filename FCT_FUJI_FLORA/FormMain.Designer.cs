@@ -37,6 +37,15 @@ namespace FCT_FUJI_FLORA
             this.lblStatus = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblPASS = new System.Windows.Forms.Label();
+            this.lblNG = new System.Windows.Forms.Label();
+            this.lblTOTAL = new System.Windows.Forms.Label();
+            this.btnStop = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.lbl_Setting = new System.Windows.Forms.Label();
             this.lblPathLog = new System.Windows.Forms.Label();
             this.dgrvResult = new System.Windows.Forms.DataGridView();
@@ -45,34 +54,24 @@ namespace FCT_FUJI_FLORA
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.btnStop = new System.Windows.Forms.Button();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblPASS = new System.Windows.Forms.Label();
-            this.lblNG = new System.Windows.Forms.Label();
-            this.lblTOTAL = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrvResult)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMessage
             // 
             this.lblMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblMessage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMessage.ForeColor = System.Drawing.Color.White;
             this.lblMessage.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.lblMessage.Location = new System.Drawing.Point(125, 3);
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.lblMessage.Size = new System.Drawing.Size(638, 72);
+            this.lblMessage.Size = new System.Drawing.Size(573, 54);
             this.lblMessage.TabIndex = 1;
             this.lblMessage.Text = "Nhấn Start để bắt đầu";
             // 
@@ -85,13 +84,16 @@ namespace FCT_FUJI_FLORA
             this.lblStatus.ForeColor = System.Drawing.Color.White;
             this.lblStatus.Location = new System.Drawing.Point(3, 3);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(122, 72);
+            this.lblStatus.Size = new System.Drawing.Size(122, 54);
             this.lblStatus.TabIndex = 0;
             this.lblStatus.Text = "[N\\A]";
             this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lblMessage);
@@ -99,11 +101,14 @@ namespace FCT_FUJI_FLORA
             this.panel2.Location = new System.Drawing.Point(7, 14);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(3);
-            this.panel2.Size = new System.Drawing.Size(768, 80);
+            this.panel2.Size = new System.Drawing.Size(706, 62);
             this.panel2.TabIndex = 14;
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.tableLayoutPanel1);
             this.groupBox3.Controls.Add(this.btnStop);
             this.groupBox3.Controls.Add(this.btnStart);
@@ -114,135 +119,9 @@ namespace FCT_FUJI_FLORA
             this.groupBox3.Location = new System.Drawing.Point(8, 12);
             this.groupBox3.MinimumSize = new System.Drawing.Size(668, 273);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(779, 437);
+            this.groupBox3.Size = new System.Drawing.Size(719, 317);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
-            // 
-            // lbl_Setting
-            // 
-            this.lbl_Setting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_Setting.Image = global::FCT_FUJI_FLORA.Properties.Resources.tools_16;
-            this.lbl_Setting.Location = new System.Drawing.Point(537, 139);
-            this.lbl_Setting.Name = "lbl_Setting";
-            this.lbl_Setting.Size = new System.Drawing.Size(30, 26);
-            this.lbl_Setting.TabIndex = 40;
-            this.lbl_Setting.Click += new System.EventHandler(this.lbl_Setting_Click);
-            // 
-            // lblPathLog
-            // 
-            this.lblPathLog.AutoSize = true;
-            this.lblPathLog.ForeColor = System.Drawing.Color.Maroon;
-            this.lblPathLog.Location = new System.Drawing.Point(7, 204);
-            this.lblPathLog.Name = "lblPathLog";
-            this.lblPathLog.Size = new System.Drawing.Size(69, 13);
-            this.lblPathLog.TabIndex = 38;
-            this.lblPathLog.Text = "PATH LOG";
-            // 
-            // dgrvResult
-            // 
-            this.dgrvResult.AllowUserToAddRows = false;
-            this.dgrvResult.AllowUserToDeleteRows = false;
-            this.dgrvResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgrvResult.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgrvResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgrvResult.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgrvResult.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgrvResult.Location = new System.Drawing.Point(3, 220);
-            this.dgrvResult.Name = "dgrvResult";
-            this.dgrvResult.ReadOnly = true;
-            this.dgrvResult.RowHeadersVisible = false;
-            this.dgrvResult.RowHeadersWidth = 5;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Green;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            this.dgrvResult.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgrvResult.Size = new System.Drawing.Size(773, 214);
-            this.dgrvResult.TabIndex = 18;
-            // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(52, 19);
-            this.toolStripStatusLabel3.Text = "Support:";
-            // 
-            // toolStripStatusLabel4
-            // 
-            this.toolStripStatusLabel4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.toolStripStatusLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(43, 19);
-            this.toolStripStatusLabel4.Text = "PE-IT";
-            // 
-            // toolStripStatusLabel6
-            // 
-            this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
-            this.toolStripStatusLabel6.Size = new System.Drawing.Size(48, 19);
-            this.toolStripStatusLabel6.Text = "Version:";
-            // 
-            // lblVersion
-            // 
-            this.lblVersion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(15, 19);
-            this.lblVersion.Text = "0";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.BackColor = System.Drawing.Color.White;
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel3,
-            this.toolStripStatusLabel4,
-            this.toolStripStatusLabel6,
-            this.lblVersion});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 452);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(796, 24);
-            this.statusStrip1.TabIndex = 20;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // btnStop
-            // 
-            this.btnStop.BackColor = System.Drawing.Color.Maroon;
-            this.btnStop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStop.Enabled = false;
-            this.btnStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStop.ForeColor = System.Drawing.Color.White;
-            this.btnStop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStop.ImageIndex = 1;
-            this.btnStop.Location = new System.Drawing.Point(643, 139);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(65, 33);
-            this.btnStop.TabIndex = 42;
-            this.btnStop.Text = "STOP";
-            this.btnStop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnStop.UseVisualStyleBackColor = false;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
-            // 
-            // btnStart
-            // 
-            this.btnStart.BackColor = System.Drawing.Color.Green;
-            this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStart.ImageIndex = 1;
-            this.btnStart.Location = new System.Drawing.Point(573, 139);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(64, 33);
-            this.btnStart.TabIndex = 41;
-            this.btnStart.Text = "START";
-            this.btnStart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnStart.UseVisualStyleBackColor = false;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -337,11 +216,137 @@ namespace FCT_FUJI_FLORA
             this.lblTOTAL.Text = "0";
             this.lblTOTAL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnStop
+            // 
+            this.btnStop.BackColor = System.Drawing.Color.Maroon;
+            this.btnStop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStop.Enabled = false;
+            this.btnStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStop.ForeColor = System.Drawing.Color.White;
+            this.btnStop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStop.ImageIndex = 1;
+            this.btnStop.Location = new System.Drawing.Point(563, 130);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(65, 33);
+            this.btnStop.TabIndex = 42;
+            this.btnStop.Text = "STOP";
+            this.btnStop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnStop.UseVisualStyleBackColor = false;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
+            // btnStart
+            // 
+            this.btnStart.BackColor = System.Drawing.Color.Green;
+            this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.ForeColor = System.Drawing.Color.White;
+            this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStart.ImageIndex = 1;
+            this.btnStart.Location = new System.Drawing.Point(493, 130);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(64, 33);
+            this.btnStart.TabIndex = 41;
+            this.btnStart.Text = "START";
+            this.btnStart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // lbl_Setting
+            // 
+            this.lbl_Setting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_Setting.Image = global::FCT_FUJI_FLORA.Properties.Resources.tools_16;
+            this.lbl_Setting.Location = new System.Drawing.Point(457, 130);
+            this.lbl_Setting.Name = "lbl_Setting";
+            this.lbl_Setting.Size = new System.Drawing.Size(30, 26);
+            this.lbl_Setting.TabIndex = 40;
+            this.lbl_Setting.Click += new System.EventHandler(this.lbl_Setting_Click);
+            // 
+            // lblPathLog
+            // 
+            this.lblPathLog.AutoSize = true;
+            this.lblPathLog.ForeColor = System.Drawing.Color.Maroon;
+            this.lblPathLog.Location = new System.Drawing.Point(7, 204);
+            this.lblPathLog.Name = "lblPathLog";
+            this.lblPathLog.Size = new System.Drawing.Size(69, 13);
+            this.lblPathLog.TabIndex = 38;
+            this.lblPathLog.Text = "PATH LOG";
+            // 
+            // dgrvResult
+            // 
+            this.dgrvResult.AllowUserToAddRows = false;
+            this.dgrvResult.AllowUserToDeleteRows = false;
+            this.dgrvResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgrvResult.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgrvResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgrvResult.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgrvResult.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgrvResult.Location = new System.Drawing.Point(3, 220);
+            this.dgrvResult.Name = "dgrvResult";
+            this.dgrvResult.ReadOnly = true;
+            this.dgrvResult.RowHeadersVisible = false;
+            this.dgrvResult.RowHeadersWidth = 5;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Green;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgrvResult.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgrvResult.Size = new System.Drawing.Size(713, 94);
+            this.dgrvResult.TabIndex = 18;
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(52, 19);
+            this.toolStripStatusLabel3.Text = "Support:";
+            // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.toolStripStatusLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(43, 19);
+            this.toolStripStatusLabel4.Text = "PE-IT";
+            // 
+            // toolStripStatusLabel6
+            // 
+            this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
+            this.toolStripStatusLabel6.Size = new System.Drawing.Size(48, 19);
+            this.toolStripStatusLabel6.Text = "Version:";
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(15, 19);
+            this.lblVersion.Text = "0";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.White;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel3,
+            this.toolStripStatusLabel4,
+            this.toolStripStatusLabel6,
+            this.lblVersion});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 331);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(739, 24);
+            this.statusStrip1.TabIndex = 20;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 476);
+            this.ClientSize = new System.Drawing.Size(739, 355);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -354,10 +359,10 @@ namespace FCT_FUJI_FLORA
             this.panel2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgrvResult)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
