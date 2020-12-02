@@ -54,6 +54,8 @@ namespace FCT_FUJI_FLORA
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblSoftInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -334,6 +336,8 @@ namespace FCT_FUJI_FLORA
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel3,
             this.toolStripStatusLabel4,
+            this.toolStripStatusLabel1,
+            this.lblSoftInfo,
             this.toolStripStatusLabel6,
             this.lblVersion});
             this.statusStrip1.Location = new System.Drawing.Point(0, 331);
@@ -341,6 +345,20 @@ namespace FCT_FUJI_FLORA
             this.statusStrip1.Size = new System.Drawing.Size(739, 24);
             this.statusStrip1.TabIndex = 20;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(52, 19);
+            this.toolStripStatusLabel1.Text = "SoftInfo:";
+            // 
+            // lblSoftInfo
+            // 
+            this.lblSoftInfo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoftInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblSoftInfo.Name = "lblSoftInfo";
+            this.lblSoftInfo.Size = new System.Drawing.Size(27, 19);
+            this.lblSoftInfo.Text = "NA";
             // 
             // FormMain
             // 
@@ -388,5 +406,7 @@ namespace FCT_FUJI_FLORA
         private Label lblPASS;
         private Label lblNG;
         private Label lblTOTAL;
+        private ToolStripStatusLabel toolStripStatusLabel1;
+        private ToolStripStatusLabel lblSoftInfo;
     }
 }

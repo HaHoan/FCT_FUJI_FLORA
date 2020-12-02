@@ -226,7 +226,8 @@ namespace FCT_FUJI_FLORA
         private void BgrwSoftInfo_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             var result = e.Result as Base_Soft_InfoEntity;
-            _pvs_service.RegisterSoftInfo(result);
+            var rs = _pvs_service.RegisterSoftInfo(result);
+            lblSoftInfo.Text = rs ? "OK" : "NG";
         }
 
         private void BgrwSoftInfo_DoWork(object sender, DoWorkEventArgs e)
