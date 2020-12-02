@@ -78,10 +78,7 @@ namespace FCT_FUJI_FLORA
                 watcher.IncludeSubdirectories = false;
                 // watcher.Created += OnChanged;
                 watcher.Changed += OnChanged;
-                timer = new System.Timers.Timer(100);
-                timer.Elapsed += OnTimedEvent;
-                timer.AutoReset = true;
-                timer.Enabled = true;
+            
             }
             catch (Exception)
             {
@@ -114,26 +111,13 @@ namespace FCT_FUJI_FLORA
         }
         private void OnChanged(object source, FileSystemEventArgs e)
         {
-
             try
             {
-                _isFileChanged = true;
-                _pathFileChanged = e.FullPath;
+                checkFileLog(e.FullPath);
             }
             catch (Exception ex)
             {
                 ShowMessage("FAIL", "NG", ex.Message.ToString());
-            }
-
-        }
-
-        private void OnTimedEvent(Object source, ElapsedEventArgs e)
-        {
-            if (_isStart && _isFileChanged)
-            {
-                _isFileChanged = false;
-                checkFileLog(_pathFileChanged);
-
             }
         }
 
@@ -261,6 +245,7 @@ namespace FCT_FUJI_FLORA
                 WINDOWS_EDITION = Common.GetOSFriendlyName(),
                 IS_WINDOWS_ACTIVE = Common.IsWindowsActivated()
             };
+            param.ID += param.MAC_ADDRESS;
             e.Result = param;
         }
         public bool checkStation(string item, string stationNo, out string stationBefore)
