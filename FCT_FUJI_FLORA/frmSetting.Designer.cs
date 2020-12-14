@@ -47,6 +47,7 @@ namespace FCT_FUJI_FLORA
             this.rb100 = new System.Windows.Forms.RadioButton();
             this.rb200 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtMilliseconds
@@ -179,7 +180,7 @@ namespace FCT_FUJI_FLORA
             // 
             this.rb100.AutoSize = true;
             this.rb100.Checked = true;
-            this.rb100.Location = new System.Drawing.Point(102, 203);
+            this.rb100.Location = new System.Drawing.Point(100, 222);
             this.rb100.Name = "rb100";
             this.rb100.Size = new System.Drawing.Size(43, 17);
             this.rb100.TabIndex = 43;
@@ -191,7 +192,7 @@ namespace FCT_FUJI_FLORA
             // rb200
             // 
             this.rb200.AutoSize = true;
-            this.rb200.Location = new System.Drawing.Point(252, 203);
+            this.rb200.Location = new System.Drawing.Point(167, 222);
             this.rb200.Name = "rb200";
             this.rb200.Size = new System.Drawing.Size(43, 17);
             this.rb200.TabIndex = 44;
@@ -201,17 +202,27 @@ namespace FCT_FUJI_FLORA
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(327, 203);
+            this.label2.Location = new System.Drawing.Point(226, 222);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(20, 13);
             this.label2.TabIndex = 45;
             this.label2.Text = "(V)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(99, 187);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(147, 13);
+            this.label4.TabIndex = 46;
+            this.label4.Text = "Chọn Model 100V hoặc 200V";
             // 
             // frmSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(388, 314);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.rb200);
             this.Controls.Add(this.rb100);
@@ -259,5 +270,6 @@ namespace FCT_FUJI_FLORA
         private System.Windows.Forms.RadioButton rb100;
         private System.Windows.Forms.RadioButton rb200;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }

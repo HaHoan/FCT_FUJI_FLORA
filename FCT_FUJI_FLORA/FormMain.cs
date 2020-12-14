@@ -71,6 +71,10 @@ namespace FCT_FUJI_FLORA
                 DateTime currentDate = DateTime.Now;
                 string dateConvert = currentDate.ToString("yyyyMMdd");
                 path += "\\" + dateConvert;
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
                 watcher.Path = path;
                 watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.CreationTime
                                              | NotifyFilters.FileName | NotifyFilters.DirectoryName;
@@ -201,6 +205,10 @@ namespace FCT_FUJI_FLORA
                 DateTime currentDate = DateTime.Now;
                 string dateConvert = currentDate.ToString("yyyyMMdd");
                 path += "\\" + dateConvert;
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
                 watcher.Path = path;
             });
             frmSetting.ShowDialog();
