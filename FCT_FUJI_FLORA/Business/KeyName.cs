@@ -21,5 +21,6 @@ namespace FCT_FUJI_FLORA.Business
         public const string COM_NAME = "COM_NAME";
         public const string STATION_NO = "STATION_NO";
         public const string PORTNAME = "PORTNAME";
+        public const string MACHINE = "MACHINE";
     }
 }

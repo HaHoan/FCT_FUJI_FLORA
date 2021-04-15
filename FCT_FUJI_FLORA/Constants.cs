@@ -17,7 +17,13 @@ namespace FCT_FUJI_FLORA
         {
             return "富士施乐-" + u + "V基板M3";
         }
+
     }
 
+    public static class Machine
+    {
+        public static string FLORA = "FLORA";
+        public static string ZAKURO = "ZAKURO";
+    }
 
 }

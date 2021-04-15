@@ -78,11 +78,19 @@ namespace FCT_FUJI_FLORA
                 watcher.Path = path;
                 watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.CreationTime
                                              | NotifyFilters.FileName | NotifyFilters.DirectoryName;
-                watcher.Filter = Constants.FILE_INPUT_EXTENSION;
+                string machine = Ultils.GetValueRegistryKey(KeyName.MACHINE);
+                if (machine == Machine.FLORA)
+                {
+                    watcher.Filter = Constants.FILE_INPUT_EXTENSION;
+                }
+                else if (machine == Machine.ZAKURO)
+                {
+                    watcher.Filter = Constants.FILE_OUTPUT_EXTENSION;
+                }
+                else ShowMessage("FAIL", "NG", "Chưa chọn loại máy ở Setting!");
                 watcher.IncludeSubdirectories = false;
                 // watcher.Created += OnChanged;
                 watcher.Changed += OnChanged;
-            
             }
             catch (Exception)
             {
@@ -96,22 +104,44 @@ namespace FCT_FUJI_FLORA
 
         private void checkFileLog(string fullPath)
         {
-            System.Threading.Thread.Sleep(int.Parse(Ultils.GetValueRegistryKey(KeyName.SLEEP_TIME)));
-            BeginInvoke(new Action(() => { lblPathLog.Text = fullPath; }));
-            string fileName = Path.GetFileName(fullPath);
-            int indexOfUnderscore = fileName.IndexOf("_");
-            int indexOfDot = fileName.IndexOf(".");
-            string dateOfFile = fileName.Substring(indexOfUnderscore + 1, indexOfDot - indexOfUnderscore - 1);
-            DateTime currentDate = DateTime.Now;
-            string dateConvert = currentDate.ToString("yyyyMMdd");
-            if (dateOfFile == dateConvert)
+            string machine = Ultils.GetValueRegistryKey(KeyName.MACHINE);
+            if (machine == Machine.FLORA)
             {
-                ReadFileLog(fullPath);
+                System.Threading.Thread.Sleep(int.Parse(Ultils.GetValueRegistryKey(KeyName.SLEEP_TIME)));
+                BeginInvoke(new Action(() => { lblPathLog.Text = fullPath; }));
+                string fileName = Path.GetFileName(fullPath);
+                int indexOfUnderscore = fileName.IndexOf("_");
+                int indexOfDot = fileName.IndexOf(".");
+                string dateOfFile = fileName.Substring(indexOfUnderscore + 1, indexOfDot - indexOfUnderscore - 1);
+                DateTime currentDate = DateTime.Now;
+                string dateConvert = currentDate.ToString("yyyyMMdd");
+                if (dateOfFile == dateConvert)
+                {
+                    ReadFileLog(fullPath);
+                }
+                else
+                {
+                    return;
+                }
             }
-            else
+            else if (machine == Machine.ZAKURO)
             {
-                return;
+                System.Threading.Thread.Sleep(int.Parse(Ultils.GetValueRegistryKey(KeyName.SLEEP_TIME)));
+                BeginInvoke(new Action(() => { lblPathLog.Text = fullPath; }));
+                string fileName = Path.GetFileName(fullPath);
+                string dateOfFile = fileName.Substring(fileName.Length - 12, 8);
+                DateTime currentDate = DateTime.Now;
+                string dateConvert = currentDate.ToString("yyyyMMdd");
+                if (dateOfFile == dateConvert)
+                {
+                    ReadFileLog(fullPath);
+                }
+                else
+                {
+                    return;
+                }
             }
+
         }
         private void OnChanged(object source, FileSystemEventArgs e)
         {
@@ -133,13 +163,34 @@ namespace FCT_FUJI_FLORA
                 string line = Ultils.ReadLastLine(fullPath);
                 var lines = line.Split(',');
                 var barcode = lines[0];
-                var timeChangeFile = lines[2];
+                string machine = Ultils.GetValueRegistryKey(KeyName.MACHINE);
+                var timeChangeFile = "";
+                if (machine == Machine.FLORA)
+                {
+                    timeChangeFile = lines[2];
+                }
+                else if (machine == Machine.ZAKURO)
+                {
+                    timeChangeFile = lines[3];
+                }
+
                 if (timeChangeFile == _timeChangedFile) return;
                 _timeChangedFile = timeChangeFile;
                 string stationCurrent = Ultils.GetValueRegistryKey(KeyName.STATION_NO);
-                int indexOfUnderscore = barcode.IndexOf("_");
-                var productId = barcode.Substring(indexOfUnderscore + 1, barcode.Length - indexOfUnderscore - 1);
-                var boardState = lines[4].ToUpper();
+                var productId = "";
+                var boardState = "";
+                if (machine == Machine.FLORA)
+                {
+                    int indexOfUnderscore = barcode.IndexOf("_");
+                    productId = barcode.Substring(indexOfUnderscore + 1, barcode.Length - indexOfUnderscore - 1);
+                    boardState = lines[4].ToUpper();
+                }
+                else if (machine == Machine.ZAKURO)
+                {
+                    productId = barcode;
+                    boardState = lines[5].ToUpper();
+                }
+               
                 var station = Ultils.GetValueRegistryKey(KeyName.STATION_NO);
                 var dateSqlServer = _pvs_service.GetDateTime();
                 PVSServiceReferences.SCANNING_LOGSEntity item = new PVSServiceReferences.SCANNING_LOGSEntity()

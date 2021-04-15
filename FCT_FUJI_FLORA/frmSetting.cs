@@ -36,6 +36,12 @@ namespace FCT_FUJI_FLORA
                 rb100.Checked = true;
             }
             else rb200.Checked = true;
+            string machine = Ultils.GetValueRegistryKey(KeyName.MACHINE);
+            if (machine == Machine.FLORA)
+            {
+                rbFlora.Checked = true;
+            }
+            else rbZakuro.Checked = true;
         }
 
         private void lblPathInput_Click(object sender, EventArgs e)
@@ -111,6 +117,7 @@ namespace FCT_FUJI_FLORA
             Ultils.WriteRegistry(KeyName.STATION_NO, txtStationNo.Text.Trim());
             Ultils.WriteRegistry(KeyName.SLEEP_TIME, txtMilliseconds.Text.Trim());
             Ultils.WriteRegistry(KeyName.VOL, rb100.Checked ? "100" : "200");
+            Ultils.WriteRegistry(KeyName.MACHINE, rbFlora.Checked ? Machine.FLORA : Machine.ZAKURO);
             MessageBox.Show("Save sucess!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             updateAfterSetting();
             this.Dispose();
@@ -124,6 +131,11 @@ namespace FCT_FUJI_FLORA
         {
             pathInputWhenChanged = txtInputPath.Text.Trim();
             pathInputWhenChanged += @"\" + Constants.FILE_NAME(rb100.Checked ? "100" : "200");
+        }
+
+        private void rbFlora_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

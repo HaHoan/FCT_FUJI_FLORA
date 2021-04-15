@@ -372,7 +372,7 @@ namespace FCT_FUJI_FLORA
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormMain";
-            this.Text = "FCT FUJI FLORA";
+            this.Text = "FCT FUJI FLORA ZAKURO";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

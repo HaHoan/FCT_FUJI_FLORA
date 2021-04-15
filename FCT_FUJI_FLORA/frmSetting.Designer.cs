@@ -46,8 +46,12 @@ namespace FCT_FUJI_FLORA
             this.label3 = new System.Windows.Forms.Label();
             this.rb100 = new System.Windows.Forms.RadioButton();
             this.rb200 = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbFlora = new System.Windows.Forms.RadioButton();
+            this.rbZakuro = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtMilliseconds
@@ -130,7 +134,7 @@ namespace FCT_FUJI_FLORA
             this.btnSaveChanged.ForeColor = System.Drawing.Color.White;
             this.btnSaveChanged.Image = global::FCT_FUJI_FLORA.Properties.Resources.Save;
             this.btnSaveChanged.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveChanged.Location = new System.Drawing.Point(232, 257);
+            this.btnSaveChanged.Location = new System.Drawing.Point(232, 369);
             this.btnSaveChanged.Name = "btnSaveChanged";
             this.btnSaveChanged.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnSaveChanged.Size = new System.Drawing.Size(86, 30);
@@ -180,7 +184,7 @@ namespace FCT_FUJI_FLORA
             // 
             this.rb100.AutoSize = true;
             this.rb100.Checked = true;
-            this.rb100.Location = new System.Drawing.Point(100, 222);
+            this.rb100.Location = new System.Drawing.Point(23, 30);
             this.rb100.Name = "rb100";
             this.rb100.Size = new System.Drawing.Size(43, 17);
             this.rb100.TabIndex = 43;
@@ -192,40 +196,65 @@ namespace FCT_FUJI_FLORA
             // rb200
             // 
             this.rb200.AutoSize = true;
-            this.rb200.Location = new System.Drawing.Point(167, 222);
+            this.rb200.Location = new System.Drawing.Point(113, 30);
             this.rb200.Name = "rb200";
             this.rb200.Size = new System.Drawing.Size(43, 17);
             this.rb200.TabIndex = 44;
             this.rb200.Text = "200";
             this.rb200.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // groupBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(226, 222);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 13);
-            this.label2.TabIndex = 45;
-            this.label2.Text = "(V)";
+            this.groupBox1.Controls.Add(this.rbZakuro);
+            this.groupBox1.Controls.Add(this.rbFlora);
+            this.groupBox1.Location = new System.Drawing.Point(100, 275);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(218, 72);
+            this.groupBox1.TabIndex = 48;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Chọn loại máy";
             // 
-            // label4
+            // rbFlora
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(99, 187);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 13);
-            this.label4.TabIndex = 46;
-            this.label4.Text = "Chọn Model 100V hoặc 200V";
+            this.rbFlora.AutoSize = true;
+            this.rbFlora.Checked = true;
+            this.rbFlora.Location = new System.Drawing.Point(25, 30);
+            this.rbFlora.Name = "rbFlora";
+            this.rbFlora.Size = new System.Drawing.Size(48, 17);
+            this.rbFlora.TabIndex = 0;
+            this.rbFlora.TabStop = true;
+            this.rbFlora.Text = "Flora";
+            this.rbFlora.UseVisualStyleBackColor = true;
+            this.rbFlora.CheckedChanged += new System.EventHandler(this.rbFlora_CheckedChanged);
+            // 
+            // rbZakuro
+            // 
+            this.rbZakuro.AutoSize = true;
+            this.rbZakuro.Location = new System.Drawing.Point(115, 30);
+            this.rbZakuro.Name = "rbZakuro";
+            this.rbZakuro.Size = new System.Drawing.Size(59, 17);
+            this.rbZakuro.TabIndex = 1;
+            this.rbZakuro.Text = "Zakuro";
+            this.rbZakuro.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rb100);
+            this.groupBox2.Controls.Add(this.rb200);
+            this.groupBox2.Location = new System.Drawing.Point(102, 198);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(216, 61);
+            this.groupBox2.TabIndex = 49;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Chọn Model 100V hoặc 200V";
             // 
             // frmSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 314);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.rb200);
-            this.Controls.Add(this.rb100);
+            this.ClientSize = new System.Drawing.Size(388, 416);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblPathInput);
             this.Controls.Add(this.txtInputPath);
             this.Controls.Add(this.label3);
@@ -245,6 +274,10 @@ namespace FCT_FUJI_FLORA
             this.Name = "frmSetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Setting";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,7 +302,9 @@ namespace FCT_FUJI_FLORA
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton rb100;
         private System.Windows.Forms.RadioButton rb200;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbZakuro;
+        private System.Windows.Forms.RadioButton rbFlora;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
