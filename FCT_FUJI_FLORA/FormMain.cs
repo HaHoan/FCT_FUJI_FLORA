@@ -67,18 +67,22 @@ namespace FCT_FUJI_FLORA
             try
             {
                 watcher = new FileSystemWatcher();
-                string path = Ultils.GetValueRegistryKey(KeyName.PATH_INPUT_CHANGE);
-                DateTime currentDate = DateTime.Now;
-                string dateConvert = currentDate.ToString("yyyyMMdd");
-                path += "\\" + dateConvert;
-                if (!Directory.Exists(path))
+                string path = Ultils.GetValueRegistryKey(KeyName.PATH_INPUT);
+                string machine = Ultils.GetValueRegistryKey(KeyName.MACHINE);
+                if(machine == Machine.FLORA)
                 {
-                    Directory.CreateDirectory(path);
+                    DateTime currentDate = DateTime.Now;
+                    string dateConvert = currentDate.ToString("yyyyMMdd");
+                    path += "\\" + dateConvert;
+                    if (!Directory.Exists(path))
+                    {
+                        Directory.CreateDirectory(path);
+                    }
                 }
+              
                 watcher.Path = path;
                 watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.CreationTime
                                              | NotifyFilters.FileName | NotifyFilters.DirectoryName;
-                string machine = Ultils.GetValueRegistryKey(KeyName.MACHINE);
                 if (machine == Machine.FLORA)
                 {
                     watcher.Filter = Constants.FILE_INPUT_EXTENSION;
@@ -250,16 +254,22 @@ namespace FCT_FUJI_FLORA
         private void lbl_Setting_Click(object sender, EventArgs e)
         {
             var frmSetting = new frmSetting();
+          
             frmSetting.updateAfterSetting = new Action(() =>
             {
-                string path = Ultils.GetValueRegistryKey(KeyName.PATH_INPUT_CHANGE);
-                DateTime currentDate = DateTime.Now;
-                string dateConvert = currentDate.ToString("yyyyMMdd");
-                path += "\\" + dateConvert;
-                if (!Directory.Exists(path))
+                string machine = Ultils.GetValueRegistryKey(KeyName.MACHINE);
+                string path = Ultils.GetValueRegistryKey(KeyName.PATH_INPUT);
+                if (machine == Machine.FLORA)
                 {
-                    Directory.CreateDirectory(path);
+                    DateTime currentDate = DateTime.Now;
+                    string dateConvert = currentDate.ToString("yyyyMMdd");
+                    path += "\\" + dateConvert;
+                    if (!Directory.Exists(path))
+                    {
+                        Directory.CreateDirectory(path);
+                    }
                 }
+               
                 watcher.Path = path;
             });
             frmSetting.ShowDialog();

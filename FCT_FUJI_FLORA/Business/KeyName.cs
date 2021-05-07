@@ -10,7 +10,6 @@ namespace FCT_FUJI_FLORA.Business
     {
         public const string PROCESS = "PROCESS";
         public const string PATH_INPUT = "PATH_INPUT";
-        public const string PATH_INPUT_CHANGE = "PATH_INPUT_CHANGE";
         public const string VOL = "VOL";
         public const string PATH_OUTPUT = "PATH_OUTPUT";
         public const string SLEEP_TIME = "SLEEP_TIME";

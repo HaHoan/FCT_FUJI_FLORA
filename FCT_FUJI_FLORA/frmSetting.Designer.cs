@@ -47,8 +47,8 @@ namespace FCT_FUJI_FLORA
             this.rb100 = new System.Windows.Forms.RadioButton();
             this.rb200 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbFlora = new System.Windows.Forms.RadioButton();
             this.rbZakuro = new System.Windows.Forms.RadioButton();
+            this.rbFlora = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -134,7 +134,7 @@ namespace FCT_FUJI_FLORA
             this.btnSaveChanged.ForeColor = System.Drawing.Color.White;
             this.btnSaveChanged.Image = global::FCT_FUJI_FLORA.Properties.Resources.Save;
             this.btnSaveChanged.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveChanged.Location = new System.Drawing.Point(232, 369);
+            this.btnSaveChanged.Location = new System.Drawing.Point(232, 265);
             this.btnSaveChanged.Name = "btnSaveChanged";
             this.btnSaveChanged.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnSaveChanged.Size = new System.Drawing.Size(86, 30);
@@ -207,12 +207,22 @@ namespace FCT_FUJI_FLORA
             // 
             this.groupBox1.Controls.Add(this.rbZakuro);
             this.groupBox1.Controls.Add(this.rbFlora);
-            this.groupBox1.Location = new System.Drawing.Point(100, 275);
+            this.groupBox1.Location = new System.Drawing.Point(100, 186);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(218, 72);
             this.groupBox1.TabIndex = 48;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chọn loại máy";
+            // 
+            // rbZakuro
+            // 
+            this.rbZakuro.AutoSize = true;
+            this.rbZakuro.Location = new System.Drawing.Point(115, 30);
+            this.rbZakuro.Name = "rbZakuro";
+            this.rbZakuro.Size = new System.Drawing.Size(59, 17);
+            this.rbZakuro.TabIndex = 1;
+            this.rbZakuro.Text = "Zakuro";
+            this.rbZakuro.UseVisualStyleBackColor = true;
             // 
             // rbFlora
             // 
@@ -227,32 +237,23 @@ namespace FCT_FUJI_FLORA
             this.rbFlora.UseVisualStyleBackColor = true;
             this.rbFlora.CheckedChanged += new System.EventHandler(this.rbFlora_CheckedChanged);
             // 
-            // rbZakuro
-            // 
-            this.rbZakuro.AutoSize = true;
-            this.rbZakuro.Location = new System.Drawing.Point(115, 30);
-            this.rbZakuro.Name = "rbZakuro";
-            this.rbZakuro.Size = new System.Drawing.Size(59, 17);
-            this.rbZakuro.TabIndex = 1;
-            this.rbZakuro.Text = "Zakuro";
-            this.rbZakuro.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rb100);
             this.groupBox2.Controls.Add(this.rb200);
-            this.groupBox2.Location = new System.Drawing.Point(102, 198);
+            this.groupBox2.Location = new System.Drawing.Point(102, 300);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(216, 61);
             this.groupBox2.TabIndex = 49;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chọn Model 100V hoặc 200V";
+            this.groupBox2.Visible = false;
             // 
             // frmSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 416);
+            this.ClientSize = new System.Drawing.Size(388, 381);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblPathInput);

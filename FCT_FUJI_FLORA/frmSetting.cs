@@ -47,6 +47,7 @@ namespace FCT_FUJI_FLORA
         private void lblPathInput_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog inputLog = new FolderBrowserDialog();
+            inputLog.SelectedPath = Ultils.GetValueRegistryKey(KeyName.PATH_INPUT);
             DialogResult open = inputLog.ShowDialog();
             if (open == DialogResult.OK)
             {
@@ -65,6 +66,7 @@ namespace FCT_FUJI_FLORA
         private void lblPathOutPut_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog outputLog = new FolderBrowserDialog();
+            outputLog.SelectedPath = Ultils.GetValueRegistryKey(KeyName.PATH_OUTPUT);
             DialogResult open = outputLog.ShowDialog();
             if (open == DialogResult.OK)
             {
@@ -99,11 +101,7 @@ namespace FCT_FUJI_FLORA
                 MessageBox.Show("Không tồn tại folder: " + inputFolder);
                 return;
             }
-            if (!Directory.Exists(pathInputWhenChanged))
-            {
-                MessageBox.Show("Không tồn tại folder: " + pathInputWhenChanged);
-                return;
-            }
+           
             string outputFolder = txtOutputLog.Text.Trim();
             if (!Directory.Exists(outputFolder))
             {
@@ -111,7 +109,6 @@ namespace FCT_FUJI_FLORA
                 return;
             }
 
-            Ultils.WriteRegistry(KeyName.PATH_INPUT_CHANGE, pathInputWhenChanged);
             Ultils.WriteRegistry(KeyName.PATH_INPUT, inputFolder);
             Ultils.WriteRegistry(KeyName.PATH_OUTPUT, outputFolder);
             Ultils.WriteRegistry(KeyName.STATION_NO, txtStationNo.Text.Trim());
@@ -130,7 +127,7 @@ namespace FCT_FUJI_FLORA
         private void SetPathInputChange()
         {
             pathInputWhenChanged = txtInputPath.Text.Trim();
-            pathInputWhenChanged += @"\" + Constants.FILE_NAME(rb100.Checked ? "100" : "200");
+        //    pathInputWhenChanged += @"\" + Constants.FILE_NAME(rb100.Checked ? "100" : "200");
         }
 
         private void rbFlora_CheckedChanged(object sender, EventArgs e)
