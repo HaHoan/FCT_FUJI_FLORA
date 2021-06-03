@@ -162,22 +162,14 @@ namespace FCT_FUJI_FLORA
                 var boardState = "";
                 string station = Ultils.GetValueRegistryKey(KeyName.STATION_NO);
                 var dateSqlServer = _pvs_service.GetDateTime();
+                var timeChangeFile = "";
                 PVSServiceReferences.SCANNING_LOGSEntity item = new PVSServiceReferences.SCANNING_LOGSEntity();
                 if (machine == Machine.FLORA)
                 {
                     string line = Ultils.ReadLastLine(fullPath);
                     var lines = line.Split(',');
                     barcode = lines[0];
-
-                    var timeChangeFile = "";
-                    if (machine == Machine.FLORA)
-                    {
-                        timeChangeFile = lines[2];
-                    }
-                    else if (machine == Machine.ZAKURO)
-                    {
-                        timeChangeFile = lines[3];
-                    }
+                    timeChangeFile = lines[2];
                     if (timeChangeFile == _timeChangedFile) return;
                     _timeChangedFile = timeChangeFile;
                     int indexOfUnderscore = barcode.IndexOf("_");
@@ -204,7 +196,6 @@ namespace FCT_FUJI_FLORA
                     boardState = allLine[allLine.Length - 1];
                     if (boardState != Constants.ALLPASS && boardState != Constants.FAIL)
                     {
-                       // ShowMessage("FAIL", "NG", "Log không có dữ liệu!");
                         return;
                     };
 
@@ -219,6 +210,9 @@ namespace FCT_FUJI_FLORA
                                 string serial = lineInfo[3];
                                 productId = lineInfo[4];
                                 barcode = serial + "_" + productId;
+                                timeChangeFile = lineInfo[7];
+                                if (timeChangeFile == _timeChangedFile) return;
+                                _timeChangedFile = timeChangeFile;
                                 break;
                             }
                             catch (Exception e)
