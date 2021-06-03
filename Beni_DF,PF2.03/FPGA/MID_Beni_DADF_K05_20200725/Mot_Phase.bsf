@@ -1,0 +1,184 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 216 384)
+	(text "Mot_Phase" (rect 5 0 67 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 304 25 316)(font "Arial" ))
+	(port
+		(pt 0 128)
+		(input)
+		(text "MOT_A" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "MOT_A" (rect 21 123 63 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "MOT_XA" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "MOT_XA" (rect 21 139 71 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "MOT_B" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "MOT_B" (rect 21 155 62 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "MOT_XB" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "MOT_XB" (rect 21 171 70 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "LOCK" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "LOCK" (rect 24 264 57 278)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "CLEAR" (rect 24 248 62 267)(font "Intel Clear" (font_size 8)))
+		(text "CLEAR" (rect 24 240 62 259)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 256)(pt 16 256))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "AU_B" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "AU_B" (rect 104 27 137 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "AU_XB" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "AU_XB" (rect 97 43 138 57)(font "Arial" (font_size 8)))
+		(line (pt 152 48)(pt 136 48))
+	)
+	(port
+		(pt 152 64)
+		(output)
+		(text "XAD_B" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "XAD_B" (rect 97 59 138 73)(font "Arial" (font_size 8)))
+		(line (pt 152 64)(pt 136 64))
+	)
+	(port
+		(pt 152 80)
+		(output)
+		(text "XAD_XB" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "XAD_XB" (rect 90 75 139 89)(font "Arial" (font_size 8)))
+		(line (pt 152 80)(pt 136 80))
+	)
+	(port
+		(pt 152 96)
+		(output)
+		(text "AD_B" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "AD_B" (rect 104 91 137 105)(font "Arial" (font_size 8)))
+		(line (pt 152 96)(pt 136 96))
+	)
+	(port
+		(pt 152 112)
+		(output)
+		(text "AD_XB" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "AD_XB" (rect 97 107 138 121)(font "Arial" (font_size 8)))
+		(line (pt 152 112)(pt 136 112))
+	)
+	(port
+		(pt 152 128)
+		(output)
+		(text "XAU_B" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "XAU_B" (rect 97 123 138 137)(font "Arial" (font_size 8)))
+		(line (pt 152 128)(pt 136 128))
+	)
+	(port
+		(pt 152 144)
+		(output)
+		(text "XAU_XB" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "XAU_XB" (rect 90 139 139 153)(font "Arial" (font_size 8)))
+		(line (pt 152 144)(pt 136 144))
+	)
+	(port
+		(pt 152 160)
+		(output)
+		(text "BU_A" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "BU_A" (rect 104 155 137 169)(font "Arial" (font_size 8)))
+		(line (pt 152 160)(pt 136 160))
+	)
+	(port
+		(pt 152 176)
+		(output)
+		(text "BU_XA" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "BU_XA" (rect 97 171 138 185)(font "Arial" (font_size 8)))
+		(line (pt 152 176)(pt 136 176))
+	)
+	(port
+		(pt 152 192)
+		(output)
+		(text "XBD_A" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "XBD_A" (rect 97 187 138 201)(font "Arial" (font_size 8)))
+		(line (pt 152 192)(pt 136 192))
+	)
+	(port
+		(pt 152 208)
+		(output)
+		(text "XBD_XA" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "XBD_XA" (rect 90 203 139 217)(font "Arial" (font_size 8)))
+		(line (pt 152 208)(pt 136 208))
+	)
+	(port
+		(pt 152 224)
+		(output)
+		(text "BD_A" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "BD_A" (rect 104 219 137 233)(font "Arial" (font_size 8)))
+		(line (pt 152 224)(pt 136 224))
+	)
+	(port
+		(pt 152 240)
+		(output)
+		(text "BD_XA" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "BD_XA" (rect 97 235 138 249)(font "Arial" (font_size 8)))
+		(line (pt 152 240)(pt 136 240))
+	)
+	(port
+		(pt 152 256)
+		(output)
+		(text "XBU_A" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "XBU_A" (rect 97 251 138 265)(font "Arial" (font_size 8)))
+		(line (pt 152 256)(pt 136 256))
+	)
+	(port
+		(pt 152 272)
+		(output)
+		(text "XBU_XA" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "XBU_XA" (rect 90 267 139 281)(font "Arial" (font_size 8)))
+		(line (pt 152 272)(pt 136 272))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 304))
+	)
+)

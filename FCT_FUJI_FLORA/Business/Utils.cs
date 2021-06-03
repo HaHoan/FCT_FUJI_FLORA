@@ -161,7 +161,21 @@ namespace FCT_FUJI_FLORA.Business
             }
 
         }
+        
+        public static string[] ReadAllLines(string path)
+        {
+            try
+            {
+                return File.ReadAllLines(path);
 
+            }
+            catch (Exception e)
+            {
+
+                return null;
+            }
+        }
+        
         public static bool IsCreateFileLog(string model, string productId, string status, string process, DateTime dateCheck)
         {
             string dateTime = dateCheck.ToString("yyMMddHHmmss");

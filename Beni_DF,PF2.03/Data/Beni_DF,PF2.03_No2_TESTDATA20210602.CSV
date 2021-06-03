@@ -1,0 +1,776 @@
+
+001:961K10600_BENI_DF,PF2.03-TOSHIBA-RS,12,X15J0004TEE0,961K 10600 K002,,12,21/06/02 13:40:48,Beni DF,PF2.03 F/T No2 (2021.02.11) 002 ,FixtureID:2 
+STEP01,   1,PASS,010001, 0,SLP_5V              ,     0.300,    -0.300,    -0.000,P752-B11 > P758-15
+STEP01,   2,PASS,010002, 0,5V                  ,     0.300,    -0.300,    -0.000,P752-A4/A5 > TP1
+STEP01,   3,PASS,010003, 0,24V                 ,     0.300,    -0.300,     0.004,P752-A13/A14 > TP3
+STEP01,   4,PASS,010004, 0,24V_INTLK           ,     0.300,    -0.300,     0.004,P753-1 > -2 >TP5
+STEP01,   5,PASS,010005, 0,24V_FMOT            ,     0.300,    -0.300,     0.004,P792-6
+STEP01, 201,PASS,010201, 0,SLP_5V              ,     5.340,     4.860,     5.082,P752-B11 > P758-15
+STEP01, 202,FAIL,010202, 0,5V                  ,     5.340,     4.860,     4.083,P752-A4/A5 > TP1
+STEP01, 203,PASS,010203, 0,24V                 ,    25.700,    22.000,    23.784,P752-A13/A14 > TP3
+STEP01, 204,PASS,010204, 0,24V_INTLK           ,     0.300,    -0.300,     0.005,P753-1 > -2 >TP5
+STEP01, 205,PASS,010205, 0,24V_FMOT            ,     0.300,    -0.300,     0.004,P792-6
+FAIL
+
+001:961K10600_BENI_DF,PF2.03-TOSHIBA-RS,12,X15J0004TEE0,961K 10600 K002,,12,21/06/02 13:42:56,Beni DF,PF2.03 F/T No2 (2021.02.11) 002 ,FixtureID:2 
+STEP01,   1,PASS,010001, 0,SLP_5V              ,     0.300,    -0.300,    -0.000,P752-B11 > P758-15
+STEP01,   2,PASS,010002, 0,5V                  ,     0.300,    -0.300,    -0.000,P752-A4/A5 > TP1
+STEP01,   3,PASS,010003, 0,24V                 ,     0.300,    -0.300,     0.002,P752-A13/A14 > TP3
+STEP01,   4,PASS,010004, 0,24V_INTLK           ,     0.300,    -0.300,     0.004,P753-1 > -2 >TP5
+STEP01,   5,PASS,010005, 0,24V_FMOT            ,     0.300,    -0.300,     0.004,P792-6
+STEP01, 201,PASS,010201, 0,SLP_5V              ,     5.340,     4.860,     5.086,P752-B11 > P758-15
+STEP01, 202,FAIL,010202, 0,5V                  ,     5.340,     4.860,     4.084,P752-A4/A5 > TP1
+STEP01, 203,PASS,010203, 0,24V                 ,    25.700,    22.000,    24.410,P752-A13/A14 > TP3
+STEP01, 204,PASS,010204, 0,24V_INTLK           ,     0.300,    -0.300,     0.004,P753-1 > -2 >TP5
+STEP01, 205,PASS,010205, 0,24V_FMOT            ,     0.300,    -0.300,     0.004,P792-6
+FAIL
+
+001:961K10600_BENI_DF,PF2.03-TOSHIBA-RS,12,X15J0005TEE0,961K 10600 K002,,12,21/06/02 13:45:24,Beni DF,PF2.03 F/T No2 (2021.02.11) 002 ,FixtureID:2 
+STEP01,   1,PASS,010001, 0,SLP_5V              ,     0.300,    -0.300,    -0.000,P752-B11 > P758-15
+STEP01,   2,PASS,010002, 0,5V                  ,     0.300,    -0.300,     0.000,P752-A4/A5 > TP1
+STEP01,   3,PASS,010003, 0,24V                 ,     0.300,    -0.300,     0.002,P752-A13/A14 > TP3
+STEP01,   4,PASS,010004, 0,24V_INTLK           ,     0.300,    -0.300,     0.004,P753-1 > -2 >TP5
+STEP01,   5,PASS,010005, 0,24V_FMOT            ,     0.300,    -0.300,     0.004,P792-6
+STEP01, 201,PASS,010201, 0,SLP_5V              ,     5.340,     4.860,     4.927,P752-B11 > P758-15
+STEP01, 202,PASS,010202, 0,5V                  ,     5.340,     4.860,     5.073,P752-A4/A5 > TP1
+STEP01, 203,PASS,010203, 0,24V                 ,    25.700,    22.000,    24.652,P752-A13/A14 > TP3
+STEP01, 204,PASS,010204, 0,24V_INTLK           ,     0.300,    -0.300,     0.004,P753-1 > -2 >TP5
+STEP01, 205,PASS,010205, 0,24V_FMOT            ,     0.300,    -0.300,     0.004,P792-6
+STEP01, 301,PASS,010301, 0,24V_INTLK           ,    25.700,    22.000,    24.437,P753-1 > -2 >TP5
+STEP01, 302,PASS,010302, 0,24V_FMOT            ,    25.700,    22.000,    24.420,P792-6
+STEP02,   1,PASS,020001, 0,(DADF_RESET_)       ,         1,         1,         1,P752-B12 -> TP8
+STEP02,   2,PASS,020002, 0,(/RESET)            ,         1,         1,         1,P752-B12 -> TP9
+STEP02,   3,PASS,020003, 0,RST                 ,         1,         1,         1,P752-B12 -> TP10
+STEP02,   4,PASS,020004, 0,5V (óßè„ÇËåüèo)     ,         1,         1,         1,P752-A4/5 > P792-4
+STEP02,  11,PASS,020011, 0,/RESET              ,     140.0,      60.0,      99.1,U3-8 -> TP9
+STEP02,  12,PASS,020012, 0,RST                 ,     140.0,      60.0,      99.1,U3-8 -> TP10
+STEP02,  21,PASS,020021, 0,(DADF_RESET_)       ,         0,         0,         0,P752-B12 -> TP8,OVP13-40
+STEP02,  22,PASS,020022, 0,(/RESET)            ,         0,         0,         0,P752-B12 -> TP9,OVP13-41
+STEP02,  23,PASS,020023, 0,RST                 ,         0,         0,         0,P752-B12 -> TP10,OVP13-42
+STEP02,  31,PASS,020031, 0,(DADF_RESET_)       ,         1,         1,         1,P752-B12 -> TP8,OVP13-40
+STEP02,  32,PASS,020032, 0,(/RESET)            ,         1,         1,         1,P752-B12/JP1/U3 -> TP9,OVP13-41
+STEP02,  33,PASS,020033, 0,RST                 ,         1,         1,         1,P752-B12 -> TP10,OVP13-42
+STEP02,   1,PASS,020001, 0,(/RESET)            ,         1,         1,         1,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   2,PASS,020002, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP02,   3,PASS,020003, 0,(/RESET)            ,         0,         0,         0,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   4,PASS,020004, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP02,   5,PASS,020005, 0,(/RESET)            ,         1,         1,         1,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   6,PASS,020006, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP03,   1,PASS,030001,20,åüç∏FWèëçû          ,          ,          ,          ,COMPLETED,P759/JP1 -> U1:CPU
+STEP04,   1,PASS,040001,20,(DADF$STS)          ,          ,          ,          ,(P751-5/6),Program Wake Up
+STEP04,   2,PASS,040002,20,(DADF$STS)          ,          ,          ,          ,(P751-5/6),SFX>
+STEP04,   3,PASS,040003,20,(DADF#CMD)          ,          ,          ,          ,(P751-7/8),SFX>
+STEP05,   1,PASS,050001,20,U3:WDT              ,          ,          ,          ,SFX>
+STEP06,   1,PASS,060001, 0,äÑçûÃ◊∏ﬁ(∏ÿ±)       ,  00000000,  00000000,  00000000
+STEP06,   2,PASS,060002, 0,(NDADF_CLOSE)       ,         1,         1,         1,P751-4 -> U1-82
+STEP06,   3,PASS,060003, 0,(NDADF_CLOSE)       ,         0,         0,         0,P751-4 -> U1-82
+STEP06,   4,PASS,060004, 0,(NDADF_START)       ,         0,         0,         0,P752-B13 -> U1-74
+STEP06,   5,PASS,060005, 0,(NDADF_START)(IRQ)  ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   6,PASS,060006, 0,(NDADF_START)       ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   7,PASS,060007, 0,(NDADF_START)(IRQ)  ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   8,PASS,060008, 0,FEED_OUT_SNR        ,         1,         1,         1,P758-2 -> U1-70
+STEP06,   9,PASS,060009, 0,FEED_OUT_SNR(IRQ)   ,         1,         1,         1,P758-2 -> U1-70
+STEP06,  10,PASS,060010, 0,FEED_OUT_SNR        ,         0,         0,         0,P758-2 -> U1-70
+STEP06,  11,PASS,060011, 0,FEED_OUT_SNR(IRQ)   ,         1,         1,         1,P758-2 -> U1-70
+STEP06,  12,PASS,060012, 0,FEED_IN_SNR         ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  13,PASS,060013, 0,FEED_IN_SNR(IRQ)    ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  14,PASS,060014, 0,FEED_IN_SNR         ,         0,         0,         0,P758-5 -> U1-69
+STEP06,  15,PASS,060015, 0,FEED_IN_SNR(IRQ)    ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  16,PASS,060016, 0,PREGI_SNR           ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  17,PASS,060017, 0,PREGI_SNR(IRQ)      ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  18,PASS,060018, 0,PREGI_SNR           ,         0,         0,         0,P757-18 -> U1-66
+STEP06,  19,PASS,060019, 0,PREGI_SNR(IRQ)      ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  20,PASS,060020, 0,OUT_SNR             ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  21,PASS,060021, 0,OUT_SNR(IRQ)        ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  22,PASS,060022, 0,OUT_SNR             ,         0,         0,         0,P757-15 -> U1-64
+STEP06,  23,PASS,060023, 0,OUT_SNR(IRQ)        ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  24,PASS,060024, 0,DOC-SET_SNR         ,         1,         1,         1,P758-14 -> U1-56
+STEP06,  25,PASS,060025, 0,DOC-SET_SNR         ,         0,         0,         0,P758-14 -> U1-56
+STEP06,  26,PASS,060026, 0,EXIT_SNR            ,         1,         1,         1,P758-8 -> U1-54
+STEP06,  27,PASS,060027, 0,EXIT_SNR            ,         0,         0,         0,P758-8 -> U1-54
+STEP06,  28,PASS,060028, 0,FEED_APS1_SNR       ,         1,         1,         1,P757-8 -> U1-53
+STEP06,  29,PASS,060029, 0,FEED_APS1_SNR       ,         0,         0,         0,P757-8 -> U1-53
+STEP06,  30,PASS,060030, 0,FEED_APS2_SNR       ,         1,         1,         1,P757-5 -> U1-52
+STEP06,  31,PASS,060031, 0,FEED_APS2_SNR       ,         0,         0,         0,P757-5 -> U1-52
+STEP06,  32,PASS,060032, 0,FEED_APS3_SNR       ,         1,         1,         1,P757-2 -> U1-51
+STEP06,  33,PASS,060033, 0,FEED_APS3_SNR       ,         0,         0,         0,P757-2 -> U1-51
+STEP06,  34,PASS,060034, 0,TRY_APS1_SNR        ,         1,         1,         1,P756-14 -> U1-49
+STEP06,  35,PASS,060035, 0,TRY_APS1_SNR        ,         0,         0,         0,P756-14 -> U1-49
+STEP06,  36,PASS,060036, 0,TRY_APS2_SNR        ,         1,         1,         1,P756-11 -> U1-48
+STEP06,  37,PASS,060037, 0,TRY_APS2_SNR        ,         0,         0,         0,P756-11 -> U1-48
+STEP06,  38,PASS,060038, 0,TRY_APS3_SNR        ,         1,         1,         1,P756-8 -> U1-47
+STEP06,  39,PASS,060039, 0,TRY_APS3_SNR        ,         0,         0,         0,P756-8 -> U1-47
+STEP06,  40,PASS,060040, 0,TRY_SIZ2_SNR        ,         1,         1,         1,P756-5 -> U1-43
+STEP06,  41,PASS,060041, 0,TRY_SIZ2_SNR        ,         0,         0,         0,P756-5 -> U1-43
+STEP06,  42,PASS,060042, 0,TRY_SIZ1_SNR        ,         1,         1,         1,P756-2 -> U1-42
+STEP06,  43,PASS,060043, 0,TRY_SIZ1_SNR        ,         0,         0,         0,P756-2 -> U1-42
+STEP06,  44,PASS,060044, 0,REGI_SNR            ,         1,         1,         1,P757-12 -> U1-17
+STEP06,  45,PASS,060045, 0,REGI_SNR(IRQ)       ,         1,         1,         1,P757-12 -> U1-17
+STEP06,  46,PASS,060046, 0,REGI_SNR            ,         0,         0,         0,P757-12 -> U1-17
+STEP06,  47,PASS,060047, 0,REGI_SNR(IRQ)       ,         1,         1,         1,P757-12 -> U1-17
+STEP07,   1,PASS,070001, 0,NDADF_PSYNC         ,         0,         0,         0,U1-85 -> P752-B14
+STEP07,   2,PASS,070002, 0,NDADF_PSYNC         ,         1,         1,         1,U1-85 -> P752-B14
+STEP07,   3,PASS,070003, 0,NDOC_RDY            ,         0,         0,         0,U1-84 -> P751-3
+STEP07,   4,PASS,070004, 0,NDOC_RDY            ,         1,         1,         1,U1-84 -> P751-3
+STEP07,   5,PASS,070005, 0,NDADF_CSYNC         ,         0,         0,         0,U1-83 -> P752-A2
+STEP07,   6,PASS,070006, 0,NDADF_CSYNC         ,         1,         1,         1,U1-83 -> P752-A2
+STEP07,   7,PASS,070007, 0,DSET_LED            ,         0,         0,         0,U1-50 -> P756-17
+STEP07,   8,PASS,070008, 0,DSET_LED            ,         1,         1,         1,U1-50 -> P756-17
+STEP08,   1,PASS,080001, 0,WAKEUP_A            ,         0,         0,         0,P758-14 -> P752-A1
+STEP08,   2,PASS,080002, 0,WAKEUP_A            ,         1,         1,         1,P758-14 -> P752-A1
+STEP09,   1,PASS,090001, 0,F_MOT_CHA           ,         1,         1,         1,P792-7 -> U1-27
+STEP09,   2,PASS,090002, 0,F_MOT_CHA           ,         0,         0,         0,P792-7 -> U1-27
+STEP09,   3,PASS,090003, 0,F_MOT_DIR           ,         0,         0,         0,U1-8 -> P792-1
+STEP09,   4,PASS,090004, 0,F_MOT_DIR           ,         1,         1,         1,U1-8 -> P792-1
+STEP09,   5,PASS,090005, 0,F_MOT_BRKE          ,         0,         0,         0,U1-9 -> P792-3
+STEP09,   6,PASS,090006, 0,F_MOT_BRKE          ,         1,         1,         1,U1-9 -> P792-3
+STEP09,   7,PASS,090007, 0,F_MOT_CLK           ,     500.1,     499.9,     500.0,U1-20 -> P792-2
+STEP09,   8,PASS,090008, 0,F_MOT_CLK(DUTY)     ,      50.1,      49.9,      50.0,U1-20 -> P792-2
+STEP10,   1,PASS,100001,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 0339 44,SFX>
+STEP10,   2,PASS,100002,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CW 99 0 1,SFX>
+STEP10,   3,PASS,100003,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 03ED EE,SFX>
+STEP10,   4,PASS,100004, 0,Pre-Regi Motor é¸îgê,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10,   5,PASS,100005, 0,Pre-Regi Motor Duty(,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10,   6,PASS,100006, 0,Pre-Regi Motor à ëä(,      A55A,      A55A,      A55A,PRMOT,P754-A1/A2/A3/A4/A5/A6
+STEP10,   7,PASS,100007, 0,Regi Motor é¸îgêî(CW,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10,   8,PASS,100008, 0,Regi Motor Duty(CW) ,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10,   9,PASS,100009, 0,Regi Motor à ëä(CW) ,      A55A,      A55A,      A55A,RMOT,P754-B8/B7/B3/B6/B5/B4
+STEP10,  10,PASS,100010,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CS,CS Complete.
+STEP10, 101,PASS,100101,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 0339 44,SFX>
+STEP10, 102,PASS,100102,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CC 99 1 1,SFX>
+STEP10, 103,PASS,100103,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 03ED FE,SFX>
+STEP10, 104,PASS,100104, 0,Pre-Regi Motor é¸îgê,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10, 105,PASS,100105, 0,Pre-Regi Motor Duty(,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10, 106,PASS,100106, 0,Pre-Regi Motor à ëä(,      5AA5,      5AA5,      5AA5,PRMOT,P754-A1/A2/A3/A4/A5/A6
+STEP10, 107,PASS,100107, 0,Regi Motor é¸îgêî(CC,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10, 108,PASS,100108, 0,Regi Motor Duty(CCW),      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10, 109,PASS,100109, 0,Regi Motor à ëä(CCW),      5AA5,      5AA5,      5AA5,RMOT,P754-B8/B7/B3/B6/B5/B4
+STEP10, 110,PASS,100110,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CS,CS Complete.
+STEP11,   1,PASS,110001, 0,(PRMOT_REF Lo)      ,     0.100,    -0.100,     0.002,TP73
+STEP11,   2,PASS,110002, 0,(RMOT_REF Lo)       ,     0.100,    -0.100,     0.002,TP75
+STEP11,   3,PASS,110003, 0,(PRMOT_REF Md)      ,     1.574,     1.424,     1.489,TP73
+STEP11,   4,PASS,110004, 0,(RMOT_REF Md)       ,     1.574,     1.424,     1.484,TP75
+STEP11,   5,PASS,110005, 0,(PRMOT_REF Hi)      ,     3.148,     2.848,     2.960,TP73
+STEP11,   6,PASS,110006, 0,(RMOT_REF Hi)       ,     3.148,     2.848,     2.953,TP75
+STEP12,   1,PASS,120001, 0,STMP_SOL            ,         0,         0,         0,U1-89 -> P755-1/2
+STEP12,   2,PASS,120002, 0,STMP_SOL            ,         1,         1,         1,U1-89 -> P755-1/2
+STEP12,   3,PASS,120003, 0,STMP_SET            ,         1,         1,         1,U1-89 -> U1-79
+STEP12,   4,PASS,120004, 0,STMP_SET            ,         0,         0,         0,U1-89 -> U1-79
+STEP12,   5,PASS,120005, 0,(+24V_SOL-CL)/TA_CL ,         0,         0,         0,U1-46 -> P793-1/2
+STEP12,   6,PASS,120006, 0,(+24V_SOL-CL)/TA_CL ,         1,         1,         1,U1-46 -> P793-1/2
+STEP12,   7,PASS,120007, 0,(+24V_SOL-CL)/PREGI_,         0,         0,         0,U1-45 -> P793-3/4
+STEP12,   8,PASS,120008, 0,(+24V_SOL-CL)/PREGI_,         1,         1,         1,U1-45 -> P793-3/4
+STEP13,   1,PASS,130001,20,åüç∏FWèëçû          ,          ,          ,          ,COMPLETED,P759 -> U1
+STEP14,   1,PASS,140001,20,êªïiFWãNìÆ(SYNC:16 7,          ,          ,          ,(DADF$STS+/-,DADF#CMD+/-),U1 <-> P751-5Å`8
+STEP14,   2,PASS,140002,20,êªïiFWãNìÆ          ,          ,          ,          ,ADF MAINTENANCE RESPONSE
+STEP15,   1,PASS,150001,10,ROM Version         ,23.16.0   ,23.16.0   ,23.16.0   
+STEP16,   1,PASS,160001,20,ADF NVM WRITE ëóêM  ,          ,          ,          ,(Initialize_1st)
+STEP16,  11,PASS,160011,20,ADF NVM WRITE       ,          ,          ,          ,(771-119 -> 00 02)
+STEP16,  21,PASS,160021,20,ADF NVM WRITE       ,          ,          ,          ,(Initialize_2nd)
+STEP16,  31,PASS,160031,20,ADF NVM WRITE       ,          ,          ,          ,(771-119 -> 00 01Åyèoâ◊ê›íËÅz)
+STEP17,   1,PASS,170001, 0,SLP_5V              ,     0.300,    -0.300,     0.000,P752-B11 > P758-15
+STEP17,   2,PASS,170002, 0,5V                  ,     0.300,    -0.300,     0.001,P752-A4/A5 > TP1
+STEP17,   3,PASS,170003, 0,24V                 ,     0.300,    -0.300,     0.006,P752-A13/A14 > TP3
+STEP17,   4,PASS,170004, 0,24V_INTLK           ,     0.300,    -0.300,     0.012,P753-1 > -2 >TP5
+STEP17,   5,PASS,170005, 0,24V_FMOT            ,     0.300,    -0.300,     0.012,P792-6
+ALL PASS
+
+001:961K10600_BENI_DF,PF2.03-TOSHIBA-RS,12,X15U0190TEE0,961K 10600 K002,,12,21/06/02 20:53:56,Beni DF,PF2.03 F/T No2 (2021.02.11) 002 ,FixtureID:2 
+STEP01,   1,PASS,010001, 0,SLP_5V              ,     0.300,    -0.300,    -0.000,P752-B11 > P758-15
+STEP01,   2,PASS,010002, 0,5V                  ,     0.300,    -0.300,     0.000,P752-A4/A5 > TP1
+STEP01,   3,PASS,010003, 0,24V                 ,     0.300,    -0.300,     0.002,P752-A13/A14 > TP3
+STEP01,   4,PASS,010004, 0,24V_INTLK           ,     0.300,    -0.300,     0.004,P753-1 > -2 >TP5
+STEP01,   5,PASS,010005, 0,24V_FMOT            ,     0.300,    -0.300,     0.004,P792-6
+STEP01, 201,PASS,010201, 0,SLP_5V              ,     5.340,     4.860,     5.098,P752-B11 > P758-15
+STEP01, 202,PASS,010202, 0,5V                  ,     5.340,     4.860,     5.078,P752-A4/A5 > TP1
+STEP01, 203,PASS,010203, 0,24V                 ,    25.700,    22.000,    24.435,P752-A13/A14 > TP3
+STEP01, 204,PASS,010204, 0,24V_INTLK           ,     0.300,    -0.300,     0.004,P753-1 > -2 >TP5
+STEP01, 205,PASS,010205, 0,24V_FMOT            ,     0.300,    -0.300,     0.004,P792-6
+STEP01, 301,PASS,010301, 0,24V_INTLK           ,    25.700,    22.000,    24.437,P753-1 > -2 >TP5
+STEP01, 302,PASS,010302, 0,24V_FMOT            ,    25.700,    22.000,    24.435,P792-6
+STEP02,   1,PASS,020001, 0,(DADF_RESET_)       ,         1,         1,         1,P752-B12 -> TP8
+STEP02,   2,PASS,020002, 0,(/RESET)            ,         1,         1,         1,P752-B12 -> TP9
+STEP02,   3,PASS,020003, 0,RST                 ,         1,         1,         1,P752-B12 -> TP10
+STEP02,   4,PASS,020004, 0,5V (óßè„ÇËåüèo)     ,         1,         1,         1,P752-A4/5 > P792-4
+STEP02,  11,PASS,020011, 0,/RESET              ,     140.0,      60.0,      96.9,U3-8 -> TP9
+STEP02,  12,PASS,020012, 0,RST                 ,     140.0,      60.0,      96.9,U3-8 -> TP10
+STEP02,  21,PASS,020021, 0,(DADF_RESET_)       ,         0,         0,         0,P752-B12 -> TP8,OVP13-40
+STEP02,  22,PASS,020022, 0,(/RESET)            ,         0,         0,         0,P752-B12 -> TP9,OVP13-41
+STEP02,  23,PASS,020023, 0,RST                 ,         0,         0,         0,P752-B12 -> TP10,OVP13-42
+STEP02,  31,PASS,020031, 0,(DADF_RESET_)       ,         1,         1,         1,P752-B12 -> TP8,OVP13-40
+STEP02,  32,PASS,020032, 0,(/RESET)            ,         1,         1,         1,P752-B12/JP1/U3 -> TP9,OVP13-41
+STEP02,  33,PASS,020033, 0,RST                 ,         1,         1,         1,P752-B12 -> TP10,OVP13-42
+STEP02,   1,PASS,020001, 0,(/RESET)            ,         1,         1,         1,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   2,PASS,020002, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP02,   3,PASS,020003, 0,(/RESET)            ,         0,         0,         0,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   4,PASS,020004, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP02,   5,PASS,020005, 0,(/RESET)            ,         1,         1,         1,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   6,PASS,020006, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP03,   1,PASS,030001,20,åüç∏FWèëçû          ,          ,          ,          ,COMPLETED,P759/JP1 -> U1:CPU
+STEP04,   1,PASS,040001,20,(DADF$STS)          ,          ,          ,          ,(P751-5/6),Program Wake Up
+STEP04,   2,PASS,040002,20,(DADF$STS)          ,          ,          ,          ,(P751-5/6),SFX>
+STEP04,   3,PASS,040003,20,(DADF#CMD)          ,          ,          ,          ,(P751-7/8),SFX>
+STEP05,   1,PASS,050001,20,U3:WDT              ,          ,          ,          ,SFX>
+STEP06,   1,PASS,060001, 0,äÑçûÃ◊∏ﬁ(∏ÿ±)       ,  00000000,  00000000,  00000000
+STEP06,   2,PASS,060002, 0,(NDADF_CLOSE)       ,         1,         1,         1,P751-4 -> U1-82
+STEP06,   3,PASS,060003, 0,(NDADF_CLOSE)       ,         0,         0,         0,P751-4 -> U1-82
+STEP06,   4,PASS,060004, 0,(NDADF_START)       ,         0,         0,         0,P752-B13 -> U1-74
+STEP06,   5,PASS,060005, 0,(NDADF_START)(IRQ)  ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   6,PASS,060006, 0,(NDADF_START)       ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   7,PASS,060007, 0,(NDADF_START)(IRQ)  ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   8,PASS,060008, 0,FEED_OUT_SNR        ,         1,         1,         1,P758-2 -> U1-70
+STEP06,   9,PASS,060009, 0,FEED_OUT_SNR(IRQ)   ,         1,         1,         1,P758-2 -> U1-70
+STEP06,  10,PASS,060010, 0,FEED_OUT_SNR        ,         0,         0,         0,P758-2 -> U1-70
+STEP06,  11,PASS,060011, 0,FEED_OUT_SNR(IRQ)   ,         1,         1,         1,P758-2 -> U1-70
+STEP06,  12,PASS,060012, 0,FEED_IN_SNR         ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  13,PASS,060013, 0,FEED_IN_SNR(IRQ)    ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  14,PASS,060014, 0,FEED_IN_SNR         ,         0,         0,         0,P758-5 -> U1-69
+STEP06,  15,PASS,060015, 0,FEED_IN_SNR(IRQ)    ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  16,PASS,060016, 0,PREGI_SNR           ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  17,PASS,060017, 0,PREGI_SNR(IRQ)      ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  18,PASS,060018, 0,PREGI_SNR           ,         0,         0,         0,P757-18 -> U1-66
+STEP06,  19,PASS,060019, 0,PREGI_SNR(IRQ)      ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  20,PASS,060020, 0,OUT_SNR             ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  21,PASS,060021, 0,OUT_SNR(IRQ)        ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  22,PASS,060022, 0,OUT_SNR             ,         0,         0,         0,P757-15 -> U1-64
+STEP06,  23,PASS,060023, 0,OUT_SNR(IRQ)        ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  24,PASS,060024, 0,DOC-SET_SNR         ,         1,         1,         1,P758-14 -> U1-56
+STEP06,  25,PASS,060025, 0,DOC-SET_SNR         ,         0,         0,         0,P758-14 -> U1-56
+STEP06,  26,PASS,060026, 0,EXIT_SNR            ,         1,         1,         1,P758-8 -> U1-54
+STEP06,  27,PASS,060027, 0,EXIT_SNR            ,         0,         0,         0,P758-8 -> U1-54
+STEP06,  28,PASS,060028, 0,FEED_APS1_SNR       ,         1,         1,         1,P757-8 -> U1-53
+STEP06,  29,PASS,060029, 0,FEED_APS1_SNR       ,         0,         0,         0,P757-8 -> U1-53
+STEP06,  30,PASS,060030, 0,FEED_APS2_SNR       ,         1,         1,         1,P757-5 -> U1-52
+STEP06,  31,PASS,060031, 0,FEED_APS2_SNR       ,         0,         0,         0,P757-5 -> U1-52
+STEP06,  32,PASS,060032, 0,FEED_APS3_SNR       ,         1,         1,         1,P757-2 -> U1-51
+STEP06,  33,PASS,060033, 0,FEED_APS3_SNR       ,         0,         0,         0,P757-2 -> U1-51
+STEP06,  34,PASS,060034, 0,TRY_APS1_SNR        ,         1,         1,         1,P756-14 -> U1-49
+STEP06,  35,PASS,060035, 0,TRY_APS1_SNR        ,         0,         0,         0,P756-14 -> U1-49
+STEP06,  36,PASS,060036, 0,TRY_APS2_SNR        ,         1,         1,         1,P756-11 -> U1-48
+STEP06,  37,PASS,060037, 0,TRY_APS2_SNR        ,         0,         0,         0,P756-11 -> U1-48
+STEP06,  38,PASS,060038, 0,TRY_APS3_SNR        ,         1,         1,         1,P756-8 -> U1-47
+STEP06,  39,PASS,060039, 0,TRY_APS3_SNR        ,         0,         0,         0,P756-8 -> U1-47
+STEP06,  40,PASS,060040, 0,TRY_SIZ2_SNR        ,         1,         1,         1,P756-5 -> U1-43
+STEP06,  41,PASS,060041, 0,TRY_SIZ2_SNR        ,         0,         0,         0,P756-5 -> U1-43
+STEP06,  42,PASS,060042, 0,TRY_SIZ1_SNR        ,         1,         1,         1,P756-2 -> U1-42
+STEP06,  43,PASS,060043, 0,TRY_SIZ1_SNR        ,         0,         0,         0,P756-2 -> U1-42
+STEP06,  44,PASS,060044, 0,REGI_SNR            ,         1,         1,         1,P757-12 -> U1-17
+STEP06,  45,PASS,060045, 0,REGI_SNR(IRQ)       ,         1,         1,         1,P757-12 -> U1-17
+STEP06,  46,PASS,060046, 0,REGI_SNR            ,         0,         0,         0,P757-12 -> U1-17
+STEP06,  47,PASS,060047, 0,REGI_SNR(IRQ)       ,         1,         1,         1,P757-12 -> U1-17
+STEP07,   1,PASS,070001, 0,NDADF_PSYNC         ,         0,         0,         0,U1-85 -> P752-B14
+STEP07,   2,PASS,070002, 0,NDADF_PSYNC         ,         1,         1,         1,U1-85 -> P752-B14
+STEP07,   3,PASS,070003, 0,NDOC_RDY            ,         0,         0,         0,U1-84 -> P751-3
+STEP07,   4,PASS,070004, 0,NDOC_RDY            ,         1,         1,         1,U1-84 -> P751-3
+STEP07,   5,PASS,070005, 0,NDADF_CSYNC         ,         0,         0,         0,U1-83 -> P752-A2
+STEP07,   6,PASS,070006, 0,NDADF_CSYNC         ,         1,         1,         1,U1-83 -> P752-A2
+STEP07,   7,PASS,070007, 0,DSET_LED            ,         0,         0,         0,U1-50 -> P756-17
+STEP07,   8,PASS,070008, 0,DSET_LED            ,         1,         1,         1,U1-50 -> P756-17
+STEP08,   1,PASS,080001, 0,WAKEUP_A            ,         0,         0,         0,P758-14 -> P752-A1
+STEP08,   2,PASS,080002, 0,WAKEUP_A            ,         1,         1,         1,P758-14 -> P752-A1
+STEP09,   1,PASS,090001, 0,F_MOT_CHA           ,         1,         1,         1,P792-7 -> U1-27
+STEP09,   2,PASS,090002, 0,F_MOT_CHA           ,         0,         0,         0,P792-7 -> U1-27
+STEP09,   3,PASS,090003, 0,F_MOT_DIR           ,         0,         0,         0,U1-8 -> P792-1
+STEP09,   4,PASS,090004, 0,F_MOT_DIR           ,         1,         1,         1,U1-8 -> P792-1
+STEP09,   5,PASS,090005, 0,F_MOT_BRKE          ,         0,         0,         0,U1-9 -> P792-3
+STEP09,   6,PASS,090006, 0,F_MOT_BRKE          ,         1,         1,         1,U1-9 -> P792-3
+STEP09,   7,PASS,090007, 0,F_MOT_CLK           ,     500.1,     499.9,     500.0,U1-20 -> P792-2
+STEP09,   8,PASS,090008, 0,F_MOT_CLK(DUTY)     ,      50.1,      49.9,      50.0,U1-20 -> P792-2
+STEP10,   1,PASS,100001,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 0339 44,SFX>
+STEP10,   2,PASS,100002,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CW 99 0 1,SFX>
+STEP10,   3,PASS,100003,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 03ED EE,SFX>
+STEP10,   4,PASS,100004, 0,Pre-Regi Motor é¸îgê,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10,   5,PASS,100005, 0,Pre-Regi Motor Duty(,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10,   6,PASS,100006, 0,Pre-Regi Motor à ëä(,      A55A,      A55A,      A55A,PRMOT,P754-A1/A2/A3/A4/A5/A6
+STEP10,   7,PASS,100007, 0,Regi Motor é¸îgêî(CW,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10,   8,PASS,100008, 0,Regi Motor Duty(CW) ,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10,   9,PASS,100009, 0,Regi Motor à ëä(CW) ,      A55A,      A55A,      A55A,RMOT,P754-B8/B7/B3/B6/B5/B4
+STEP10,  10,PASS,100010,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CS,CS Complete.
+STEP10, 101,PASS,100101,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 0339 44,SFX>
+STEP10, 102,PASS,100102,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CC 99 1 1,SFX>
+STEP10, 103,PASS,100103,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 03ED FE,SFX>
+STEP10, 104,PASS,100104, 0,Pre-Regi Motor é¸îgê,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10, 105,PASS,100105, 0,Pre-Regi Motor Duty(,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10, 106,PASS,100106, 0,Pre-Regi Motor à ëä(,      5AA5,      5AA5,      5AA5,PRMOT,P754-A1/A2/A3/A4/A5/A6
+STEP10, 107,PASS,100107, 0,Regi Motor é¸îgêî(CC,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10, 108,PASS,100108, 0,Regi Motor Duty(CCW),      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10, 109,PASS,100109, 0,Regi Motor à ëä(CCW),      5AA5,      5AA5,      5AA5,RMOT,P754-B8/B7/B3/B6/B5/B4
+STEP10, 110,PASS,100110,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CS,CS Complete.
+STEP11,   1,PASS,110001, 0,(PRMOT_REF Lo)      ,     0.100,    -0.100,     0.002,TP73
+STEP11,   2,PASS,110002, 0,(RMOT_REF Lo)       ,     0.100,    -0.100,     0.002,TP75
+STEP11,   3,PASS,110003, 0,(PRMOT_REF Md)      ,     1.574,     1.424,     1.486,TP73
+STEP11,   4,PASS,110004, 0,(RMOT_REF Md)       ,     1.574,     1.424,     1.486,TP75
+STEP11,   5,PASS,110005, 0,(PRMOT_REF Hi)      ,     3.148,     2.848,     2.956,TP73
+STEP11,   6,PASS,110006, 0,(RMOT_REF Hi)       ,     3.148,     2.848,     2.954,TP75
+STEP12,   1,PASS,120001, 0,STMP_SOL            ,         0,         0,         0,U1-89 -> P755-1/2
+STEP12,   2,PASS,120002, 0,STMP_SOL            ,         1,         1,         1,U1-89 -> P755-1/2
+STEP12,   3,PASS,120003, 0,STMP_SET            ,         1,         1,         1,U1-89 -> U1-79
+STEP12,   4,PASS,120004, 0,STMP_SET            ,         0,         0,         0,U1-89 -> U1-79
+STEP12,   5,PASS,120005, 0,(+24V_SOL-CL)/TA_CL ,         0,         0,         0,U1-46 -> P793-1/2
+STEP12,   6,PASS,120006, 0,(+24V_SOL-CL)/TA_CL ,         1,         1,         1,U1-46 -> P793-1/2
+STEP12,   7,PASS,120007, 0,(+24V_SOL-CL)/PREGI_,         0,         0,         0,U1-45 -> P793-3/4
+STEP12,   8,PASS,120008, 0,(+24V_SOL-CL)/PREGI_,         1,         1,         1,U1-45 -> P793-3/4
+STEP13,   1,PASS,130001,20,åüç∏FWèëçû          ,          ,          ,          ,COMPLETED,P759 -> U1
+STEP14,   1,PASS,140001,20,êªïiFWãNìÆ(SYNC:16 7,          ,          ,          ,(DADF$STS+/-,DADF#CMD+/-),U1 <-> P751-5Å`8
+STEP14,   2,PASS,140002,20,êªïiFWãNìÆ          ,          ,          ,          ,ADF MAINTENANCE RESPONSE
+STEP15,   1,PASS,150001,10,ROM Version         ,23.16.0   ,23.16.0   ,23.16.0   
+STEP16,   1,PASS,160001,20,ADF NVM WRITE ëóêM  ,          ,          ,          ,(Initialize_1st)
+STEP16,  11,PASS,160011,20,ADF NVM WRITE       ,          ,          ,          ,(771-119 -> 00 02)
+STEP16,  21,PASS,160021,20,ADF NVM WRITE       ,          ,          ,          ,(Initialize_2nd)
+STEP16,  31,PASS,160031,20,ADF NVM WRITE       ,          ,          ,          ,(771-119 -> 00 01Åyèoâ◊ê›íËÅz)
+STEP17,   1,PASS,170001, 0,SLP_5V              ,     0.300,    -0.300,     0.000,P752-B11 > P758-15
+STEP17,   2,PASS,170002, 0,5V                  ,     0.300,    -0.300,     0.002,P752-A4/A5 > TP1
+STEP17,   3,PASS,170003, 0,24V                 ,     0.300,    -0.300,     0.006,P752-A13/A14 > TP3
+STEP17,   4,PASS,170004, 0,24V_INTLK           ,     0.300,    -0.300,     0.012,P753-1 > -2 >TP5
+STEP17,   5,PASS,170005, 0,24V_FMOT            ,     0.300,    -0.300,     0.012,P792-6
+ALL PASS
+
+001:961K10600_BENI_DF,PF2.03-TOSHIBA-RS,738260,X15U0190TEE0,961K 10600 K002,,56661,21/06/02 20:56:32,Beni DF,PF2.03 F/T No2 (2021.02.11) 002 ,FixtureID:2 
+STEP01,   1,PASS,010001, 0,SLP_5V              ,     0.300,    -0.300,    -0.000,P752-B11 > P758-15
+STEP01,   2,PASS,010002, 0,5V                  ,     0.300,    -0.300,     0.000,P752-A4/A5 > TP1
+STEP01,   3,PASS,010003, 0,24V                 ,     0.300,    -0.300,     0.002,P752-A13/A14 > TP3
+STEP01,   4,PASS,010004, 0,24V_INTLK           ,     0.300,    -0.300,     0.004,P753-1 > -2 >TP5
+STEP01,   5,PASS,010005, 0,24V_FMOT            ,     0.300,    -0.300,     0.005,P792-6
+STEP01, 201,PASS,010201, 0,SLP_5V              ,     5.340,     4.860,     5.098,P752-B11 > P758-15
+STEP01, 202,PASS,010202, 0,5V                  ,     5.340,     4.860,     5.072,P752-A4/A5 > TP1
+STEP01, 203,PASS,010203, 0,24V                 ,    25.700,    22.000,    24.435,P752-A13/A14 > TP3
+STEP01, 204,PASS,010204, 0,24V_INTLK           ,     0.300,    -0.300,     0.005,P753-1 > -2 >TP5
+STEP01, 205,PASS,010205, 0,24V_FMOT            ,     0.300,    -0.300,     0.005,P792-6
+STEP01, 301,PASS,010301, 0,24V_INTLK           ,    25.700,    22.000,    24.434,P753-1 > -2 >TP5
+STEP01, 302,PASS,010302, 0,24V_FMOT            ,    25.700,    22.000,    24.420,P792-6
+STEP02,   1,PASS,020001, 0,(DADF_RESET_)       ,         1,         1,         1,P752-B12 -> TP8
+STEP02,   2,PASS,020002, 0,(/RESET)            ,         1,         1,         1,P752-B12 -> TP9
+STEP02,   3,PASS,020003, 0,RST                 ,         1,         1,         1,P752-B12 -> TP10
+STEP02,   4,PASS,020004, 0,5V (óßè„ÇËåüèo)     ,         1,         1,         1,P752-A4/5 > P792-4
+STEP02,  11,PASS,020011, 0,/RESET              ,     140.0,      60.0,      96.3,U3-8 -> TP9
+STEP02,  12,PASS,020012, 0,RST                 ,     140.0,      60.0,      96.3,U3-8 -> TP10
+STEP02,  21,PASS,020021, 0,(DADF_RESET_)       ,         0,         0,         0,P752-B12 -> TP8,OVP13-40
+STEP02,  22,PASS,020022, 0,(/RESET)            ,         0,         0,         0,P752-B12 -> TP9,OVP13-41
+STEP02,  23,PASS,020023, 0,RST                 ,         0,         0,         0,P752-B12 -> TP10,OVP13-42
+STEP02,  31,PASS,020031, 0,(DADF_RESET_)       ,         1,         1,         1,P752-B12 -> TP8,OVP13-40
+STEP02,  32,PASS,020032, 0,(/RESET)            ,         1,         1,         1,P752-B12/JP1/U3 -> TP9,OVP13-41
+STEP02,  33,PASS,020033, 0,RST                 ,         1,         1,         1,P752-B12 -> TP10,OVP13-42
+STEP02,   1,PASS,020001, 0,(/RESET)            ,         1,         1,         1,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   2,PASS,020002, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP02,   3,PASS,020003, 0,(/RESET)            ,         0,         0,         0,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   4,PASS,020004, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP02,   5,PASS,020005, 0,(/RESET)            ,         1,         1,         1,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   6,PASS,020006, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP03,   1,PASS,030001,20,åüç∏FWèëçû          ,          ,          ,          ,COMPLETED,P759/JP1 -> U1:CPU
+STEP04,   1,PASS,040001,20,(DADF$STS)          ,          ,          ,          ,(P751-5/6),Program Wake Up
+STEP04,   2,PASS,040002,20,(DADF$STS)          ,          ,          ,          ,(P751-5/6),SFX>
+STEP04,   3,PASS,040003,20,(DADF#CMD)          ,          ,          ,          ,(P751-7/8),SFX>
+STEP05,   1,PASS,050001,20,U3:WDT              ,          ,          ,          ,SFX>
+STEP06,   1,PASS,060001, 0,äÑçûÃ◊∏ﬁ(∏ÿ±)       ,  00000000,  00000000,  00000000
+STEP06,   2,PASS,060002, 0,(NDADF_CLOSE)       ,         1,         1,         1,P751-4 -> U1-82
+STEP06,   3,PASS,060003, 0,(NDADF_CLOSE)       ,         0,         0,         0,P751-4 -> U1-82
+STEP06,   4,PASS,060004, 0,(NDADF_START)       ,         0,         0,         0,P752-B13 -> U1-74
+STEP06,   5,PASS,060005, 0,(NDADF_START)(IRQ)  ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   6,PASS,060006, 0,(NDADF_START)       ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   7,PASS,060007, 0,(NDADF_START)(IRQ)  ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   8,PASS,060008, 0,FEED_OUT_SNR        ,         1,         1,         1,P758-2 -> U1-70
+STEP06,   9,PASS,060009, 0,FEED_OUT_SNR(IRQ)   ,         1,         1,         1,P758-2 -> U1-70
+STEP06,  10,PASS,060010, 0,FEED_OUT_SNR        ,         0,         0,         0,P758-2 -> U1-70
+STEP06,  11,PASS,060011, 0,FEED_OUT_SNR(IRQ)   ,         1,         1,         1,P758-2 -> U1-70
+STEP06,  12,PASS,060012, 0,FEED_IN_SNR         ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  13,PASS,060013, 0,FEED_IN_SNR(IRQ)    ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  14,PASS,060014, 0,FEED_IN_SNR         ,         0,         0,         0,P758-5 -> U1-69
+STEP06,  15,PASS,060015, 0,FEED_IN_SNR(IRQ)    ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  16,PASS,060016, 0,PREGI_SNR           ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  17,PASS,060017, 0,PREGI_SNR(IRQ)      ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  18,PASS,060018, 0,PREGI_SNR           ,         0,         0,         0,P757-18 -> U1-66
+STEP06,  19,PASS,060019, 0,PREGI_SNR(IRQ)      ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  20,PASS,060020, 0,OUT_SNR             ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  21,PASS,060021, 0,OUT_SNR(IRQ)        ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  22,PASS,060022, 0,OUT_SNR             ,         0,         0,         0,P757-15 -> U1-64
+STEP06,  23,PASS,060023, 0,OUT_SNR(IRQ)        ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  24,PASS,060024, 0,DOC-SET_SNR         ,         1,         1,         1,P758-14 -> U1-56
+STEP06,  25,PASS,060025, 0,DOC-SET_SNR         ,         0,         0,         0,P758-14 -> U1-56
+STEP06,  26,PASS,060026, 0,EXIT_SNR            ,         1,         1,         1,P758-8 -> U1-54
+STEP06,  27,PASS,060027, 0,EXIT_SNR            ,         0,         0,         0,P758-8 -> U1-54
+STEP06,  28,PASS,060028, 0,FEED_APS1_SNR       ,         1,         1,         1,P757-8 -> U1-53
+STEP06,  29,PASS,060029, 0,FEED_APS1_SNR       ,         0,         0,         0,P757-8 -> U1-53
+STEP06,  30,PASS,060030, 0,FEED_APS2_SNR       ,         1,         1,         1,P757-5 -> U1-52
+STEP06,  31,PASS,060031, 0,FEED_APS2_SNR       ,         0,         0,         0,P757-5 -> U1-52
+STEP06,  32,PASS,060032, 0,FEED_APS3_SNR       ,         1,         1,         1,P757-2 -> U1-51
+STEP06,  33,PASS,060033, 0,FEED_APS3_SNR       ,         0,         0,         0,P757-2 -> U1-51
+STEP06,  34,PASS,060034, 0,TRY_APS1_SNR        ,         1,         1,         1,P756-14 -> U1-49
+STEP06,  35,PASS,060035, 0,TRY_APS1_SNR        ,         0,         0,         0,P756-14 -> U1-49
+STEP06,  36,PASS,060036, 0,TRY_APS2_SNR        ,         1,         1,         1,P756-11 -> U1-48
+STEP06,  37,PASS,060037, 0,TRY_APS2_SNR        ,         0,         0,         0,P756-11 -> U1-48
+STEP06,  38,PASS,060038, 0,TRY_APS3_SNR        ,         1,         1,         1,P756-8 -> U1-47
+STEP06,  39,PASS,060039, 0,TRY_APS3_SNR        ,         0,         0,         0,P756-8 -> U1-47
+STEP06,  40,PASS,060040, 0,TRY_SIZ2_SNR        ,         1,         1,         1,P756-5 -> U1-43
+STEP06,  41,PASS,060041, 0,TRY_SIZ2_SNR        ,         0,         0,         0,P756-5 -> U1-43
+STEP06,  42,PASS,060042, 0,TRY_SIZ1_SNR        ,         1,         1,         1,P756-2 -> U1-42
+STEP06,  43,PASS,060043, 0,TRY_SIZ1_SNR        ,         0,         0,         0,P756-2 -> U1-42
+STEP06,  44,PASS,060044, 0,REGI_SNR            ,         1,         1,         1,P757-12 -> U1-17
+STEP06,  45,PASS,060045, 0,REGI_SNR(IRQ)       ,         1,         1,         1,P757-12 -> U1-17
+STEP06,  46,PASS,060046, 0,REGI_SNR            ,         0,         0,         0,P757-12 -> U1-17
+STEP06,  47,PASS,060047, 0,REGI_SNR(IRQ)       ,         1,         1,         1,P757-12 -> U1-17
+STEP07,   1,PASS,070001, 0,NDADF_PSYNC         ,         0,         0,         0,U1-85 -> P752-B14
+STEP07,   2,PASS,070002, 0,NDADF_PSYNC         ,         1,         1,         1,U1-85 -> P752-B14
+STEP07,   3,PASS,070003, 0,NDOC_RDY            ,         0,         0,         0,U1-84 -> P751-3
+STEP07,   4,PASS,070004, 0,NDOC_RDY            ,         1,         1,         1,U1-84 -> P751-3
+STEP07,   5,PASS,070005, 0,NDADF_CSYNC         ,         0,         0,         0,U1-83 -> P752-A2
+STEP07,   6,PASS,070006, 0,NDADF_CSYNC         ,         1,         1,         1,U1-83 -> P752-A2
+STEP07,   7,PASS,070007, 0,DSET_LED            ,         0,         0,         0,U1-50 -> P756-17
+STEP07,   8,PASS,070008, 0,DSET_LED            ,         1,         1,         1,U1-50 -> P756-17
+STEP08,   1,PASS,080001, 0,WAKEUP_A            ,         0,         0,         0,P758-14 -> P752-A1
+STEP08,   2,PASS,080002, 0,WAKEUP_A            ,         1,         1,         1,P758-14 -> P752-A1
+STEP09,   1,PASS,090001, 0,F_MOT_CHA           ,         1,         1,         1,P792-7 -> U1-27
+STEP09,   2,PASS,090002, 0,F_MOT_CHA           ,         0,         0,         0,P792-7 -> U1-27
+STEP09,   3,PASS,090003, 0,F_MOT_DIR           ,         0,         0,         0,U1-8 -> P792-1
+STEP09,   4,PASS,090004, 0,F_MOT_DIR           ,         1,         1,         1,U1-8 -> P792-1
+STEP09,   5,PASS,090005, 0,F_MOT_BRKE          ,         0,         0,         0,U1-9 -> P792-3
+STEP09,   6,PASS,090006, 0,F_MOT_BRKE          ,         1,         1,         1,U1-9 -> P792-3
+STEP09,   7,PASS,090007, 0,F_MOT_CLK           ,     500.1,     499.9,     500.0,U1-20 -> P792-2
+STEP09,   8,PASS,090008, 0,F_MOT_CLK(DUTY)     ,      50.1,      49.9,      50.0,U1-20 -> P792-2
+STEP10,   1,PASS,100001,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 0339 44,SFX>
+STEP10,   2,PASS,100002,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CW 99 0 1,SFX>
+STEP10,   3,PASS,100003,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 03ED EE,SFX>
+STEP10,   4,PASS,100004, 0,Pre-Regi Motor é¸îgê,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10,   5,PASS,100005, 0,Pre-Regi Motor Duty(,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10,   6,PASS,100006, 0,Pre-Regi Motor à ëä(,      A55A,      A55A,      A55A,PRMOT,P754-A1/A2/A3/A4/A5/A6
+STEP10,   7,PASS,100007, 0,Regi Motor é¸îgêî(CW,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10,   8,PASS,100008, 0,Regi Motor Duty(CW) ,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10,   9,PASS,100009, 0,Regi Motor à ëä(CW) ,      A55A,      A55A,      A55A,RMOT,P754-B8/B7/B3/B6/B5/B4
+STEP10,  10,PASS,100010,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CS,CS Complete.
+STEP10, 101,PASS,100101,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 0339 44,SFX>
+STEP10, 102,PASS,100102,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CC 99 1 1,SFX>
+STEP10, 103,PASS,100103,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 03ED FE,SFX>
+STEP10, 104,PASS,100104, 0,Pre-Regi Motor é¸îgê,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10, 105,PASS,100105, 0,Pre-Regi Motor Duty(,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10, 106,PASS,100106, 0,Pre-Regi Motor à ëä(,      5AA5,      5AA5,      5AA5,PRMOT,P754-A1/A2/A3/A4/A5/A6
+STEP10, 107,PASS,100107, 0,Regi Motor é¸îgêî(CC,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10, 108,PASS,100108, 0,Regi Motor Duty(CCW),      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10, 109,PASS,100109, 0,Regi Motor à ëä(CCW),      5AA5,      5AA5,      5AA5,RMOT,P754-B8/B7/B3/B6/B5/B4
+STEP10, 110,PASS,100110,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CS,CS Complete.
+STEP11,   1,PASS,110001, 0,(PRMOT_REF Lo)      ,     0.100,    -0.100,     0.002,TP73
+STEP11,   2,PASS,110002, 0,(RMOT_REF Lo)       ,     0.100,    -0.100,     0.002,TP75
+STEP11,   3,PASS,110003, 0,(PRMOT_REF Md)      ,     1.574,     1.424,     1.486,TP73
+STEP11,   4,PASS,110004, 0,(RMOT_REF Md)       ,     1.574,     1.424,     1.485,TP75
+STEP11,   5,PASS,110005, 0,(PRMOT_REF Hi)      ,     3.148,     2.848,     2.956,TP73
+STEP11,   6,PASS,110006, 0,(RMOT_REF Hi)       ,     3.148,     2.848,     2.954,TP75
+STEP12,   1,PASS,120001, 0,STMP_SOL            ,         0,         0,         0,U1-89 -> P755-1/2
+STEP12,   2,PASS,120002, 0,STMP_SOL            ,         1,         1,         1,U1-89 -> P755-1/2
+STEP12,   3,PASS,120003, 0,STMP_SET            ,         1,         1,         1,U1-89 -> U1-79
+STEP12,   4,PASS,120004, 0,STMP_SET            ,         0,         0,         0,U1-89 -> U1-79
+STEP12,   5,PASS,120005, 0,(+24V_SOL-CL)/TA_CL ,         0,         0,         0,U1-46 -> P793-1/2
+STEP12,   6,PASS,120006, 0,(+24V_SOL-CL)/TA_CL ,         1,         1,         1,U1-46 -> P793-1/2
+STEP12,   7,PASS,120007, 0,(+24V_SOL-CL)/PREGI_,         0,         0,         0,U1-45 -> P793-3/4
+STEP12,   8,PASS,120008, 0,(+24V_SOL-CL)/PREGI_,         1,         1,         1,U1-45 -> P793-3/4
+STEP13,   1,PASS,130001,20,åüç∏FWèëçû          ,          ,          ,          ,COMPLETED,P759 -> U1
+STEP14,   1,PASS,140001,20,êªïiFWãNìÆ(SYNC:16 7,          ,          ,          ,(DADF$STS+/-,DADF#CMD+/-),U1 <-> P751-5Å`8
+STEP14,   2,PASS,140002,20,êªïiFWãNìÆ          ,          ,          ,          ,ADF MAINTENANCE RESPONSE
+STEP15,   1,PASS,150001,10,ROM Version         ,23.16.0   ,23.16.0   ,23.16.0   
+STEP16,   1,PASS,160001,20,ADF NVM WRITE ëóêM  ,          ,          ,          ,(Initialize_1st)
+STEP16,  11,PASS,160011,20,ADF NVM WRITE       ,          ,          ,          ,(771-119 -> 00 02)
+STEP16,  21,PASS,160021,20,ADF NVM WRITE       ,          ,          ,          ,(Initialize_2nd)
+STEP16,  31,PASS,160031,20,ADF NVM WRITE       ,          ,          ,          ,(771-119 -> 00 01Åyèoâ◊ê›íËÅz)
+STEP17,   1,PASS,170001, 0,SLP_5V              ,     0.300,    -0.300,     0.000,P752-B11 > P758-15
+STEP17,   2,PASS,170002, 0,5V                  ,     0.300,    -0.300,     0.002,P752-A4/A5 > TP1
+STEP17,   3,PASS,170003, 0,24V                 ,     0.300,    -0.300,     0.006,P752-A13/A14 > TP3
+STEP17,   4,PASS,170004, 0,24V_INTLK           ,     0.300,    -0.300,     0.013,P753-1 > -2 >TP5
+STEP17,   5,PASS,170005, 0,24V_FMOT            ,     0.300,    -0.300,     0.012,P792-6
+ALL PASS
+
+001:961K10600_BENI_DF,PF2.03-TOSHIBA-RS,738260,X15U0190TEE0,961K 10600 K002,,56661,21/06/02 20:58:45,Beni DF,PF2.03 F/T No2 (2021.02.11) 002 ,FixtureID:2 
+STEP01,   1,PASS,010001, 0,SLP_5V              ,     0.300,    -0.300,    -0.000,P752-B11 > P758-15
+STEP01,   2,PASS,010002, 0,5V                  ,     0.300,    -0.300,    -0.000,P752-A4/A5 > TP1
+STEP01,   3,PASS,010003, 0,24V                 ,     0.300,    -0.300,     0.002,P752-A13/A14 > TP3
+STEP01,   4,PASS,010004, 0,24V_INTLK           ,     0.300,    -0.300,     0.005,P753-1 > -2 >TP5
+STEP01,   5,PASS,010005, 0,24V_FMOT            ,     0.300,    -0.300,     0.005,P792-6
+STEP01, 201,PASS,010201, 0,SLP_5V              ,     5.340,     4.860,     5.098,P752-B11 > P758-15
+STEP01, 202,PASS,010202, 0,5V                  ,     5.340,     4.860,     5.073,P752-A4/A5 > TP1
+STEP01, 203,PASS,010203, 0,24V                 ,    25.700,    22.000,    24.435,P752-A13/A14 > TP3
+STEP01, 204,PASS,010204, 0,24V_INTLK           ,     0.300,    -0.300,     0.005,P753-1 > -2 >TP5
+STEP01, 205,PASS,010205, 0,24V_FMOT            ,     0.300,    -0.300,     0.005,P792-6
+STEP01, 301,PASS,010301, 0,24V_INTLK           ,    25.700,    22.000,    24.438,P753-1 > -2 >TP5
+STEP01, 302,PASS,010302, 0,24V_FMOT            ,    25.700,    22.000,    24.420,P792-6
+STEP02,   1,PASS,020001, 0,(DADF_RESET_)       ,         1,         1,         1,P752-B12 -> TP8
+STEP02,   2,PASS,020002, 0,(/RESET)            ,         1,         1,         1,P752-B12 -> TP9
+STEP02,   3,PASS,020003, 0,RST                 ,         1,         1,         1,P752-B12 -> TP10
+STEP02,   4,PASS,020004, 0,5V (óßè„ÇËåüèo)     ,         1,         1,         1,P752-A4/5 > P792-4
+STEP02,  11,PASS,020011, 0,/RESET              ,     140.0,      60.0,      96.2,U3-8 -> TP9
+STEP02,  12,PASS,020012, 0,RST                 ,     140.0,      60.0,      96.2,U3-8 -> TP10
+STEP02,  21,PASS,020021, 0,(DADF_RESET_)       ,         0,         0,         0,P752-B12 -> TP8,OVP13-40
+STEP02,  22,PASS,020022, 0,(/RESET)            ,         0,         0,         0,P752-B12 -> TP9,OVP13-41
+STEP02,  23,PASS,020023, 0,RST                 ,         0,         0,         0,P752-B12 -> TP10,OVP13-42
+STEP02,  31,PASS,020031, 0,(DADF_RESET_)       ,         1,         1,         1,P752-B12 -> TP8,OVP13-40
+STEP02,  32,PASS,020032, 0,(/RESET)            ,         1,         1,         1,P752-B12/JP1/U3 -> TP9,OVP13-41
+STEP02,  33,PASS,020033, 0,RST                 ,         1,         1,         1,P752-B12 -> TP10,OVP13-42
+STEP02,   1,PASS,020001, 0,(/RESET)            ,         1,         1,         1,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   2,PASS,020002, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP02,   3,PASS,020003, 0,(/RESET)            ,         0,         0,         0,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   4,PASS,020004, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP02,   5,PASS,020005, 0,(/RESET)            ,         1,         1,         1,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   6,PASS,020006, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP03,   1,PASS,030001,20,åüç∏FWèëçû          ,          ,          ,          ,COMPLETED,P759/JP1 -> U1:CPU
+STEP04,   1,PASS,040001,20,(DADF$STS)          ,          ,          ,          ,(P751-5/6),Program Wake Up
+STEP04,   2,PASS,040002,20,(DADF$STS)          ,          ,          ,          ,(P751-5/6),SFX>
+STEP04,   3,PASS,040003,20,(DADF#CMD)          ,          ,          ,          ,(P751-7/8),SFX>
+STEP05,   1,PASS,050001,20,U3:WDT              ,          ,          ,          ,SFX>
+STEP06,   1,PASS,060001, 0,äÑçûÃ◊∏ﬁ(∏ÿ±)       ,  00000000,  00000000,  00000000
+STEP06,   2,PASS,060002, 0,(NDADF_CLOSE)       ,         1,         1,         1,P751-4 -> U1-82
+STEP06,   3,PASS,060003, 0,(NDADF_CLOSE)       ,         0,         0,         0,P751-4 -> U1-82
+STEP06,   4,PASS,060004, 0,(NDADF_START)       ,         0,         0,         0,P752-B13 -> U1-74
+STEP06,   5,PASS,060005, 0,(NDADF_START)(IRQ)  ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   6,PASS,060006, 0,(NDADF_START)       ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   7,PASS,060007, 0,(NDADF_START)(IRQ)  ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   8,PASS,060008, 0,FEED_OUT_SNR        ,         1,         1,         1,P758-2 -> U1-70
+STEP06,   9,PASS,060009, 0,FEED_OUT_SNR(IRQ)   ,         1,         1,         1,P758-2 -> U1-70
+STEP06,  10,PASS,060010, 0,FEED_OUT_SNR        ,         0,         0,         0,P758-2 -> U1-70
+STEP06,  11,PASS,060011, 0,FEED_OUT_SNR(IRQ)   ,         1,         1,         1,P758-2 -> U1-70
+STEP06,  12,PASS,060012, 0,FEED_IN_SNR         ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  13,PASS,060013, 0,FEED_IN_SNR(IRQ)    ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  14,PASS,060014, 0,FEED_IN_SNR         ,         0,         0,         0,P758-5 -> U1-69
+STEP06,  15,PASS,060015, 0,FEED_IN_SNR(IRQ)    ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  16,PASS,060016, 0,PREGI_SNR           ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  17,PASS,060017, 0,PREGI_SNR(IRQ)      ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  18,PASS,060018, 0,PREGI_SNR           ,         0,         0,         0,P757-18 -> U1-66
+STEP06,  19,PASS,060019, 0,PREGI_SNR(IRQ)      ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  20,PASS,060020, 0,OUT_SNR             ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  21,PASS,060021, 0,OUT_SNR(IRQ)        ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  22,PASS,060022, 0,OUT_SNR             ,         0,         0,         0,P757-15 -> U1-64
+STEP06,  23,PASS,060023, 0,OUT_SNR(IRQ)        ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  24,PASS,060024, 0,DOC-SET_SNR         ,         1,         1,         1,P758-14 -> U1-56
+STEP06,  25,PASS,060025, 0,DOC-SET_SNR         ,         0,         0,         0,P758-14 -> U1-56
+STEP06,  26,PASS,060026, 0,EXIT_SNR            ,         1,         1,         1,P758-8 -> U1-54
+STEP06,  27,PASS,060027, 0,EXIT_SNR            ,         0,         0,         0,P758-8 -> U1-54
+STEP06,  28,PASS,060028, 0,FEED_APS1_SNR       ,         1,         1,         1,P757-8 -> U1-53
+STEP06,  29,PASS,060029, 0,FEED_APS1_SNR       ,         0,         0,         0,P757-8 -> U1-53
+STEP06,  30,PASS,060030, 0,FEED_APS2_SNR       ,         1,         1,         1,P757-5 -> U1-52
+STEP06,  31,PASS,060031, 0,FEED_APS2_SNR       ,         0,         0,         0,P757-5 -> U1-52
+STEP06,  32,PASS,060032, 0,FEED_APS3_SNR       ,         1,         1,         1,P757-2 -> U1-51
+STEP06,  33,PASS,060033, 0,FEED_APS3_SNR       ,         0,         0,         0,P757-2 -> U1-51
+STEP06,  34,PASS,060034, 0,TRY_APS1_SNR        ,         1,         1,         1,P756-14 -> U1-49
+STEP06,  35,PASS,060035, 0,TRY_APS1_SNR        ,         0,         0,         0,P756-14 -> U1-49
+STEP06,  36,PASS,060036, 0,TRY_APS2_SNR        ,         1,         1,         1,P756-11 -> U1-48
+STEP06,  37,PASS,060037, 0,TRY_APS2_SNR        ,         0,         0,         0,P756-11 -> U1-48
+STEP06,  38,PASS,060038, 0,TRY_APS3_SNR        ,         1,         1,         1,P756-8 -> U1-47
+STEP06,  39,PASS,060039, 0,TRY_APS3_SNR        ,         0,         0,         0,P756-8 -> U1-47
+STEP06,  40,PASS,060040, 0,TRY_SIZ2_SNR        ,         1,         1,         1,P756-5 -> U1-43
+STEP06,  41,PASS,060041, 0,TRY_SIZ2_SNR        ,         0,         0,         0,P756-5 -> U1-43
+STEP06,  42,PASS,060042, 0,TRY_SIZ1_SNR        ,         1,         1,         1,P756-2 -> U1-42
+STEP06,  43,PASS,060043, 0,TRY_SIZ1_SNR        ,         0,         0,         0,P756-2 -> U1-42
+STEP06,  44,PASS,060044, 0,REGI_SNR            ,         1,         1,         1,P757-12 -> U1-17
+STEP06,  45,PASS,060045, 0,REGI_SNR(IRQ)       ,         1,         1,         1,P757-12 -> U1-17
+STEP06,  46,PASS,060046, 0,REGI_SNR            ,         0,         0,         0,P757-12 -> U1-17
+STEP06,  47,PASS,060047, 0,REGI_SNR(IRQ)       ,         1,         1,         1,P757-12 -> U1-17
+STEP07,   1,PASS,070001, 0,NDADF_PSYNC         ,         0,         0,         0,U1-85 -> P752-B14
+STEP07,   2,PASS,070002, 0,NDADF_PSYNC         ,         1,         1,         1,U1-85 -> P752-B14
+STEP07,   3,PASS,070003, 0,NDOC_RDY            ,         0,         0,         0,U1-84 -> P751-3
+STEP07,   4,PASS,070004, 0,NDOC_RDY            ,         1,         1,         1,U1-84 -> P751-3
+STEP07,   5,PASS,070005, 0,NDADF_CSYNC         ,         0,         0,         0,U1-83 -> P752-A2
+STEP07,   6,PASS,070006, 0,NDADF_CSYNC         ,         1,         1,         1,U1-83 -> P752-A2
+STEP07,   7,PASS,070007, 0,DSET_LED            ,         0,         0,         0,U1-50 -> P756-17
+STEP07,   8,PASS,070008, 0,DSET_LED            ,         1,         1,         1,U1-50 -> P756-17
+STEP08,   1,PASS,080001, 0,WAKEUP_A            ,         0,         0,         0,P758-14 -> P752-A1
+STEP08,   2,PASS,080002, 0,WAKEUP_A            ,         1,         1,         1,P758-14 -> P752-A1
+STEP09,   1,PASS,090001, 0,F_MOT_CHA           ,         1,         1,         1,P792-7 -> U1-27
+STEP09,   2,PASS,090002, 0,F_MOT_CHA           ,         0,         0,         0,P792-7 -> U1-27
+STEP09,   3,PASS,090003, 0,F_MOT_DIR           ,         0,         0,         0,U1-8 -> P792-1
+STEP09,   4,PASS,090004, 0,F_MOT_DIR           ,         1,         1,         1,U1-8 -> P792-1
+STEP09,   5,PASS,090005, 0,F_MOT_BRKE          ,         0,         0,         0,U1-9 -> P792-3
+STEP09,   6,PASS,090006, 0,F_MOT_BRKE          ,         1,         1,         1,U1-9 -> P792-3
+STEP09,   7,PASS,090007, 0,F_MOT_CLK           ,     500.1,     499.9,     500.0,U1-20 -> P792-2
+STEP09,   8,PASS,090008, 0,F_MOT_CLK(DUTY)     ,      50.1,      49.9,      50.0,U1-20 -> P792-2
+STEP10,   1,PASS,100001,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 0339 44,SFX>
+STEP10,   2,PASS,100002,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CW 99 0 1,SFX>
+STEP10,   3,PASS,100003,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 03ED EE,SFX>
+STEP10,   4,PASS,100004, 0,Pre-Regi Motor é¸îgê,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10,   5,PASS,100005, 0,Pre-Regi Motor Duty(,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10,   6,PASS,100006, 0,Pre-Regi Motor à ëä(,      A55A,      A55A,      A55A,PRMOT,P754-A1/A2/A3/A4/A5/A6
+STEP10,   7,PASS,100007, 0,Regi Motor é¸îgêî(CW,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10,   8,PASS,100008, 0,Regi Motor Duty(CW) ,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10,   9,PASS,100009, 0,Regi Motor à ëä(CW) ,      A55A,      A55A,      A55A,RMOT,P754-B8/B7/B3/B6/B5/B4
+STEP10,  10,PASS,100010,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CS,CS Complete.
+STEP10, 101,PASS,100101,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 0339 44,SFX>
+STEP10, 102,PASS,100102,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CC 99 1 1,SFX>
+STEP10, 103,PASS,100103,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 03ED FE,SFX>
+STEP10, 104,PASS,100104, 0,Pre-Regi Motor é¸îgê,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10, 105,PASS,100105, 0,Pre-Regi Motor Duty(,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10, 106,PASS,100106, 0,Pre-Regi Motor à ëä(,      5AA5,      5AA5,      5AA5,PRMOT,P754-A1/A2/A3/A4/A5/A6
+STEP10, 107,PASS,100107, 0,Regi Motor é¸îgêî(CC,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10, 108,PASS,100108, 0,Regi Motor Duty(CCW),      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10, 109,PASS,100109, 0,Regi Motor à ëä(CCW),      5AA5,      5AA5,      5AA5,RMOT,P754-B8/B7/B3/B6/B5/B4
+STEP10, 110,PASS,100110,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CS,CS Complete.
+STEP11,   1,PASS,110001, 0,(PRMOT_REF Lo)      ,     0.100,    -0.100,     0.002,TP73
+STEP11,   2,PASS,110002, 0,(RMOT_REF Lo)       ,     0.100,    -0.100,     0.002,TP75
+STEP11,   3,PASS,110003, 0,(PRMOT_REF Md)      ,     1.574,     1.424,     1.486,TP73
+STEP11,   4,PASS,110004, 0,(RMOT_REF Md)       ,     1.574,     1.424,     1.486,TP75
+STEP11,   5,PASS,110005, 0,(PRMOT_REF Hi)      ,     3.148,     2.848,     2.956,TP73
+STEP11,   6,PASS,110006, 0,(RMOT_REF Hi)       ,     3.148,     2.848,     2.954,TP75
+STEP12,   1,PASS,120001, 0,STMP_SOL            ,         0,         0,         0,U1-89 -> P755-1/2
+STEP12,   2,PASS,120002, 0,STMP_SOL            ,         1,         1,         1,U1-89 -> P755-1/2
+STEP12,   3,PASS,120003, 0,STMP_SET            ,         1,         1,         1,U1-89 -> U1-79
+STEP12,   4,PASS,120004, 0,STMP_SET            ,         0,         0,         0,U1-89 -> U1-79
+STEP12,   5,PASS,120005, 0,(+24V_SOL-CL)/TA_CL ,         0,         0,         0,U1-46 -> P793-1/2
+STEP12,   6,PASS,120006, 0,(+24V_SOL-CL)/TA_CL ,         1,         1,         1,U1-46 -> P793-1/2
+STEP12,   7,PASS,120007, 0,(+24V_SOL-CL)/PREGI_,         0,         0,         0,U1-45 -> P793-3/4
+STEP12,   8,PASS,120008, 0,(+24V_SOL-CL)/PREGI_,         1,         1,         1,U1-45 -> P793-3/4
+STEP13,   1,PASS,130001,20,åüç∏FWèëçû          ,          ,          ,          ,COMPLETED,P759 -> U1
+STEP14,   1,PASS,140001,20,êªïiFWãNìÆ(SYNC:16 7,          ,          ,          ,(DADF$STS+/-,DADF#CMD+/-),U1 <-> P751-5Å`8
+STEP14,   2,PASS,140002,20,êªïiFWãNìÆ          ,          ,          ,          ,ADF MAINTENANCE RESPONSE
+STEP15,   1,PASS,150001,10,ROM Version         ,23.16.0   ,23.16.0   ,23.16.0   
+STEP16,   1,PASS,160001,20,ADF NVM WRITE ëóêM  ,          ,          ,          ,(Initialize_1st)
+STEP16,  11,PASS,160011,20,ADF NVM WRITE       ,          ,          ,          ,(771-119 -> 00 02)
+STEP16,  21,PASS,160021,20,ADF NVM WRITE       ,          ,          ,          ,(Initialize_2nd)
+STEP16,  31,PASS,160031,20,ADF NVM WRITE       ,          ,          ,          ,(771-119 -> 00 01Åyèoâ◊ê›íËÅz)
+STEP17,   1,PASS,170001, 0,SLP_5V              ,     0.300,    -0.300,     0.000,P752-B11 > P758-15
+STEP17,   2,PASS,170002, 0,5V                  ,     0.300,    -0.300,     0.001,P752-A4/A5 > TP1
+STEP17,   3,PASS,170003, 0,24V                 ,     0.300,    -0.300,     0.006,P752-A13/A14 > TP3
+STEP17,   4,PASS,170004, 0,24V_INTLK           ,     0.300,    -0.300,     0.012,P753-1 > -2 >TP5
+STEP17,   5,PASS,170005, 0,24V_FMOT            ,     0.300,    -0.300,     0.012,P792-6
+ALL PASS
+
+001:961K10600_BENI_DF,PF2.03-TOSHIBA-RS,738260,X15U0190TEE0,961K 10600 K002,,56661,21/06/02 21:30:09,Beni DF,PF2.03 F/T No2 (2021.02.11) 002 ,FixtureID:2 
+STEP01,   1,PASS,010001, 0,SLP_5V              ,     0.300,    -0.300,    -0.000,P752-B11 > P758-15
+STEP01,   2,PASS,010002, 0,5V                  ,     0.300,    -0.300,    -0.000,P752-A4/A5 > TP1
+STEP01,   3,PASS,010003, 0,24V                 ,     0.300,    -0.300,     0.002,P752-A13/A14 > TP3
+STEP01,   4,PASS,010004, 0,24V_INTLK           ,     0.300,    -0.300,     0.004,P753-1 > -2 >TP5
+STEP01,   5,PASS,010005, 0,24V_FMOT            ,     0.300,    -0.300,     0.004,P792-6
+STEP01, 201,PASS,010201, 0,SLP_5V              ,     5.340,     4.860,     4.908,P752-B11 > P758-15
+STEP01, 202,PASS,010202, 0,5V                  ,     5.340,     4.860,     5.072,P752-A4/A5 > TP1
+STEP01, 203,PASS,010203, 0,24V                 ,    25.700,    22.000,    24.673,P752-A13/A14 > TP3
+STEP01, 204,PASS,010204, 0,24V_INTLK           ,     0.300,    -0.300,     0.004,P753-1 > -2 >TP5
+STEP01, 205,PASS,010205, 0,24V_FMOT            ,     0.300,    -0.300,     0.004,P792-6
+STEP01, 301,PASS,010301, 0,24V_INTLK           ,    25.700,    22.000,    24.436,P753-1 > -2 >TP5
+STEP01, 302,PASS,010302, 0,24V_FMOT            ,    25.700,    22.000,    24.420,P792-6
+STEP02,   1,PASS,020001, 0,(DADF_RESET_)       ,         1,         1,         1,P752-B12 -> TP8
+STEP02,   2,PASS,020002, 0,(/RESET)            ,         1,         1,         1,P752-B12 -> TP9
+STEP02,   3,PASS,020003, 0,RST                 ,         1,         1,         1,P752-B12 -> TP10
+STEP02,   4,PASS,020004, 0,5V (óßè„ÇËåüèo)     ,         1,         1,         1,P752-A4/5 > P792-4
+STEP02,  11,PASS,020011, 0,/RESET              ,     140.0,      60.0,      96.2,U3-8 -> TP9
+STEP02,  12,PASS,020012, 0,RST                 ,     140.0,      60.0,      96.2,U3-8 -> TP10
+STEP02,  21,PASS,020021, 0,(DADF_RESET_)       ,         0,         0,         0,P752-B12 -> TP8,OVP13-40
+STEP02,  22,PASS,020022, 0,(/RESET)            ,         0,         0,         0,P752-B12 -> TP9,OVP13-41
+STEP02,  23,PASS,020023, 0,RST                 ,         0,         0,         0,P752-B12 -> TP10,OVP13-42
+STEP02,  31,PASS,020031, 0,(DADF_RESET_)       ,         1,         1,         1,P752-B12 -> TP8,OVP13-40
+STEP02,  32,PASS,020032, 0,(/RESET)            ,         1,         1,         1,P752-B12/JP1/U3 -> TP9,OVP13-41
+STEP02,  33,PASS,020033, 0,RST                 ,         1,         1,         1,P752-B12 -> TP10,OVP13-42
+STEP02,   1,PASS,020001, 0,(/RESET)            ,         1,         1,         1,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   2,PASS,020002, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP02,   3,PASS,020003, 0,(/RESET)            ,         0,         0,         0,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   4,PASS,020004, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP02,   5,PASS,020005, 0,(/RESET)            ,         1,         1,         1,P759-8/JP1/U3 -> TP9,OVP13-41
+STEP02,   6,PASS,020006, 0,RST                 ,         1,         1,         1,P759-8 -> TP10,OVP13-42
+STEP03,   1,PASS,030001,20,åüç∏FWèëçû          ,          ,          ,          ,COMPLETED,P759/JP1 -> U1:CPU
+STEP04,   1,PASS,040001,20,(DADF$STS)          ,          ,          ,          ,(P751-5/6),Program Wake Up
+STEP04,   2,PASS,040002,20,(DADF$STS)          ,          ,          ,          ,(P751-5/6),SFX>
+STEP04,   3,PASS,040003,20,(DADF#CMD)          ,          ,          ,          ,(P751-7/8),SFX>
+STEP05,   1,PASS,050001,20,U3:WDT              ,          ,          ,          ,SFX>
+STEP06,   1,PASS,060001, 0,äÑçûÃ◊∏ﬁ(∏ÿ±)       ,  00000000,  00000000,  00000000
+STEP06,   2,PASS,060002, 0,(NDADF_CLOSE)       ,         1,         1,         1,P751-4 -> U1-82
+STEP06,   3,PASS,060003, 0,(NDADF_CLOSE)       ,         0,         0,         0,P751-4 -> U1-82
+STEP06,   4,PASS,060004, 0,(NDADF_START)       ,         0,         0,         0,P752-B13 -> U1-74
+STEP06,   5,PASS,060005, 0,(NDADF_START)(IRQ)  ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   6,PASS,060006, 0,(NDADF_START)       ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   7,PASS,060007, 0,(NDADF_START)(IRQ)  ,         1,         1,         1,P752-B13 -> U1-74
+STEP06,   8,PASS,060008, 0,FEED_OUT_SNR        ,         1,         1,         1,P758-2 -> U1-70
+STEP06,   9,PASS,060009, 0,FEED_OUT_SNR(IRQ)   ,         1,         1,         1,P758-2 -> U1-70
+STEP06,  10,PASS,060010, 0,FEED_OUT_SNR        ,         0,         0,         0,P758-2 -> U1-70
+STEP06,  11,PASS,060011, 0,FEED_OUT_SNR(IRQ)   ,         1,         1,         1,P758-2 -> U1-70
+STEP06,  12,PASS,060012, 0,FEED_IN_SNR         ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  13,PASS,060013, 0,FEED_IN_SNR(IRQ)    ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  14,PASS,060014, 0,FEED_IN_SNR         ,         0,         0,         0,P758-5 -> U1-69
+STEP06,  15,PASS,060015, 0,FEED_IN_SNR(IRQ)    ,         1,         1,         1,P758-5 -> U1-69
+STEP06,  16,PASS,060016, 0,PREGI_SNR           ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  17,PASS,060017, 0,PREGI_SNR(IRQ)      ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  18,PASS,060018, 0,PREGI_SNR           ,         0,         0,         0,P757-18 -> U1-66
+STEP06,  19,PASS,060019, 0,PREGI_SNR(IRQ)      ,         1,         1,         1,P757-18 -> U1-66
+STEP06,  20,PASS,060020, 0,OUT_SNR             ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  21,PASS,060021, 0,OUT_SNR(IRQ)        ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  22,PASS,060022, 0,OUT_SNR             ,         0,         0,         0,P757-15 -> U1-64
+STEP06,  23,PASS,060023, 0,OUT_SNR(IRQ)        ,         1,         1,         1,P757-15 -> U1-64
+STEP06,  24,PASS,060024, 0,DOC-SET_SNR         ,         1,         1,         1,P758-14 -> U1-56
+STEP06,  25,PASS,060025, 0,DOC-SET_SNR         ,         0,         0,         0,P758-14 -> U1-56
+STEP06,  26,PASS,060026, 0,EXIT_SNR            ,         1,         1,         1,P758-8 -> U1-54
+STEP06,  27,PASS,060027, 0,EXIT_SNR            ,         0,         0,         0,P758-8 -> U1-54
+STEP06,  28,PASS,060028, 0,FEED_APS1_SNR       ,         1,         1,         1,P757-8 -> U1-53
+STEP06,  29,PASS,060029, 0,FEED_APS1_SNR       ,         0,         0,         0,P757-8 -> U1-53
+STEP06,  30,PASS,060030, 0,FEED_APS2_SNR       ,         1,         1,         1,P757-5 -> U1-52
+STEP06,  31,PASS,060031, 0,FEED_APS2_SNR       ,         0,         0,         0,P757-5 -> U1-52
+STEP06,  32,PASS,060032, 0,FEED_APS3_SNR       ,         1,         1,         1,P757-2 -> U1-51
+STEP06,  33,PASS,060033, 0,FEED_APS3_SNR       ,         0,         0,         0,P757-2 -> U1-51
+STEP06,  34,PASS,060034, 0,TRY_APS1_SNR        ,         1,         1,         1,P756-14 -> U1-49
+STEP06,  35,PASS,060035, 0,TRY_APS1_SNR        ,         0,         0,         0,P756-14 -> U1-49
+STEP06,  36,PASS,060036, 0,TRY_APS2_SNR        ,         1,         1,         1,P756-11 -> U1-48
+STEP06,  37,PASS,060037, 0,TRY_APS2_SNR        ,         0,         0,         0,P756-11 -> U1-48
+STEP06,  38,PASS,060038, 0,TRY_APS3_SNR        ,         1,         1,         1,P756-8 -> U1-47
+STEP06,  39,PASS,060039, 0,TRY_APS3_SNR        ,         0,         0,         0,P756-8 -> U1-47
+STEP06,  40,PASS,060040, 0,TRY_SIZ2_SNR        ,         1,         1,         1,P756-5 -> U1-43
+STEP06,  41,PASS,060041, 0,TRY_SIZ2_SNR        ,         0,         0,         0,P756-5 -> U1-43
+STEP06,  42,PASS,060042, 0,TRY_SIZ1_SNR        ,         1,         1,         1,P756-2 -> U1-42
+STEP06,  43,PASS,060043, 0,TRY_SIZ1_SNR        ,         0,         0,         0,P756-2 -> U1-42
+STEP06,  44,PASS,060044, 0,REGI_SNR            ,         1,         1,         1,P757-12 -> U1-17
+STEP06,  45,PASS,060045, 0,REGI_SNR(IRQ)       ,         1,         1,         1,P757-12 -> U1-17
+STEP06,  46,PASS,060046, 0,REGI_SNR            ,         0,         0,         0,P757-12 -> U1-17
+STEP06,  47,PASS,060047, 0,REGI_SNR(IRQ)       ,         1,         1,         1,P757-12 -> U1-17
+STEP07,   1,PASS,070001, 0,NDADF_PSYNC         ,         0,         0,         0,U1-85 -> P752-B14
+STEP07,   2,PASS,070002, 0,NDADF_PSYNC         ,         1,         1,         1,U1-85 -> P752-B14
+STEP07,   3,PASS,070003, 0,NDOC_RDY            ,         0,         0,         0,U1-84 -> P751-3
+STEP07,   4,PASS,070004, 0,NDOC_RDY            ,         1,         1,         1,U1-84 -> P751-3
+STEP07,   5,PASS,070005, 0,NDADF_CSYNC         ,         0,         0,         0,U1-83 -> P752-A2
+STEP07,   6,PASS,070006, 0,NDADF_CSYNC         ,         1,         1,         1,U1-83 -> P752-A2
+STEP07,   7,PASS,070007, 0,DSET_LED            ,         0,         0,         0,U1-50 -> P756-17
+STEP07,   8,PASS,070008, 0,DSET_LED            ,         1,         1,         1,U1-50 -> P756-17
+STEP08,   1,PASS,080001, 0,WAKEUP_A            ,         0,         0,         0,P758-14 -> P752-A1
+STEP08,   2,PASS,080002, 0,WAKEUP_A            ,         1,         1,         1,P758-14 -> P752-A1
+STEP09,   1,PASS,090001, 0,F_MOT_CHA           ,         1,         1,         1,P792-7 -> U1-27
+STEP09,   2,PASS,090002, 0,F_MOT_CHA           ,         0,         0,         0,P792-7 -> U1-27
+STEP09,   3,PASS,090003, 0,F_MOT_DIR           ,         0,         0,         0,U1-8 -> P792-1
+STEP09,   4,PASS,090004, 0,F_MOT_DIR           ,         1,         1,         1,U1-8 -> P792-1
+STEP09,   5,PASS,090005, 0,F_MOT_BRKE          ,         0,         0,         0,U1-9 -> P792-3
+STEP09,   6,PASS,090006, 0,F_MOT_BRKE          ,         1,         1,         1,U1-9 -> P792-3
+STEP09,   7,PASS,090007, 0,F_MOT_CLK           ,     500.1,     499.9,     500.0,U1-20 -> P792-2
+STEP09,   8,PASS,090008, 0,F_MOT_CLK(DUTY)     ,      50.1,      49.9,      50.0,U1-20 -> P792-2
+STEP10,   1,PASS,100001,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 0339 44,SFX>
+STEP10,   2,PASS,100002,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CW 99 0 1,SFX>
+STEP10,   3,PASS,100003,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 03ED EE,SFX>
+STEP10,   4,PASS,100004, 0,Pre-Regi Motor é¸îgê,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10,   5,PASS,100005, 0,Pre-Regi Motor Duty(,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10,   6,PASS,100006, 0,Pre-Regi Motor à ëä(,      A55A,      A55A,      A55A,PRMOT,P754-A1/A2/A3/A4/A5/A6
+STEP10,   7,PASS,100007, 0,Regi Motor é¸îgêî(CW,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10,   8,PASS,100008, 0,Regi Motor Duty(CW) ,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10,   9,PASS,100009, 0,Regi Motor à ëä(CW) ,      A55A,      A55A,      A55A,RMOT,P754-B8/B7/B3/B6/B5/B4
+STEP10,  10,PASS,100010,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CS,CS Complete.
+STEP10, 101,PASS,100101,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 0339 44,SFX>
+STEP10, 102,PASS,100102,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CC 99 1 1,SFX>
+STEP10, 103,PASS,100103,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,WB 03ED FE,SFX>
+STEP10, 104,PASS,100104, 0,Pre-Regi Motor é¸îgê,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10, 105,PASS,100105, 0,Pre-Regi Motor Duty(,      62.6,      62.4,      62.5,PRMOT,P754-A1/A2/A5
+STEP10, 106,PASS,100106, 0,Pre-Regi Motor à ëä(,      5AA5,      5AA5,      5AA5,PRMOT,P754-A1/A2/A3/A4/A5/A6
+STEP10, 107,PASS,100107, 0,Regi Motor é¸îgêî(CC,      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10, 108,PASS,100108, 0,Regi Motor Duty(CCW),      62.6,      62.4,      62.5,RMOT,P754-B8/B7/B3
+STEP10, 109,PASS,100109, 0,Regi Motor à ëä(CCW),      5AA5,      5AA5,      5AA5,RMOT,P754-B8/B7/B3/B6/B5/B4
+STEP10, 110,PASS,100110,20,OUT Test4 (MOTOR2)  ,          ,          ,          ,CS,CS Complete.
+STEP11,   1,PASS,110001, 0,(PRMOT_REF Lo)      ,     0.100,    -0.100,     0.002,TP73
+STEP11,   2,PASS,110002, 0,(RMOT_REF Lo)       ,     0.100,    -0.100,     0.002,TP75
+STEP11,   3,PASS,110003, 0,(PRMOT_REF Md)      ,     1.574,     1.424,     1.486,TP73
+STEP11,   4,PASS,110004, 0,(RMOT_REF Md)       ,     1.574,     1.424,     1.486,TP75
+STEP11,   5,PASS,110005, 0,(PRMOT_REF Hi)      ,     3.148,     2.848,     2.956,TP73
+STEP11,   6,PASS,110006, 0,(RMOT_REF Hi)       ,     3.148,     2.848,     2.954,TP75
+STEP12,   1,PASS,120001, 0,STMP_SOL            ,         0,         0,         0,U1-89 -> P755-1/2
+STEP12,   2,PASS,120002, 0,STMP_SOL            ,         1,         1,         1,U1-89 -> P755-1/2
+STEP12,   3,PASS,120003, 0,STMP_SET            ,         1,         1,         1,U1-89 -> U1-79
+STEP12,   4,PASS,120004, 0,STMP_SET            ,         0,         0,         0,U1-89 -> U1-79
+STEP12,   5,PASS,120005, 0,(+24V_SOL-CL)/TA_CL ,         0,         0,         0,U1-46 -> P793-1/2
+STEP12,   6,PASS,120006, 0,(+24V_SOL-CL)/TA_CL ,         1,         1,         1,U1-46 -> P793-1/2
+STEP12,   7,PASS,120007, 0,(+24V_SOL-CL)/PREGI_,         0,         0,         0,U1-45 -> P793-3/4
+STEP12,   8,PASS,120008, 0,(+24V_SOL-CL)/PREGI_,         1,         1,         1,U1-45 -> P793-3/4
+STEP13,   1,PASS,130001,20,åüç∏FWèëçû          ,          ,          ,          ,COMPLETED,P759 -> U1
+STEP14,   1,PASS,140001,20,êªïiFWãNìÆ(SYNC:16 7,          ,          ,          ,(DADF$STS+/-,DADF#CMD+/-),U1 <-> P751-5Å`8
+STEP14,   2,PASS,140002,20,êªïiFWãNìÆ          ,          ,          ,          ,ADF MAINTENANCE RESPONSE
+STEP15,   1,PASS,150001,10,ROM Version         ,23.16.0   ,23.16.0   ,23.16.0   
+STEP16,   1,PASS,160001,20,ADF NVM WRITE ëóêM  ,          ,          ,          ,(Initialize_1st)
+STEP16,  11,PASS,160011,20,ADF NVM WRITE       ,          ,          ,          ,(771-119 -> 00 02)
+STEP16,  21,PASS,160021,20,ADF NVM WRITE       ,          ,          ,          ,(Initialize_2nd)
+STEP16,  31,PASS,160031,20,ADF NVM WRITE       ,          ,          ,          ,(771-119 -> 00 01Åyèoâ◊ê›íËÅz)
+STEP17,   1,PASS,170001, 0,SLP_5V              ,     0.300,    -0.300,     0.000,P752-B11 > P758-15
+STEP17,   2,PASS,170002, 0,5V                  ,     0.300,    -0.300,     0.002,P752-A4/A5 > TP1
+STEP17,   3,PASS,170003, 0,24V                 ,     0.300,    -0.300,     0.006,P752-A13/A14 > TP3
+STEP17,   4,PASS,170004, 0,24V_INTLK           ,     0.300,    -0.300,     0.009,P753-1 > -2 >TP5
+STEP17,   5,PASS,170005, 0,24V_FMOT            ,     0.300,    -0.300,     0.012,P792-6
+ALL PASS

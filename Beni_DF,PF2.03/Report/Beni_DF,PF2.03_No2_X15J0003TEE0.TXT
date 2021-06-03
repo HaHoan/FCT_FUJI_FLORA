@@ -1,0 +1,1634 @@
+
+-----------------------------------------
+001:961K10600_BENI_DF,PF2.03-TOSHIBA-RS,,X15J0003TEE0,961K 10600 K002,,21/05/25 14:02:48,Beni DF,PF2.03 F/T No2 (2021.02.11) 002 ,FixtureID:2
+LID:0A800918_58900461_EC8CA000_A00000F9
+CID:00000000_00000000_00000000_00000000
+-- Beni_DF,PF2.03  STEP01 ìdåπìdà≥Test -- 
+[FT] MID1 Date ... 2020.07.25
+[FT] MID1 Version ... 00.01.00.00
+[FT] 14:02:48 Åyìdåπ OFFÅz
+[FT] √ﬁ®Ω¡¨∞ºﬁ  äÆóπ
+[FT] SLP_5V                         P752-B11 > P758-15   (-0.300VÅ` 0.300V) ...  0.000V OK
+[FT] 5V                             P752-A4/A5 > TP1     (-0.300VÅ` 0.300V) ... -0.000V OK
+[FT] 24V                            P752-A13/A14 > TP3   (-0.300VÅ` 0.300V) ...  0.004V OK
+[FT] 24V_INTLK                      P753-1 > -2 >TP5     (-0.300VÅ` 0.300V) ...  0.004V OK
+[FT] 24V_FMOT                       P792-6               (-0.300VÅ` 0.300V) ...  0.004V OK
+[FT] 14:02:49 Åyìdåπ ON Åz
+[FT] SLP_5V                         P752-B11 > P758-15   ( 4.860VÅ` 5.340V) ...  5.099V OK
+[FT] 5V                             P752-A4/A5 > TP1     ( 4.860VÅ` 5.340V) ...  5.077V OK
+[FT] 24V                            P752-A13/A14 > TP3   (22.000VÅ`25.700V) ... 24.486V OK
+[FT] 24V_INTLK                      P753-1 > -2 >TP5     (-0.300VÅ` 0.300V) ...  0.004V OK
+[FT] 24V_FMOT                       P792-6               (-0.300VÅ` 0.300V) ...  0.004V OK
+[FT] Åy24V_INTLK ON Åz
+[FT] 24V_INTLK                      P753-1 > -2 >TP5     (22.000VÅ`25.700V) ... 24.436V OK
+[FT] 24V_FMOT                       P792-6               (22.000VÅ`25.700V) ... 24.434V OK
+-- 14:02:50 --    1.66 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP02 RESET Test 1 -- 
+[FT] 14:02:50 Åyìdåπ OFFÅz
+[FT] √ﬁ®Ω¡¨∞ºﬁ  äÆóπ
+[FT] 14:02:51 Åyìdåπ ON Åz
+[FT] (DADF_RESET_)                  P752-B12 -> TP8      (1Å`1) ... 1 OK
+[FT] (/RESET)                       P752-B12 -> TP9      (1Å`1) ... 1 OK
+[FT] RST                            P752-B12 -> TP10     (1Å`1) ... 1 OK
+[FT] 5V (óßè„ÇËåüèo)                P752-A4/5 > P792-4   (1Å`1) ... 1 OK
+[FT] /RESET                         U3-8 -> TP9          ( 60.0msÅ`140.0ms) ...  95.0ms OK
+[FT] RST                            U3-8 -> TP10         ( 60.0msÅ`140.0ms) ...  95.0ms OK
+[FT] (DADF_RESET_)                  P752-B12 -> TP8      (0Å`0) ... 0 OK
+[FT] (/RESET)                       P752-B12 -> TP9      (0Å`0) ... 0 OK
+[FT] RST                            P752-B12 -> TP10     (0Å`0) ... 0 OK
+[FT] (DADF_RESET_)                  P752-B12 -> TP8      (1Å`1) ... 1 OK
+[FT] (/RESET)                       P752-B12/JP1/U3 -> TP9 (1Å`1) ... 1 OK
+[FT] RST                            P752-B12 -> TP10     (1Å`1) ... 1 OK
+[FT] (/RESET)                       P759-8/JP1/U3 -> TP9 (1Å`1) ... 1 OK
+[FT] RST                            P759-8 -> TP10       (1Å`1) ... 1 OK
+[FT] (/RESET)                       P759-8/JP1/U3 -> TP9 (0Å`0) ... 0 OK
+[FT] RST                            P759-8 -> TP10       (1Å`1) ... 1 OK
+[FT] (/RESET)                       P759-8/JP1/U3 -> TP9 (1Å`1) ... 1 OK
+[FT] RST                            P759-8 -> TP10       (1Å`1) ... 1 OK
+-- 14:02:52 --    1.66 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP03 åüç∏FW D/L -- 
+[FT] 14:02:52 Åyìdåπ OFFÅz
+[FT] 14:02:52 Åyìdåπ ON Åz
+aws: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+w4f: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f
+FWP: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.FWP
+fsf: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+mot: C:\FT\Beni_DF,PF2.03\Firmware\TestROM\Beni_DF.mot
+Log: C:\FT\Beni_DF,PF2.03\Firmware\FDT\FDT_Log.txt
+Status: C:\FT\Beni_DF,PF2.03\Firmware\FDT\FDT_Status.txt
+[FT] FDT.exe /DISCRETESTARTUP "w4fRun \"C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f\"
+****************************************************
+ ****   Flash Development Toolkit log file
+ ****   Ver  : 4.09.03.00
+ ****   User : FXMFG
+ ****   PC   : DESKTOP-KJMF8UJ
+ ****   Tue May 25 2021, 14:02:53
+****************************************************
+[25-May-21 14:02:53.658]  
+Loaded Wait For File config: "C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f"
+Waiting...                
+[25-May-21 14:02:53.796]  
+File Opened: "C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf" (Last Modified: 25-May-21 14:02:53)
+
+*************************
+**     LOG FILE        **
+*************************
+# RenesasèëçûÉXÉNÉäÉvÉg
+workspace C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+disconnect
+ connect USB|E8a|9HS078016|0.0|0.0
+download C:\FT\Beni_DF,PF2.03\Firmware\TestROM\Beni_DF.mot
+disconnect
+delete $script
+exit
+*************************
+[25-May-21 14:02:53.803]  FSF: workspace C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+[25-May-21 14:02:53.815]  Flash Development Toolkit and flash programming components
+are provided without support
+[25-May-21 14:02:53.815]  OS: Windows 10 (Windows 8) [Non-Admin]
+[25-May-21 14:02:53.816]  FDT API initialised: version 4, 09, 02, 000
+[25-May-21 14:02:53.863]  FCF Settings Applied: R5F364AE_7Line, (C:\Program Files (x86)\Renesas\FDT4.09\kernels\ProtD\R5F364AE\Renesas\1_2_00\)
+[25-May-21 14:02:53.881]  FSF: disconnect
+[25-May-21 14:02:53.882]  FSF:  connect USB|E8a|9HS078016|0.0|0.0
+[25-May-21 14:02:53.905]  Clock Frequency (External) = N/A, Clock Mode = N/A, CKM = N/A, and CKP = N/A
+[25-May-21 14:02:53.906]  Connecting to device 'R5F364AE_7Line' on 'E8a'
+[25-May-21 14:02:53.907]  Configuration:
+[25-May-21 14:02:53.907]  'BOOT Mode' connection - using emulated interface
+[25-May-21 14:02:53.907]  Opening port 'E8a' ...
+[25-May-21 14:02:54.096]  Checking for E8/E8a update...
+[25-May-21 14:02:54.482]  Adaptor checksum OK
+[25-May-21 14:02:54.487]  Processing Data file :'c:\program files (x86)\renesas\fdt4.09\ADPFiles\E8-Rel-Img2-a.mot'
+[25-May-21 14:02:54.503]  Adaptor version number OK
+[25-May-21 14:02:54.503]   (current E8/E8a Bootstub (Level 0) version = 1.00.00.000, FDT holds version 1.00.00.000, FDT requires version 1.00.XX.XXX)
+[25-May-21 14:02:54.504]  Adaptor version type OK
+[25-May-21 14:02:54.505]   (current type = E8aEMULATOR)
+[25-May-21 14:02:54.508]  Processing Data file :'c:\program files (x86)\renesas\fdt4.09\ADPFiles\E8-Rel-Img2-a.mot'
+[25-May-21 14:02:54.524]  Adaptor version number OK
+[25-May-21 14:02:54.524]   (current E8/E8a Adaptor Software (Level 1) version = 2.17.00.000, FDT holds version 2.17.00.000, FDT requires version 2.17.XX.XXX)
+[25-May-21 14:02:54.550]  Version Information: VER.1.00
+[25-May-21 14:02:54.553]  ID code check successful
+[25-May-21 14:02:54.555]  Connection complete
+[25-May-21 14:02:54.680]  All blocks marked as unknown written status
+
+[25-May-21 14:02:54.680]  FSF: download C:\FT\Beni_DF,PF2.03\Firmware\TestROM\Beni_DF.mot
+[25-May-21 14:02:55.211]  Erasing 2 blocks from device
+[25-May-21 14:02:55.211]  Erasing... 'EB3'...
+[25-May-21 14:02:55.419]  Erased block EB3 (0x000C0000 - 0x000CFFFF)
+[25-May-21 14:02:55.419]  Erasing... 'EB0'...
+[25-May-21 14:02:55.637]  Erased block EB0 (0x000F0000 - 0x000FFFFF)
+[25-May-21 14:02:55.637]  Erase complete
+[25-May-21 14:02:55.750]  
+[25-May-21 14:02:55.755]  Processing file :"c:\ft\beni_df,pf2.03\firmware\testrom\beni_df.mot"
+[25-May-21 14:02:55.762]  [User Flash 2] - No Data Loaded
+[25-May-21 14:02:55.766]  [Data Flash] - No Data Loaded
+[25-May-21 14:02:56.514]  Operation on User Flash 1
+[25-May-21 14:02:56.515]  Writing image to device... [0x000C0000 - 0x000C66FF]
+[25-May-21 14:02:58.378]  Writing image to device... [0x000FFD00 - 0x000FFDFF]
+[25-May-21 14:02:58.397]  Writing image to device... [0x000FFF00 - 0x000FFFFF]
+[25-May-21 14:02:58.413]  Data programmed at the following positions:
+[25-May-21 14:02:58.413]   0x000C0000 - 0x000C66FF      Length : 0x00006700
+[25-May-21 14:02:58.414]   0x000FFD00 - 0x000FFDFF      Length : 0x00000100
+[25-May-21 14:02:58.414]   0x000FFF00 - 0x000FFFFF      Length : 0x00000100
+[25-May-21 14:02:58.415]  26.25 K programmed in 2 seconds
+[25-May-21 14:02:58.416]  Image written to device
+[25-May-21 14:02:58.531]  
+[25-May-21 14:02:58.531]  FSF: disconnect
+[25-May-21 14:02:59.120]  Disconnecting
+[25-May-21 14:02:59.121]  Disconnected
+[25-May-21 14:02:59.295]  
+[25-May-21 14:02:59.295]  FSF: delete $script
+[25-May-21 14:02:59.295]  FSF: exit
+[25-May-21 14:02:59.295]  Exiting...
+[25-May-21 14:02:59.295]  FSF: delete C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+[25-May-21 14:02:59.296]  Deleted: c:\ft\beni_df,pf2.03\firmware\fdt\beni_df,pf2.03.fsf
+[25-May-21 14:02:59.296]  Script Execution COMPLETED
+
+[25-May-21 14:02:59.302]  Job Number 0 completed
+[FT] åüç∏FWèëçû                     COMPLETED            ... OK (P759/JP1 -> U1:CPU)
+-- 14:02:59 --    7.41 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP04 åüç∏FW ãNìÆ -- 
+[FT] 14:02:59 Åyìdåπ OFFÅz
+[FT] 14:03:00 Åyìdåπ ON Åz
+ãNìÆë“Çø.
+******* M16C/64A  Program Wake Up !!! *********
+[FT] (DADF$STS)                     (P751-5/6)           ... OK (Program Wake Up)
+<<< Beni-DADF Function Tester  Version 1.00 >>>
+                               Rev.1 2020/05/20
+***********************************************
+
+SFX>[FT] (DADF$STS)                     (P751-5/6)           ... OK (SFX>)
+ 
+SFX>[FT] (DADF#CMD)                     (P751-7/8)           ... OK (SFX>)
+
+-- 14:03:01 --    1.80 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP05 RESET Test 2 (WDT) -- 
+ss
+SS Complete.
+SFX> 
+******* M16C/64A  Program Wake Up !!! *********
+<<< Beni-DADF Function Tester  Version 1.00 >>>
+                               Rev.1 2020/05/20
+***********************************************
+
+SFX>[FT] U3:WDT                         ... OK (SFX>)
+-- 14:03:01 --    0.46 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP06 INPUT Test -- 
+[FT] Åy24V_INTLK ON Åz
+
+ WB 0207 FF
+WB Complete.
+SFX> WB 0205 03
+WB Complete.
+SFX>
+ IC
+IC Complete.
+SFX> IR
+IR IRQ_Status 0x00 
+SFX>[FT] äÑçûÃ◊∏ﬁ(∏ÿ±)                 (00000000IRQÅ`00000000IRQ) ... 00000000IRQ OK
+ RB 000003E0
+RB 000003E0 10
+SFX>
+[FT] (NDADF_CLOSE)                  P751-4 -> U1-82      (1Å`1) ... 1 OK
+ RB 000003E0
+RB 000003E0 00
+SFX>
+[FT] (NDADF_CLOSE)                  P751-4 -> U1-82      (0Å`0) ... 0 OK
+ RB 000003E1
+RB 000003E1 04
+SFX>
+[FT] (NDADF_START)                  P752-B13 -> U1-74    (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0x08 
+SFX>
+[FT] (NDADF_START)(IRQ)             P752-B13 -> U1-74    (1Å`1) ... 1 OK
+ RB 000003E1
+RB 000003E1 34
+SFX>
+[FT] (NDADF_START)                  P752-B13 -> U1-74    (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0x08 
+SFX>
+[FT] (NDADF_START)(IRQ)             P752-B13 -> U1-74    (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 01
+SFX>
+[FT] FEED_OUT_SNR                   P758-2 -> U1-70      (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0x28 
+SFX>
+[FT] FEED_OUT_SNR(IRQ)              P758-2 -> U1-70      (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 00
+SFX>
+[FT] FEED_OUT_SNR                   P758-2 -> U1-70      (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0x28 
+SFX>
+[FT] FEED_OUT_SNR(IRQ)              P758-2 -> U1-70      (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 02
+SFX>
+[FT] FEED_IN_SNR                    P758-5 -> U1-69      (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0x38 
+SFX>
+[FT] FEED_IN_SNR(IRQ)               P758-5 -> U1-69      (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 00
+SFX>
+[FT] FEED_IN_SNR                    P758-5 -> U1-69      (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0x38 
+SFX>
+[FT] FEED_IN_SNR(IRQ)               P758-5 -> U1-69      (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 18
+SFX>
+[FT] PREGI_SNR                      P757-18 -> U1-66     (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0x78 
+SFX>
+[FT] PREGI_SNR(IRQ)                 P757-18 -> U1-66     (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 00
+SFX>
+[FT] PREGI_SNR                      P757-18 -> U1-66     (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0x78 
+SFX>
+[FT] PREGI_SNR(IRQ)                 P757-18 -> U1-66     (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 60
+SFX>
+[FT] OUT_SNR                        P757-15 -> U1-64     (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0xF8 
+SFX>
+[FT] OUT_SNR(IRQ)                   P757-15 -> U1-64     (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 00
+SFX>
+[FT] OUT_SNR                        P757-15 -> U1-64     (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0xF8 
+SFX>
+[FT] OUT_SNR(IRQ)                   P757-15 -> U1-64     (1Å`1) ... 1 OK
+ RB 000003E5
+RB 000003E5 10
+SFX>
+[FT] DOC-SET_SNR                    P758-14 -> U1-56     (1Å`1) ... 1 OK
+ RB 000003E5
+RB 000003E5 00
+SFX>
+[FT] DOC-SET_SNR                    P758-14 -> U1-56     (0Å`0) ... 0 OK
+ RB 000003E5
+RB 000003E5 40
+SFX>
+[FT] EXIT_SNR                       P758-8 -> U1-54      (1Å`1) ... 1 OK
+ RB 000003E5
+RB 000003E5 00
+SFX>
+[FT] EXIT_SNR                       P758-8 -> U1-54      (0Å`0) ... 0 OK
+ RB 000003E5
+RB 000003E5 80
+SFX>
+[FT] FEED_APS1_SNR                  P757-8 -> U1-53      (1Å`1) ... 1 OK
+ RB 000003E5
+RB 000003E5 00
+SFX>
+[FT] FEED_APS1_SNR                  P757-8 -> U1-53      (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 01
+SFX>
+[FT] FEED_APS2_SNR                  P757-5 -> U1-52      (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX>
+[FT] FEED_APS2_SNR                  P757-5 -> U1-52      (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 02
+SFX>
+[FT] FEED_APS3_SNR                  P757-2 -> U1-51      (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX>
+[FT] FEED_APS3_SNR                  P757-2 -> U1-51      (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 08
+SFX>
+[FT] TRY_APS1_SNR                   P756-14 -> U1-49     (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX>
+[FT] TRY_APS1_SNR                   P756-14 -> U1-49     (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 10
+SFX>
+[FT] TRY_APS2_SNR                   P756-11 -> U1-48     (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX>
+[FT] TRY_APS2_SNR                   P756-11 -> U1-48     (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 20
+SFX>
+[FT] TRY_APS3_SNR                   P756-8 -> U1-47      (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX>
+[FT] TRY_APS3_SNR                   P756-8 -> U1-47      (0Å`0) ... 0 OK
+ RB 000003E9
+RB 000003E9 83
+SFX>
+[FT] TRY_SIZ2_SNR                   P756-5 -> U1-43      (1Å`1) ... 1 OK
+ RB 000003E9
+RB 000003E9 81
+SFX>
+[FT] TRY_SIZ2_SNR                   P756-5 -> U1-43      (0Å`0) ... 0 OK
+ RB 000003E9
+RB 000003E9 85
+SFX>
+[FT] TRY_SIZ1_SNR                   P756-2 -> U1-42      (1Å`1) ... 1 OK
+ RB 000003E9
+RB 000003E9 81
+SFX>
+[FT] TRY_SIZ1_SNR                   P756-2 -> U1-42      (0Å`0) ... 0 OK
+ RB 000003F0
+RB 000003F0 2C
+SFX>
+[FT] REGI_SNR                       P757-12 -> U1-17     (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0xFB 
+SFX>
+[FT] REGI_SNR(IRQ)                  P757-12 -> U1-17     (1Å`1) ... 1 OK
+ RB 000003F0
+RB 000003F0 20
+SFX>
+[FT] REGI_SNR                       P757-12 -> U1-17     (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0xFB 
+SFX>
+[FT] REGI_SNR(IRQ)                  P757-12 -> U1-17     (1Å`1) ... 1 OK
+-- 14:03:04 --    2.90 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP07 OUTPUT Test1 (I/O) -- 
+ RB 000003E0
+RB 000003E0 00
+SFX> WB 000003E0 02
+WB Complete.
+SFX>[FT] NDADF_PSYNC                    U1-85 -> P752-B14    (0Å`0) ... 0 OK
+ RB 000003E0
+RB 000003E0 02
+SFX> WB 000003E0 00
+WB Complete.
+SFX>[FT] NDADF_PSYNC                    U1-85 -> P752-B14    (1Å`1) ... 1 OK
+ RB 000003E0
+RB 000003E0 00
+SFX> WB 000003E0 04
+WB Complete.
+SFX>[FT] NDOC_RDY                       U1-84 -> P751-3      (0Å`0) ... 0 OK
+ RB 000003E0
+RB 000003E0 04
+SFX> WB 000003E0 00
+WB Complete.
+SFX>[FT] NDOC_RDY                       U1-84 -> P751-3      (1Å`1) ... 1 OK
+ RB 000003E0
+RB 000003E0 00
+SFX> WB 000003E0 08
+WB Complete.
+SFX>[FT] NDADF_CSYNC                    U1-83 -> P752-A2     (0Å`0) ... 0 OK
+ RB 000003E0
+RB 000003E0 08
+SFX> WB 000003E0 00
+WB Complete.
+SFX>[FT] NDADF_CSYNC                    U1-83 -> P752-A2     (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX> WB 000003E8 04
+WB Complete.
+SFX>[FT] DSET_LED                       U1-50 -> P756-17     (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 04
+SFX> WB 000003E8 00
+WB Complete.
+SFX>[FT] DSET_LED                       U1-50 -> P756-17     (1Å`1) ... 1 OK
+-- 14:03:05 --    0.99 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP08 OUTPUT Test2 (THRU) -- 
+
+[FT] WAKEUP_A                       P758-14 -> P752-A1   (0Å`0) ... 0 OK
+
+[FT] WAKEUP_A                       P758-14 -> P752-A1   (1Å`1) ... 1 OK
+-- 14:03:05 --    0.03 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP09 OUTPUT Test3 (MOTOR1) -- 
+ RB 000003ED
+RB 000003ED 02
+SFX>
+[FT] F_MOT_CHA                      P792-7 -> U1-27      (1Å`1) ... 1 OK
+ RB 000003ED
+RB 000003ED 00
+SFX>
+[FT] F_MOT_CHA                      P792-7 -> U1-27      (0Å`0) ... 0 OK
+ RB 000003F0
+RB 000003F0 20
+SFX> WB 000003F0 A0
+WB Complete.
+SFX>[FT] F_MOT_DIR                      U1-8 -> P792-1       (0Å`0) ... 0 OK
+ RB 000003F0
+RB 000003F0 A0
+SFX> WB 000003F0 20
+WB Complete.
+SFX>[FT] F_MOT_DIR                      U1-8 -> P792-1       (1Å`1) ... 1 OK
+ RB 000003F0
+RB 000003F0 20
+SFX> WB 000003F0 60
+WB Complete.
+SFX>[FT] F_MOT_BRKE                     U1-9 -> P792-3       (0Å`0) ... 0 OK
+ RB 000003F0
+RB 000003F0 60
+SFX> WB 000003F0 20
+WB Complete.
+SFX>[FT] F_MOT_BRKE                     U1-9 -> P792-3       (1Å`1) ... 1 OK
+[FT] F_MOT_CLK                      U1-20 -> P792-2      (499.9HzÅ`500.1Hz) ... 500.0Hz OK
+[FT] F_MOT_CLK(DUTY)                U1-20 -> P792-2      (  49.9%Å`  50.1%) ...   50.0% OK
+-- 14:03:06 --    0.68 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP10 OUTPUT Test4 (MOTOR2) -- 
+[FT] Åy24V_INTLK ON Åz
+ WB 0339 44
+WB Complete.
+SFX>[FT] OUT Test4 (MOTOR2)             WB 0339 44           ... OK (SFX>)
+ CW 99 0 1
+CW Complete.
+SFX>[FT] OUT Test4 (MOTOR2)             CW 99 0 1            ... OK (SFX>)
+ WB 03ED EE
+WB Complete.
+SFX>[FT] OUT Test4 (MOTOR2)             WB 03ED EE           ... OK (SFX>)
+[FT] Pre-Regi Motor é¸îgêî(CW)      PRMOT                ( 62.4kHzÅ` 62.6kHz) ...  62.5kHz OK
+[FT] Pre-Regi Motor Duty(CW)        PRMOT                ( 62.4%  Å` 62.6%  ) ...  62.5%   OK
+[FT] Pre-Regi Motor à ëä(CW)        PRMOT                ( A55A   Å` A55A   ) ...  A55A    OK
+[FT] Regi Motor é¸îgêî(CW)          RMOT                 ( 62.4kHzÅ` 62.6kHz) ...  62.5kHz OK
+[FT] Regi Motor Duty(CW)            RMOT                 ( 62.4%  Å` 62.6%  ) ...  62.5%   OK
+[FT] Regi Motor à ëä(CW)            RMOT                 ( A55A   Å` A55A   ) ...  A55A    OK
+ CS
+CS Complete.
+[FT] OUT Test4 (MOTOR2)             CS                   ... OK (CS Complete.)
+SFX> WB 0339 44
+[FT] OUT Test4 (MOTOR2)             WB 0339 44           ... OK (SFX>)
+WB Complete.
+SFX>[FT] OUT Test4 (MOTOR2)             CC 99 1 1            ... OK (SFX>)
+ CC 99 1 1
+CC Complete.
+SFX>[FT] OUT Test4 (MOTOR2)             WB 03ED FE           ... OK (SFX>)
+[FT] Pre-Regi Motor é¸îgêî(CCW)     PRMOT                ( 62.4kHzÅ` 62.6kHz) ...  62.5kHz OK
+[FT] Pre-Regi Motor Duty(CCW)       PRMOT                ( 62.4%  Å` 62.6%  ) ...  62.5%   OK
+[FT] Pre-Regi Motor à ëä(CCW)       PRMOT                ( 5AA5   Å` 5AA5   ) ...  5AA5    OK
+[FT] Regi Motor é¸îgêî(CCW)         RMOT                 ( 62.4kHzÅ` 62.6kHz) ...  62.5kHz OK
+[FT] Regi Motor Duty(CCW)           RMOT                 ( 62.4%  Å` 62.6%  ) ...  62.5%   OK
+[FT] Regi Motor à ëä(CCW)           RMOT                 ( 5AA5   Å` 5AA5   ) ...  5AA5    OK
+ WB 03ED FE
+WB Complete.
+SFX> CS
+CS Complete.
+[FT] OUT Test4 (MOTOR2)             CS                   ... OK (CS Complete.)
+-- 14:03:07 --    1.07 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP11 OUTPUT Test5 (MOT-VREF) -- 
+SFX> WB 0339 44
+WB Complete.
+SFX> CW 99 0 0
+CW Complete.
+SFX>
+[FT] (PRMOT_REF Lo)                 TP73                 (-0.100VÅ` 0.100V) ...  0.002V OK
+[FT] (RMOT_REF Lo)                  TP75                 (-0.100VÅ` 0.100V) ...  0.002V OK
+ WB 03ED EE
+WB Complete.
+SFX> CS
+CS Complete.
+SFX> WB 0339 44
+WB Complete.
+SFX> CW 99 0 1
+CW Complete.
+SFX>
+[FT] (PRMOT_REF Md)                 TP73                 ( 1.424VÅ` 1.574V) ...  1.484V OK
+[FT] (RMOT_REF Md)                  TP75                 ( 1.424VÅ` 1.574V) ...  1.487V OK
+ WB 03ED EE
+WB Complete.
+SFX> CS
+CS Complete.
+SFX> WB 0339 44
+WB Complete.
+SFX> CW 99 0 2
+CW Complete.
+SFX>
+[FT] (PRMOT_REF Hi)                 TP73                 ( 2.848VÅ` 3.148V) ...  2.952V OK
+[FT] (RMOT_REF Hi)                  TP75                 ( 2.848VÅ` 3.148V) ...  2.960V OK
+ WB 03ED EE
+WB Complete.
+SFX>-- 14:03:09 --    1.50 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP12 OUTPUT Test6 (SOL) -- 
+ CS
+CS Complete.
+SFX> RB 000003F4
+RB 000003F4 00
+SFX>
+[FT] Dut.ReadByte() Retry ... 
+ RB 000003F4
+RB 000003F4 C0
+SFX> WB 000003F4 E0
+WB Complete.
+SFX>[FT] STMP_SOL                       U1-89 -> P755-1/2    (0Å`0) ... 0 OK
+ RB 000003F4
+RB 000003F4 E0
+SFX> WB 000003F4 C0
+WB Complete.
+SFX>[FT] STMP_SOL                       U1-89 -> P755-1/2    (1Å`1) ... 1 OK
+ RB 000003F4
+RB 000003F4 C0
+SFX> WB 000003F4 E0
+WB Complete.
+SFX> RB 000003E0
+RB 000003E0 80
+SFX>[FT] STMP_SET                       U1-89 -> U1-79       (1Å`1) ... 1 OK
+ RB 000003F4
+RB 000003F4 E0
+SFX> WB 000003F4 C0
+WB Complete.
+SFX> RB 000003E0
+RB 000003E0 00
+SFX>[FT] STMP_SET                       U1-89 -> U1-79       (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 00
+SFX> WB 000003E8 40
+WB Complete.
+SFX>[FT] (+24V_SOL-CL)/TA_CL            U1-46 -> P793-1/2    (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 40
+SFX> WB 000003E8 00
+WB Complete.
+SFX>[FT] (+24V_SOL-CL)/TA_CL            U1-46 -> P793-1/2    (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX> WB 000003E8 80
+WB Complete.
+SFX>[FT] (+24V_SOL-CL)/PREGI_CL         U1-45 -> P793-3/4    (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 80
+SFX> WB 000003E8 00
+WB Complete.
+SFX>[FT] (+24V_SOL-CL)/PREGI_CL         U1-45 -> P793-3/4    (1Å`1) ... 1 OK
+-- 14:03:10 --    1.11 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP13 êªïiFW D/L -- 
+[FT] 14:03:10 Åyìdåπ OFFÅz
+[FT] 14:03:11 Åyìdåπ ON Åz
+aws: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+w4f: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f
+FWP: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.FWP
+fsf: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+mot: C:\FT\Beni_DF,PF2.03\Firmware\07_540K 17211\PF203_DADF&IPL&PTTN_V231600.mot
+Log: C:\FT\Beni_DF,PF2.03\Firmware\FDT\FDT_Log.txt
+Status: C:\FT\Beni_DF,PF2.03\Firmware\FDT\FDT_Status.txt
+[FT] FDT.exe /DISCRETESTARTUP "w4fRun \"C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f\"
+****************************************************
+ ****   Flash Development Toolkit log file
+ ****   Ver  : 4.09.03.00
+ ****   User : FXMFG
+ ****   PC   : DESKTOP-KJMF8UJ
+ ****   Tue May 25 2021, 14:03:11
+****************************************************
+[25-May-21 14:03:11.813]  
+Loaded Wait For File config: "C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f"
+Waiting...                
+[25-May-21 14:03:11.954]  
+File Opened: "C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf" (Last Modified: 25-May-21 14:03:11)
+
+*************************
+**     LOG FILE        **
+*************************
+# RenesasèëçûÉXÉNÉäÉvÉg
+workspace C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+disconnect
+ connect USB|E8a|9HS078016|0.0|0.0
+download C:\FT\Beni_DF,PF2.03\Firmware\07_540K 17211\PF203_DADF&IPL&PTTN_V231600.mot
+disconnect
+delete $script
+exit
+*************************
+[25-May-21 14:03:11.960]  FSF: workspace C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+[25-May-21 14:03:11.974]  Flash Development Toolkit and flash programming components
+are provided without support
+[25-May-21 14:03:11.974]  OS: Windows 10 (Windows 8) [Non-Admin]
+[25-May-21 14:03:11.975]  FDT API initialised: version 4, 09, 02, 000
+[25-May-21 14:03:12.020]  FCF Settings Applied: R5F364AE_7Line, (C:\Program Files (x86)\Renesas\FDT4.09\kernels\ProtD\R5F364AE\Renesas\1_2_00\)
+[25-May-21 14:03:12.038]  FSF: disconnect
+[25-May-21 14:03:12.039]  FSF:  connect USB|E8a|9HS078016|0.0|0.0
+[25-May-21 14:03:12.062]  Clock Frequency (External) = N/A, Clock Mode = N/A, CKM = N/A, and CKP = N/A
+[25-May-21 14:03:12.063]  Connecting to device 'R5F364AE_7Line' on 'E8a'
+[25-May-21 14:03:12.063]  Configuration:
+[25-May-21 14:03:12.064]  'BOOT Mode' connection - using emulated interface
+[25-May-21 14:03:12.064]  Opening port 'E8a' ...
+[25-May-21 14:03:12.254]  Checking for E8/E8a update...
+[25-May-21 14:03:12.640]  Adaptor checksum OK
+[25-May-21 14:03:12.645]  Processing Data file :'c:\program files (x86)\renesas\fdt4.09\ADPFiles\E8-Rel-Img2-a.mot'
+[25-May-21 14:03:12.660]  Adaptor version number OK
+[25-May-21 14:03:12.661]   (current E8/E8a Bootstub (Level 0) version = 1.00.00.000, FDT holds version 1.00.00.000, FDT requires version 1.00.XX.XXX)
+[25-May-21 14:03:12.661]  Adaptor version type OK
+[25-May-21 14:03:12.662]   (current type = E8aEMULATOR)
+[25-May-21 14:03:12.665]  Processing Data file :'c:\program files (x86)\renesas\fdt4.09\ADPFiles\E8-Rel-Img2-a.mot'
+[25-May-21 14:03:12.681]  Adaptor version number OK
+[25-May-21 14:03:12.681]   (current E8/E8a Adaptor Software (Level 1) version = 2.17.00.000, FDT holds version 2.17.00.000, FDT requires version 2.17.XX.XXX)
+[25-May-21 14:03:12.708]  Version Information: VER.1.00
+[25-May-21 14:03:12.720]  ID code check successful
+[25-May-21 14:03:12.721]  Connection complete
+[25-May-21 14:03:12.839]  All blocks marked as unknown written status
+
+[25-May-21 14:03:12.840]  FSF: download C:\FT\Beni_DF,PF2.03\Firmware\07_540K 17211\PF203_DADF&IPL&PTTN_V231600.mot
+[25-May-21 14:03:13.370]  Erasing 5 blocks from device
+[25-May-21 14:03:13.373]  Erasing... 'EBB'...
+[25-May-21 14:03:13.496]  Erased block EBB (0x0000F000 - 0x0000FFFF)
+[25-May-21 14:03:13.497]  Erasing... 'EB3'...
+[25-May-21 14:03:13.710]  Erased block EB3 (0x000C0000 - 0x000CFFFF)
+[25-May-21 14:03:13.710]  Erasing... 'EB2'...
+[25-May-21 14:03:13.922]  Erased block EB2 (0x000D0000 - 0x000DFFFF)
+[25-May-21 14:03:13.923]  Erasing... 'EB1'...
+[25-May-21 14:03:14.142]  Erased block EB1 (0x000E0000 - 0x000EFFFF)
+[25-May-21 14:03:14.143]  Erasing... 'EB0'...
+[25-May-21 14:03:14.360]  Erased block EB0 (0x000F0000 - 0x000FFFFF)
+[25-May-21 14:03:14.360]  Erase complete
+[25-May-21 14:03:14.467]  
+[25-May-21 14:03:14.472]  Processing file :"c:\ft\beni_df,pf2.03\firmware\07_540k 17211\pf203_dadf&ipl&pttn_v231600.mot"
+[25-May-21 14:03:14.504]  [User Flash 2] - No Data Loaded
+[25-May-21 14:03:14.676]  Operation on User Flash 1
+[25-May-21 14:03:14.676]  Writing image to device... [0x000C0000 - 0x000C00FF]
+[25-May-21 14:03:14.694]  Writing image to device... [0x000C0600 - 0x000E7CFF]
+[25-May-21 14:03:26.094]  Writing image to device... [0x000E7D00 - 0x000E7DFF]
+[25-May-21 14:03:26.106]  Writing image to device... [0x000E7E00 - 0x000E7EFF]
+[25-May-21 14:03:26.118]  Writing image to device... [0x000E7F00 - 0x000E80FF]
+[25-May-21 14:03:26.139]  Writing image to device... [0x000E8100 - 0x000E81FF]
+[25-May-21 14:03:26.150]  Writing image to device... [0x000E8200 - 0x000E82FF]
+[25-May-21 14:03:26.160]  Writing image to device... [0x000E8300 - 0x000EAEFF]
+[25-May-21 14:03:26.954]  Writing image to device... [0x000EAF00 - 0x000EBAFF]
+[25-May-21 14:03:27.171]  Writing image to device... [0x000FC000 - 0x000FC1FF]
+[25-May-21 14:03:27.201]  Writing image to device... [0x000FC800 - 0x000FFFFF]
+[25-May-21 14:03:28.215]  Data programmed at the following positions:
+[25-May-21 14:03:28.216]   0x000C0000 - 0x000C00FF      Length : 0x00000100
+[25-May-21 14:03:28.216]   0x000C0600 - 0x000E7CFF      Length : 0x00027700
+[25-May-21 14:03:28.216]   0x000E7D00 - 0x000E7DFF      Length : 0x00000100
+[25-May-21 14:03:28.217]   0x000E7E00 - 0x000E7EFF      Length : 0x00000100
+[25-May-21 14:03:28.217]   0x000E7F00 - 0x000E80FF      Length : 0x00000200
+[25-May-21 14:03:28.218]   0x000E8100 - 0x000E81FF      Length : 0x00000100
+[25-May-21 14:03:28.218]   0x000E8200 - 0x000E82FF      Length : 0x00000100
+[25-May-21 14:03:28.218]   0x000E8300 - 0x000EAEFF      Length : 0x00002C00
+[25-May-21 14:03:28.219]   0x000EAF00 - 0x000EBAFF      Length : 0x00000C00
+[25-May-21 14:03:28.219]   0x000FC000 - 0x000FC1FF      Length : 0x00000200
+[25-May-21 14:03:28.220]   0x000FC800 - 0x000FFFFF      Length : 0x00003800
+[25-May-21 14:03:28.220]  188 K programmed in 14 seconds
+[25-May-21 14:03:28.221]  
+[25-May-21 14:03:28.223]  Operation on Data Flash
+[25-May-21 14:03:28.223]  Writing image to device... [0x0000FF00 - 0x0000FFFF]
+[25-May-21 14:03:28.235]  Data programmed at the following positions:
+[25-May-21 14:03:28.235]   0x0000FF00 - 0x0000FFFF      Length : 0x00000100
+[25-May-21 14:03:28.235]  256 Bytes programmed in 0 seconds
+[25-May-21 14:03:28.236]  Image written to device
+[25-May-21 14:03:28.347]  
+[25-May-21 14:03:28.347]  FSF: disconnect
+[25-May-21 14:03:29.032]  Disconnecting
+[25-May-21 14:03:29.033]  Disconnected
+[25-May-21 14:03:29.207]  
+[25-May-21 14:03:29.207]  FSF: delete $script
+[25-May-21 14:03:29.208]  FSF: exit
+[25-May-21 14:03:29.208]  Exiting...
+[25-May-21 14:03:29.209]  FSF: delete C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+[25-May-21 14:03:29.209]  Deleted: c:\ft\beni_df,pf2.03\firmware\fdt\beni_df,pf2.03.fsf
+[25-May-21 14:03:29.210]  Script Execution COMPLETED
+
+[25-May-21 14:03:29.216]  Job Number 0 completed
+[FT] åüç∏FWèëçû                     COMPLETED            ... OK (P759 -> U1)
+-- 14:03:29 --   19.17 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP14 êªïiFW ãNìÆ -- 
+[FT] 14:03:29 Åyìdåπ OFFÅz
+[FT] √ﬁ®Ω¡¨∞ºﬁ  äÆóπ
+[FT] 14:03:30 Åyìdåπ ON Åz
+ DUT->FT: 16 7F 16 ,3 [16] FT->DUT:06(ACK)
+[FT] êªïiFWãNìÆ(SYNC:16 7F 16)      (DADF$STS+/-,DADF#CMD+/-) ... OK (U1 <-> P751-5Å`8)
+ DUT->FT: F0 01 86 77 ,4 [77] FT->DUT:06(ACK)
+ FT->DUT: F0 01 86 77  DUT->FT[ACK]: 06
+ DUT->FT: F0 01 87 F8 ,4 [F8] FT->DUT:86(ACK)
+ DUT->FT: F0 02 45 01 38 ,5 [38] FT->DUT:06(ACK)
+ DUT->FT: F0 02 41 00 B3 ,5 [B3] FT->DUT:86(ACK)
+ DUT->FT: F0 04 3D 02 81 02 36 ,7 [36] FT->DUT:06(ACK)
+ DUT->FT: F0 03 3B 01 00 AF ,6 [AF] FT->DUT:86(ACK)
+ FT->DUT: F0 01 87 F8  DUT->FT[ACK]: 86
+ FT->DUT: F0 01 66 57  DUT->FT[ACK]: 06
+ DUT->FT: F0 07 76 05 E6 00 FF 00 28 7F ,10 [7F] FT->DUT:06(ACK)
+[FT] êªïiFWãNìÆ                     ADF MAINTENANCE RESPONSE ... OK
+-- 14:03:30 --    1.47 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP15 êªïiROM VersionämîF [êªïiFW] -- 
+ FT->DUT: F0 02 61 00 D3  DUT->FT[ACK]: 86
+ DUT->FT: F0 0A 71 01 02 01 08 A4 02 17 10 00 C4 ,13 [C4] FT->DUT:86(ACK)
+[FT] ROM Version                   (23.16.0) ... 23.16.0 OK
+-- 14:03:31 --    0.06 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP16 NVM Test/ê›íË [êªïiFW] -- 
+ FT->DUT: F0 03 A1 01 03 18  DUT->FT[ACK]: 06
+[FT] ADF NVM WRITE ëóêM             (Initialize_1st)     ... OK
+ DUT->FT: F0 04 B1 01 03 00 29 ,7 [29] FT->DUT:06(ACK)
+ FT->DUT: F0 05 A0 02 C7 00 C7 A5  DUT->FT[ACK]: 86
+ DUT->FT: F0 0E B0 02 C7 00 C7 00 00 01 00 03 00 00 00 01 C3 ,17 [C3] FT->DUT:86(ACK)
+ FT->DUT: F0 08 A1 00 02 C7 00 C7 00 02 2B  DUT->FT[ACK]: 06
+ DUT->FT: F0 07 B1 00 02 C7 00 C7 00 38 ,10 [38] FT->DUT:06(ACK)
+[FT] ADF NVM WRITE                  (771-119 -> 00 02)   ... OK
+ FT->DUT: F0 05 A0 02 C7 00 C7 A5  DUT->FT[ACK]: 86
+ DUT->FT: F0 0E B0 02 C7 00 C7 00 00 02 00 03 00 00 00 01 C4 ,17 [C4] FT->DUT:86(ACK)
+ FT->DUT: F0 03 A1 01 03 18  DUT->FT[ACK]: 06
+ DUT->FT: F0 04 B1 01 03 00 29 ,7 [29] FT->DUT:06(ACK)
+[FT] ADF NVM WRITE                  (Initialize_2nd)     ... OK
+ FT->DUT: F0 05 A0 02 C7 00 C7 A5  DUT->FT[ACK]: 86
+ DUT->FT: F0 0E B0 02 C7 00 C7 00 00 01 00 03 00 00 00 01 C3 ,17 [C3] FT->DUT:86(ACK)
+ FT->DUT: F0 08 A1 00 02 C7 00 C7 00 01 2A  DUT->FT[ACK]: 06
+ DUT->FT: F0 07 B1 00 02 C7 00 C7 00 38 ,10 [38] FT->DUT:06(ACK)
+[FT] ADF NVM WRITE                  (771-119 -> 00 01Åyèoâ◊ê›íËÅz) ... OK
+ FT->DUT: F0 05 A0 02 C7 00 C7 A5  DUT->FT[ACK]: 86
+ DUT->FT: F0 0E B0 02 C7 00 C7 00 00 01 00 03 00 00 00 01 C3 ,17 [C3] FT->DUT:86(ACK)
+-- 14:03:33 --    2.47 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP17 ìdåπOFF -- 
+[FT] 14:03:33 Åyìdåπ OFFÅz
+[FT] √ﬁ®Ω¡¨∞ºﬁ  äÆóπ
+[FT] SLP_5V                         P752-B11 > P758-15   (-0.300VÅ` 0.300V) ...  0.001V OK
+[FT] 5V                             P752-A4/A5 > TP1     (-0.300VÅ` 0.300V) ...  0.002V OK
+[FT] 24V                            P752-A13/A14 > TP3   (-0.300VÅ` 0.300V) ...  0.006V OK
+[FT] 24V_INTLK                      P753-1 > -2 >TP5     (-0.300VÅ` 0.300V) ...  0.012V OK
+[FT] 24V_FMOT                       P792-6               (-0.300VÅ` 0.300V) ...  0.012V OK
+-- 14:03:34 --    0.85 Sec
+PASS 
+
+[FT] 14:03:34 Åyìdåπ OFFÅz
+[FT] √ﬁ®Ω¡¨∞ºﬁ  äÆóπ
+--- åüç∏éûä‘èÓïÒ ---
+[FT]          STEP01 ìdåπìdà≥Test                       ...   1.662 ïb
+[FT]          STEP02 RESET Test 1                       ...   1.659 ïb
+[FT]          STEP03 åüç∏FW D/L                         ...   7.410 ïb
+[FT]          STEP04 åüç∏FW ãNìÆ                        ...   1.795 ïb
+[FT]          STEP05 RESET Test 2 (WDT)                 ...   0.461 ïb
+[FT]          STEP06 INPUT Test                         ...   2.898 ïb
+[FT]          STEP07 OUTPUT Test1 (I/O)                 ...   0.990 ïb
+[FT]          STEP08 OUTPUT Test2 (THRU)                ...   0.029 ïb
+[FT]          STEP09 OUTPUT Test3 (MOTOR1)              ...   0.684 ïb
+[FT]          STEP10 OUTPUT Test4 (MOTOR2)              ...   1.071 ïb
+[FT]          STEP11 OUTPUT Test5 (MOT-VREF)            ...   1.500 ïb
+[FT]          STEP12 OUTPUT Test6 (SOL)                 ...   1.109 ïb
+[FT]          STEP13 êªïiFW D/L                         ...  19.171 ïb
+[FT]          STEP14 êªïiFW ãNìÆ                        ...   1.468 ïb
+[FT]          STEP15 êªïiROM VersionämîF [êªïiFW]       ...   0.061 ïb
+[FT]          STEP16 NVM Test/ê›íË [êªïiFW]             ...   2.471 ïb
+[FT]          STEP17 ìdåπOFF                            ...   0.845 ïb
+[FT]          STEP91 ìdåπON (debug)ÅyâêÕópÅz           ...  îÒé¿é{   
+[FT]          STEP92 E8a ê⁄ë±ÅyâêÕópÅz                 ...  îÒé¿é{   
+[FT]          STEP99 ìdåπOFF (debug)ÅyâêÕópÅz          ...  îÒé¿é{   
+[FT]          STEP101 (í êMâï˙) ÅyâêÕópÅz             ...  îÒé¿é{   
+[FT]          STEP102 (í êMê⁄ë±) ÅyâêÕópÅz             ...  îÒé¿é{   
+[FT] STEP** ëçåüç∏éûä‘                               ...  45.285 ïb
+
+-----------------------------------------
+001:961K10600_BENI_DF,PF2.03-TOSHIBA-RS,,X15J0003TEE0,961K 10600 K002,,21/05/25 14:29:47,Beni DF,PF2.03 F/T No2 (2021.02.11) 002 ,FixtureID:2
+LID:0A800918_58900461_EC8CA000_A00000F9
+CID:00000000_00000000_00000000_00000000
+-- Beni_DF,PF2.03  STEP01 ìdåπìdà≥Test -- 
+[FT] MID1 Date ... 2020.07.25
+[FT] MID1 Version ... 00.01.00.00
+[FT] 14:29:48 Åyìdåπ OFFÅz
+[FT] √ﬁ®Ω¡¨∞ºﬁ  äÆóπ
+[FT] SLP_5V                         P752-B11 > P758-15   (-0.300VÅ` 0.300V) ... -0.000V OK
+[FT] 5V                             P752-A4/A5 > TP1     (-0.300VÅ` 0.300V) ...  0.000V OK
+[FT] 24V                            P752-A13/A14 > TP3   (-0.300VÅ` 0.300V) ...  0.002V OK
+[FT] 24V_INTLK                      P753-1 > -2 >TP5     (-0.300VÅ` 0.300V) ...  0.004V OK
+[FT] 24V_FMOT                       P792-6               (-0.300VÅ` 0.300V) ...  0.004V OK
+[FT] 14:29:48 Åyìdåπ ON Åz
+[FT] SLP_5V                         P752-B11 > P758-15   ( 4.860VÅ` 5.340V) ...  5.098V OK
+[FT] 5V                             P752-A4/A5 > TP1     ( 4.860VÅ` 5.340V) ...  5.072V OK
+[FT] 24V                            P752-A13/A14 > TP3   (22.000VÅ`25.700V) ... 24.669V OK
+[FT] 24V_INTLK                      P753-1 > -2 >TP5     (-0.300VÅ` 0.300V) ...  0.004V OK
+[FT] 24V_FMOT                       P792-6               (-0.300VÅ` 0.300V) ...  0.004V OK
+[FT] Åy24V_INTLK ON Åz
+[FT] 24V_INTLK                      P753-1 > -2 >TP5     (22.000VÅ`25.700V) ... 24.437V OK
+[FT] 24V_FMOT                       P792-6               (22.000VÅ`25.700V) ... 24.420V OK
+-- 14:29:49 --    1.70 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP02 RESET Test 1 -- 
+[FT] 14:29:49 Åyìdåπ OFFÅz
+[FT] √ﬁ®Ω¡¨∞ºﬁ  äÆóπ
+[FT] 14:29:50 Åyìdåπ ON Åz
+[FT] (DADF_RESET_)                  P752-B12 -> TP8      (1Å`1) ... 1 OK
+[FT] (/RESET)                       P752-B12 -> TP9      (1Å`1) ... 1 OK
+[FT] RST                            P752-B12 -> TP10     (1Å`1) ... 1 OK
+[FT] 5V (óßè„ÇËåüèo)                P752-A4/5 > P792-4   (1Å`1) ... 1 OK
+[FT] /RESET                         U3-8 -> TP9          ( 60.0msÅ`140.0ms) ...  94.2ms OK
+[FT] RST                            U3-8 -> TP10         ( 60.0msÅ`140.0ms) ...  94.2ms OK
+[FT] (DADF_RESET_)                  P752-B12 -> TP8      (0Å`0) ... 0 OK
+[FT] (/RESET)                       P752-B12 -> TP9      (0Å`0) ... 0 OK
+[FT] RST                            P752-B12 -> TP10     (0Å`0) ... 0 OK
+[FT] (DADF_RESET_)                  P752-B12 -> TP8      (1Å`1) ... 1 OK
+[FT] (/RESET)                       P752-B12/JP1/U3 -> TP9 (1Å`1) ... 1 OK
+[FT] RST                            P752-B12 -> TP10     (1Å`1) ... 1 OK
+[FT] (/RESET)                       P759-8/JP1/U3 -> TP9 (1Å`1) ... 1 OK
+[FT] RST                            P759-8 -> TP10       (1Å`1) ... 1 OK
+[FT] (/RESET)                       P759-8/JP1/U3 -> TP9 (0Å`0) ... 0 OK
+[FT] RST                            P759-8 -> TP10       (1Å`1) ... 1 OK
+[FT] (/RESET)                       P759-8/JP1/U3 -> TP9 (1Å`1) ... 1 OK
+[FT] RST                            P759-8 -> TP10       (1Å`1) ... 1 OK
+-- 14:29:51 --    1.67 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP03 åüç∏FW D/L -- 
+[FT] 14:29:51 Åyìdåπ OFFÅz
+[FT] 14:29:52 Åyìdåπ ON Åz
+aws: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+w4f: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f
+FWP: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.FWP
+fsf: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+mot: C:\FT\Beni_DF,PF2.03\Firmware\TestROM\Beni_DF.mot
+Log: C:\FT\Beni_DF,PF2.03\Firmware\FDT\FDT_Log.txt
+Status: C:\FT\Beni_DF,PF2.03\Firmware\FDT\FDT_Status.txt
+[FT] FDT.exe /DISCRETESTARTUP "w4fRun \"C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f\"
+****************************************************
+ ****   Flash Development Toolkit log file
+ ****   Ver  : 4.09.03.00
+ ****   User : FXMFG
+ ****   PC   : DESKTOP-KJMF8UJ
+ ****   Tue May 25 2021, 14:29:52
+****************************************************
+[25-May-21 14:29:52.903]  
+Loaded Wait For File config: "C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f"
+Waiting...                
+[25-May-21 14:29:53.036]  
+File Opened: "C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf" (Last Modified: 25-May-21 14:29:52)
+
+*************************
+**     LOG FILE        **
+*************************
+# RenesasèëçûÉXÉNÉäÉvÉg
+workspace C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+disconnect
+ connect USB|E8a|9HS078016|0.0|0.0
+download C:\FT\Beni_DF,PF2.03\Firmware\TestROM\Beni_DF.mot
+disconnect
+delete $script
+exit
+*************************
+[25-May-21 14:29:53.056]  FSF: workspace C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+[25-May-21 14:29:53.067]  Flash Development Toolkit and flash programming components
+are provided without support
+[25-May-21 14:29:53.068]  OS: Windows 10 (Windows 8) [Non-Admin]
+[25-May-21 14:29:53.069]  FDT API initialised: version 4, 09, 02, 000
+[25-May-21 14:29:53.119]  FCF Settings Applied: R5F364AE_7Line, (C:\Program Files (x86)\Renesas\FDT4.09\kernels\ProtD\R5F364AE\Renesas\1_2_00\)
+[25-May-21 14:29:53.136]  FSF: disconnect
+[25-May-21 14:29:53.137]  FSF:  connect USB|E8a|9HS078016|0.0|0.0
+[25-May-21 14:29:53.160]  Clock Frequency (External) = N/A, Clock Mode = N/A, CKM = N/A, and CKP = N/A
+[25-May-21 14:29:53.161]  Connecting to device 'R5F364AE_7Line' on 'E8a'
+[25-May-21 14:29:53.161]  Configuration:
+[25-May-21 14:29:53.161]  'BOOT Mode' connection - using emulated interface
+[25-May-21 14:29:53.162]  Opening port 'E8a' ...
+[25-May-21 14:29:53.353]  Checking for E8/E8a update...
+[25-May-21 14:29:53.739]  Adaptor checksum OK
+[25-May-21 14:29:53.744]  Processing Data file :'c:\program files (x86)\renesas\fdt4.09\ADPFiles\E8-Rel-Img2-a.mot'
+[25-May-21 14:29:53.759]  Adaptor version number OK
+[25-May-21 14:29:53.759]   (current E8/E8a Bootstub (Level 0) version = 1.00.00.000, FDT holds version 1.00.00.000, FDT requires version 1.00.XX.XXX)
+[25-May-21 14:29:53.760]  Adaptor version type OK
+[25-May-21 14:29:53.761]   (current type = E8aEMULATOR)
+[25-May-21 14:29:53.764]  Processing Data file :'c:\program files (x86)\renesas\fdt4.09\ADPFiles\E8-Rel-Img2-a.mot'
+[25-May-21 14:29:53.780]  Adaptor version number OK
+[25-May-21 14:29:53.780]   (current E8/E8a Adaptor Software (Level 1) version = 2.17.00.000, FDT holds version 2.17.00.000, FDT requires version 2.17.XX.XXX)
+[25-May-21 14:29:53.806]  Version Information: VER.1.00
+[25-May-21 14:29:53.816]  ID code check successful
+[25-May-21 14:29:53.817]  Connection complete
+[25-May-21 14:29:53.938]  All blocks marked as unknown written status
+
+[25-May-21 14:29:53.938]  FSF: download C:\FT\Beni_DF,PF2.03\Firmware\TestROM\Beni_DF.mot
+[25-May-21 14:29:54.468]  Erasing 2 blocks from device
+[25-May-21 14:29:54.469]  Erasing... 'EB3'...
+[25-May-21 14:29:54.676]  Erased block EB3 (0x000C0000 - 0x000CFFFF)
+[25-May-21 14:29:54.676]  Erasing... 'EB0'...
+[25-May-21 14:29:54.894]  Erased block EB0 (0x000F0000 - 0x000FFFFF)
+[25-May-21 14:29:54.895]  Erase complete
+[25-May-21 14:29:55.005]  
+[25-May-21 14:29:55.011]  Processing file :"c:\ft\beni_df,pf2.03\firmware\testrom\beni_df.mot"
+[25-May-21 14:29:55.019]  [User Flash 2] - No Data Loaded
+[25-May-21 14:29:55.023]  [Data Flash] - No Data Loaded
+[25-May-21 14:29:55.783]  Operation on User Flash 1
+[25-May-21 14:29:55.784]  Writing image to device... [0x000C0000 - 0x000C66FF]
+[25-May-21 14:29:57.648]  Writing image to device... [0x000FFD00 - 0x000FFDFF]
+[25-May-21 14:29:57.667]  Writing image to device... [0x000FFF00 - 0x000FFFFF]
+[25-May-21 14:29:57.683]  Data programmed at the following positions:
+[25-May-21 14:29:57.683]   0x000C0000 - 0x000C66FF      Length : 0x00006700
+[25-May-21 14:29:57.684]   0x000FFD00 - 0x000FFDFF      Length : 0x00000100
+[25-May-21 14:29:57.684]   0x000FFF00 - 0x000FFFFF      Length : 0x00000100
+[25-May-21 14:29:57.685]  26.25 K programmed in 2 seconds
+[25-May-21 14:29:57.685]  Image written to device
+[25-May-21 14:29:57.786]  
+[25-May-21 14:29:57.786]  FSF: disconnect
+[25-May-21 14:29:58.393]  Disconnecting
+[25-May-21 14:29:58.394]  Disconnected
+[25-May-21 14:29:58.567]  
+[25-May-21 14:29:58.567]  FSF: delete $script
+[25-May-21 14:29:58.568]  FSF: exit
+[25-May-21 14:29:58.568]  Exiting...
+[25-May-21 14:29:58.568]  FSF: delete C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+[25-May-21 14:29:58.569]  Deleted: c:\ft\beni_df,pf2.03\firmware\fdt\beni_df,pf2.03.fsf
+[25-May-21 14:29:58.569]  Script Execution COMPLETED
+
+[25-May-21 14:29:58.574]  Job Number 0 completed
+[FT] åüç∏FWèëçû                     COMPLETED            ... OK (P759/JP1 -> U1:CPU)
+-- 14:29:58 --    7.42 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP04 åüç∏FW ãNìÆ -- 
+[FT] 14:29:58 Åyìdåπ OFFÅz
+[FT] 14:29:59 Åyìdåπ ON Åz
+ãNìÆë“Çø.
+******* M16C/64A  Program Wake Up !!! *********
+[FT] (DADF$STS)                     (P751-5/6)           ... OK (Program Wake Up)
+<<< Beni-DADF Function Tester  Version 1.00 >>>
+                               Rev.1 2020/05/20
+***********************************************
+
+SFX>[FT] (DADF$STS)                     (P751-5/6)           ... OK (SFX>)
+ 
+SFX>[FT] (DADF#CMD)                     (P751-7/8)           ... OK (SFX>)
+
+-- 14:30:00 --    1.80 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP05 RESET Test 2 (WDT) -- 
+ss
+SS Complete.
+SFX> 
+******* M16C/64A  Program Wake Up !!! *********
+<<< Beni-DADF Function Tester  Version 1.00 >>>
+                               Rev.1 2020/05/20
+***********************************************
+
+SFX>[FT] U3:WDT                         ... OK (SFX>)
+-- 14:30:01 --    0.46 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP06 INPUT Test -- 
+[FT] Åy24V_INTLK ON Åz
+
+ WB 0207 FF
+WB Complete.
+SFX> WB 0205 03
+WB Complete.
+SFX>
+ IC
+IC Complete.
+SFX> IR
+IR IRQ_Status 0x00 
+SFX>[FT] äÑçûÃ◊∏ﬁ(∏ÿ±)                 (00000000IRQÅ`00000000IRQ) ... 00000000IRQ OK
+ RB 000003E0
+RB 000003E0 10
+SFX>
+[FT] (NDADF_CLOSE)                  P751-4 -> U1-82      (1Å`1) ... 1 OK
+ RB 000003E0
+RB 000003E0 00
+SFX>
+[FT] (NDADF_CLOSE)                  P751-4 -> U1-82      (0Å`0) ... 0 OK
+ RB 000003E1
+RB 000003E1 04
+SFX>
+[FT] (NDADF_START)                  P752-B13 -> U1-74    (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0x08 
+SFX>
+[FT] (NDADF_START)(IRQ)             P752-B13 -> U1-74    (1Å`1) ... 1 OK
+ RB 000003E1
+RB 000003E1 34
+SFX>
+[FT] (NDADF_START)                  P752-B13 -> U1-74    (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0x08 
+SFX>
+[FT] (NDADF_START)(IRQ)             P752-B13 -> U1-74    (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 01
+SFX>
+[FT] FEED_OUT_SNR                   P758-2 -> U1-70      (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0x28 
+SFX>
+[FT] FEED_OUT_SNR(IRQ)              P758-2 -> U1-70      (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 00
+SFX>
+[FT] FEED_OUT_SNR                   P758-2 -> U1-70      (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0x28 
+SFX>
+[FT] FEED_OUT_SNR(IRQ)              P758-2 -> U1-70      (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 02
+SFX>
+[FT] FEED_IN_SNR                    P758-5 -> U1-69      (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0x38 
+SFX>
+[FT] FEED_IN_SNR(IRQ)               P758-5 -> U1-69      (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 00
+SFX>
+[FT] FEED_IN_SNR                    P758-5 -> U1-69      (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0x38 
+SFX>
+[FT] FEED_IN_SNR(IRQ)               P758-5 -> U1-69      (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 18
+SFX>
+[FT] PREGI_SNR                      P757-18 -> U1-66     (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0x78 
+SFX>
+[FT] PREGI_SNR(IRQ)                 P757-18 -> U1-66     (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 00
+SFX>
+[FT] PREGI_SNR                      P757-18 -> U1-66     (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0x78 
+SFX>
+[FT] PREGI_SNR(IRQ)                 P757-18 -> U1-66     (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 60
+SFX>
+[FT] OUT_SNR                        P757-15 -> U1-64     (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0xF8 
+SFX>
+[FT] OUT_SNR(IRQ)                   P757-15 -> U1-64     (1Å`1) ... 1 OK
+ RB 000003E4
+RB 000003E4 00
+SFX>
+[FT] OUT_SNR                        P757-15 -> U1-64     (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0xF8 
+SFX>
+[FT] OUT_SNR(IRQ)                   P757-15 -> U1-64     (1Å`1) ... 1 OK
+ RB 000003E5
+RB 000003E5 10
+SFX>
+[FT] DOC-SET_SNR                    P758-14 -> U1-56     (1Å`1) ... 1 OK
+ RB 000003E5
+RB 000003E5 00
+SFX>
+[FT] DOC-SET_SNR                    P758-14 -> U1-56     (0Å`0) ... 0 OK
+ RB 000003E5
+RB 000003E5 40
+SFX>
+[FT] EXIT_SNR                       P758-8 -> U1-54      (1Å`1) ... 1 OK
+ RB 000003E5
+RB 000003E5 00
+SFX>
+[FT] EXIT_SNR                       P758-8 -> U1-54      (0Å`0) ... 0 OK
+ RB 000003E5
+RB 000003E5 80
+SFX>
+[FT] FEED_APS1_SNR                  P757-8 -> U1-53      (1Å`1) ... 1 OK
+ RB 000003E5
+RB 000003E5 00
+SFX>
+[FT] FEED_APS1_SNR                  P757-8 -> U1-53      (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 01
+SFX>
+[FT] FEED_APS2_SNR                  P757-5 -> U1-52      (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX>
+[FT] FEED_APS2_SNR                  P757-5 -> U1-52      (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 02
+SFX>
+[FT] FEED_APS3_SNR                  P757-2 -> U1-51      (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX>
+[FT] FEED_APS3_SNR                  P757-2 -> U1-51      (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 08
+SFX>
+[FT] TRY_APS1_SNR                   P756-14 -> U1-49     (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX>
+[FT] TRY_APS1_SNR                   P756-14 -> U1-49     (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 10
+SFX>
+[FT] TRY_APS2_SNR                   P756-11 -> U1-48     (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX>
+[FT] TRY_APS2_SNR                   P756-11 -> U1-48     (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 20
+SFX>
+[FT] TRY_APS3_SNR                   P756-8 -> U1-47      (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX>
+[FT] TRY_APS3_SNR                   P756-8 -> U1-47      (0Å`0) ... 0 OK
+ RB 000003E9
+RB 000003E9 83
+SFX>
+[FT] TRY_SIZ2_SNR                   P756-5 -> U1-43      (1Å`1) ... 1 OK
+ RB 000003E9
+RB 000003E9 81
+SFX>
+[FT] TRY_SIZ2_SNR                   P756-5 -> U1-43      (0Å`0) ... 0 OK
+ RB 000003E9
+RB 000003E9 85
+SFX>
+[FT] TRY_SIZ1_SNR                   P756-2 -> U1-42      (1Å`1) ... 1 OK
+ RB 000003E9
+RB 000003E9 81
+SFX>
+[FT] TRY_SIZ1_SNR                   P756-2 -> U1-42      (0Å`0) ... 0 OK
+ RB 000003F0
+RB 000003F0 2C
+SFX>
+[FT] REGI_SNR                       P757-12 -> U1-17     (1Å`1) ... 1 OK
+ IR
+IR IRQ_Status 0xFB 
+SFX>
+[FT] REGI_SNR(IRQ)                  P757-12 -> U1-17     (1Å`1) ... 1 OK
+ RB 000003F0
+RB 000003F0 20
+SFX>
+[FT] REGI_SNR                       P757-12 -> U1-17     (0Å`0) ... 0 OK
+ IR
+IR IRQ_Status 0xFB 
+SFX>
+[FT] REGI_SNR(IRQ)                  P757-12 -> U1-17     (1Å`1) ... 1 OK
+-- 14:30:04 --    2.94 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP07 OUTPUT Test1 (I/O) -- 
+ RB 000003E0
+RB 000003E0 00
+SFX> WB 000003E0 02
+WB Complete.
+SFX>[FT] NDADF_PSYNC                    U1-85 -> P752-B14    (0Å`0) ... 0 OK
+ RB 000003E0
+RB 000003E0 02
+SFX> WB 000003E0 00
+WB Complete.
+SFX>[FT] NDADF_PSYNC                    U1-85 -> P752-B14    (1Å`1) ... 1 OK
+ RB 000003E0
+RB 000003E0 00
+SFX> WB 000003E0 04
+WB Complete.
+SFX>[FT] NDOC_RDY                       U1-84 -> P751-3      (0Å`0) ... 0 OK
+ RB 000003E0
+RB 000003E0 04
+SFX> WB 000003E0 00
+WB Complete.
+SFX>[FT] NDOC_RDY                       U1-84 -> P751-3      (1Å`1) ... 1 OK
+ RB 000003E0
+RB 000003E0 00
+SFX> WB 000003E0 08
+WB Complete.
+SFX>[FT] NDADF_CSYNC                    U1-83 -> P752-A2     (0Å`0) ... 0 OK
+ RB 000003E0
+RB 000003E0 08
+SFX> WB 000003E0 00
+WB Complete.
+SFX>[FT] NDADF_CSYNC                    U1-83 -> P752-A2     (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX> WB 000003E8 04
+WB Complete.
+SFX>[FT] DSET_LED                       U1-50 -> P756-17     (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 04
+SFX> WB 000003E8 00
+WB Complete.
+SFX>[FT] DSET_LED                       U1-50 -> P756-17     (1Å`1) ... 1 OK
+-- 14:30:05 --    1.00 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP08 OUTPUT Test2 (THRU) -- 
+
+[FT] WAKEUP_A                       P758-14 -> P752-A1   (0Å`0) ... 0 OK
+
+[FT] WAKEUP_A                       P758-14 -> P752-A1   (1Å`1) ... 1 OK
+-- 14:30:05 --    0.03 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP09 OUTPUT Test3 (MOTOR1) -- 
+ RB 000003ED
+RB 000003ED 02
+SFX>
+[FT] F_MOT_CHA                      P792-7 -> U1-27      (1Å`1) ... 1 OK
+ RB 000003ED
+RB 000003ED 00
+SFX>
+[FT] F_MOT_CHA                      P792-7 -> U1-27      (0Å`0) ... 0 OK
+ RB 000003F0
+RB 000003F0 20
+SFX> WB 000003F0 A0
+WB Complete.
+SFX>[FT] F_MOT_DIR                      U1-8 -> P792-1       (0Å`0) ... 0 OK
+ RB 000003F0
+RB 000003F0 A0
+SFX> WB 000003F0 20
+WB Complete.
+SFX>[FT] F_MOT_DIR                      U1-8 -> P792-1       (1Å`1) ... 1 OK
+ RB 000003F0
+RB 000003F0 20
+SFX> WB 000003F0 60
+WB Complete.
+SFX>[FT] F_MOT_BRKE                     U1-9 -> P792-3       (0Å`0) ... 0 OK
+ RB 000003F0
+RB 000003F0 60
+SFX> WB 000003F0 20
+WB Complete.
+SFX>[FT] F_MOT_BRKE                     U1-9 -> P792-3       (1Å`1) ... 1 OK
+[FT] F_MOT_CLK                      U1-20 -> P792-2      (499.9HzÅ`500.1Hz) ... 500.0Hz OK
+[FT] F_MOT_CLK(DUTY)                U1-20 -> P792-2      (  49.9%Å`  50.1%) ...   50.0% OK
+-- 14:30:05 --    0.68 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP10 OUTPUT Test4 (MOTOR2) -- 
+[FT] Åy24V_INTLK ON Åz
+ WB 0339 44
+WB Complete.
+SFX>[FT] OUT Test4 (MOTOR2)             WB 0339 44           ... OK (SFX>)
+ CW 99 0 1
+CW Complete.
+SFX>[FT] OUT Test4 (MOTOR2)             CW 99 0 1            ... OK (SFX>)
+ WB 03ED EE
+WB Complete.
+SFX>[FT] OUT Test4 (MOTOR2)             WB 03ED EE           ... OK (SFX>)
+[FT] Pre-Regi Motor é¸îgêî(CW)      PRMOT                ( 62.4kHzÅ` 62.6kHz) ...  62.5kHz OK
+[FT] Pre-Regi Motor Duty(CW)        PRMOT                ( 62.4%  Å` 62.6%  ) ...  62.5%   OK
+[FT] Pre-Regi Motor à ëä(CW)        PRMOT                ( A55A   Å` A55A   ) ...  A55A    OK
+[FT] Regi Motor é¸îgêî(CW)          RMOT                 ( 62.4kHzÅ` 62.6kHz) ...  62.5kHz OK
+[FT] Regi Motor Duty(CW)            RMOT                 ( 62.4%  Å` 62.6%  ) ...  62.5%   OK
+[FT] Regi Motor à ëä(CW)            RMOT                 ( A55A   Å` A55A   ) ...  A55A    OK
+ CS
+CS Complete.
+[FT] OUT Test4 (MOTOR2)             CS                   ... OK (CS Complete.)
+SFX> WB 0339 44
+[FT] OUT Test4 (MOTOR2)             WB 0339 44           ... OK (SFX>)
+WB Complete.
+SFX>[FT] OUT Test4 (MOTOR2)             CC 99 1 1            ... OK (SFX>)
+ CC 99 1 1
+CC Complete.
+SFX>[FT] OUT Test4 (MOTOR2)             WB 03ED FE           ... OK (SFX>)
+[FT] Pre-Regi Motor é¸îgêî(CCW)     PRMOT                ( 62.4kHzÅ` 62.6kHz) ...  62.5kHz OK
+[FT] Pre-Regi Motor Duty(CCW)       PRMOT                ( 62.4%  Å` 62.6%  ) ...  62.5%   OK
+[FT] Pre-Regi Motor à ëä(CCW)       PRMOT                ( 5AA5   Å` 5AA5   ) ...  5AA5    OK
+[FT] Regi Motor é¸îgêî(CCW)         RMOT                 ( 62.4kHzÅ` 62.6kHz) ...  62.5kHz OK
+[FT] Regi Motor Duty(CCW)           RMOT                 ( 62.4%  Å` 62.6%  ) ...  62.5%   OK
+[FT] Regi Motor à ëä(CCW)           RMOT                 ( 5AA5   Å` 5AA5   ) ...  5AA5    OK
+ WB 03ED FE
+WB Complete.
+SFX> CS
+CS Complete.
+[FT] OUT Test4 (MOTOR2)             CS                   ... OK (CS Complete.)
+-- 14:30:06 --    1.08 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP11 OUTPUT Test5 (MOT-VREF) -- 
+SFX> WB 0339 44
+WB Complete.
+SFX> CW 99 0 0
+CW Complete.
+SFX>
+[FT] (PRMOT_REF Lo)                 TP73                 (-0.100VÅ` 0.100V) ...  0.002V OK
+[FT] (RMOT_REF Lo)                  TP75                 (-0.100VÅ` 0.100V) ...  0.002V OK
+ WB 03ED EE
+WB Complete.
+SFX> CS
+CS Complete.
+SFX> WB 0339 44
+WB Complete.
+SFX> CW 99 0 1
+CW Complete.
+SFX>
+[FT] (PRMOT_REF Md)                 TP73                 ( 1.424VÅ` 1.574V) ...  1.484V OK
+[FT] (RMOT_REF Md)                  TP75                 ( 1.424VÅ` 1.574V) ...  1.487V OK
+ WB 03ED EE
+WB Complete.
+SFX> CS
+CS Complete.
+SFX> WB 0339 44
+WB Complete.
+SFX> CW 99 0 2
+CW Complete.
+SFX>
+[FT] (PRMOT_REF Hi)                 TP73                 ( 2.848VÅ` 3.148V) ...  2.952V OK
+[FT] (RMOT_REF Hi)                  TP75                 ( 2.848VÅ` 3.148V) ...  2.960V OK
+ WB 03ED EE
+WB Complete.
+SFX>-- 14:30:08 --    1.52 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP12 OUTPUT Test6 (SOL) -- 
+ CS
+CS Complete.
+SFX> RB 000003F4
+RB 000003F4 00
+SFX>
+[FT] Dut.ReadByte() Retry ... 
+ RB 000003F4
+RB 000003F4 C0
+SFX> WB 000003F4 E0
+WB Complete.
+SFX>[FT] STMP_SOL                       U1-89 -> P755-1/2    (0Å`0) ... 0 OK
+ RB 000003F4
+RB 000003F4 20
+SFX> WB 000003F4 00
+WB Complete.
+SFX>[FT] STMP_SOL                       U1-89 -> P755-1/2    (1Å`1) ... 1 OK
+ RB 000003F4
+RB 000003F4 00
+SFX> WB 000003F4 20
+WB Complete.
+SFX> RB 000003E0
+RB 000003E0 80
+SFX>[FT] STMP_SET                       U1-89 -> U1-79       (1Å`1) ... 1 OK
+ RB 000003F4
+RB 000003F4 20
+SFX> WB 000003F4 00
+WB Complete.
+SFX> RB 000003E0
+RB 000003E0 00
+SFX>[FT] STMP_SET                       U1-89 -> U1-79       (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 00
+SFX> WB 000003E8 40
+WB Complete.
+SFX>[FT] (+24V_SOL-CL)/TA_CL            U1-46 -> P793-1/2    (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 40
+SFX> WB 000003E8 00
+WB Complete.
+SFX>[FT] (+24V_SOL-CL)/TA_CL            U1-46 -> P793-1/2    (1Å`1) ... 1 OK
+ RB 000003E8
+RB 000003E8 00
+SFX> WB 000003E8 80
+WB Complete.
+SFX>[FT] (+24V_SOL-CL)/PREGI_CL         U1-45 -> P793-3/4    (0Å`0) ... 0 OK
+ RB 000003E8
+RB 000003E8 80
+SFX> WB 000003E8 00
+WB Complete.
+SFX>[FT] (+24V_SOL-CL)/PREGI_CL         U1-45 -> P793-3/4    (1Å`1) ... 1 OK
+-- 14:30:09 --    1.15 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP13 êªïiFW D/L -- 
+[FT] 14:30:09 Åyìdåπ OFFÅz
+[FT] 14:30:10 Åyìdåπ ON Åz
+aws: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+w4f: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f
+FWP: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.FWP
+fsf: C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+mot: C:\FT\Beni_DF,PF2.03\Firmware\07_540K 17211\PF203_DADF&IPL&PTTN_V231600.mot
+Log: C:\FT\Beni_DF,PF2.03\Firmware\FDT\FDT_Log.txt
+Status: C:\FT\Beni_DF,PF2.03\Firmware\FDT\FDT_Status.txt
+[FT] FDT.exe /DISCRETESTARTUP "w4fRun \"C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f\"
+****************************************************
+ ****   Flash Development Toolkit log file
+ ****   Ver  : 4.09.03.00
+ ****   User : FXMFG
+ ****   PC   : DESKTOP-KJMF8UJ
+ ****   Tue May 25 2021, 14:30:11
+****************************************************
+[25-May-21 14:30:11.207]  
+Loaded Wait For File config: "C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f"
+Waiting...                
+[25-May-21 14:30:11.336]  
+File Opened: "C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf" (Last Modified: 25-May-21 14:30:10)
+
+*************************
+**     LOG FILE        **
+*************************
+# RenesasèëçûÉXÉNÉäÉvÉg
+workspace C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+disconnect
+ connect USB|E8a|9HS078016|0.0|0.0
+download C:\FT\Beni_DF,PF2.03\Firmware\07_540K 17211\PF203_DADF&IPL&PTTN_V231600.mot
+disconnect
+delete $script
+exit
+*************************
+[25-May-21 14:30:11.343]  FSF: workspace C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+[25-May-21 14:30:11.355]  Flash Development Toolkit and flash programming components
+are provided without support
+[25-May-21 14:30:11.355]  OS: Windows 10 (Windows 8) [Non-Admin]
+[25-May-21 14:30:11.356]  FDT API initialised: version 4, 09, 02, 000
+[25-May-21 14:30:11.404]  FCF Settings Applied: R5F364AE_7Line, (C:\Program Files (x86)\Renesas\FDT4.09\kernels\ProtD\R5F364AE\Renesas\1_2_00\)
+[25-May-21 14:30:11.423]  FSF: disconnect
+[25-May-21 14:30:11.423]  FSF:  connect USB|E8a|9HS078016|0.0|0.0
+[25-May-21 14:30:11.448]  Clock Frequency (External) = N/A, Clock Mode = N/A, CKM = N/A, and CKP = N/A
+[25-May-21 14:30:11.449]  Connecting to device 'R5F364AE_7Line' on 'E8a'
+[25-May-21 14:30:11.449]  Configuration:
+[25-May-21 14:30:11.449]  'BOOT Mode' connection - using emulated interface
+[25-May-21 14:30:11.450]  Opening port 'E8a' ...
+[25-May-21 14:30:11.638]  Checking for E8/E8a update...
+[25-May-21 14:30:12.024]  Adaptor checksum OK
+[25-May-21 14:30:12.029]  Processing Data file :'c:\program files (x86)\renesas\fdt4.09\ADPFiles\E8-Rel-Img2-a.mot'
+[25-May-21 14:30:12.044]  Adaptor version number OK
+[25-May-21 14:30:12.045]   (current E8/E8a Bootstub (Level 0) version = 1.00.00.000, FDT holds version 1.00.00.000, FDT requires version 1.00.XX.XXX)
+[25-May-21 14:30:12.046]  Adaptor version type OK
+[25-May-21 14:30:12.046]   (current type = E8aEMULATOR)
+[25-May-21 14:30:12.050]  Processing Data file :'c:\program files (x86)\renesas\fdt4.09\ADPFiles\E8-Rel-Img2-a.mot'
+[25-May-21 14:30:12.066]  Adaptor version number OK
+[25-May-21 14:30:12.067]   (current E8/E8a Adaptor Software (Level 1) version = 2.17.00.000, FDT holds version 2.17.00.000, FDT requires version 2.17.XX.XXX)
+[25-May-21 14:30:12.093]  Version Information: VER.1.00
+[25-May-21 14:30:12.106]  ID code check successful
+[25-May-21 14:30:12.107]  Connection complete
+[25-May-21 14:30:12.225]  All blocks marked as unknown written status
+
+[25-May-21 14:30:12.225]  FSF: download C:\FT\Beni_DF,PF2.03\Firmware\07_540K 17211\PF203_DADF&IPL&PTTN_V231600.mot
+[25-May-21 14:30:12.756]  Erasing 5 blocks from device
+[25-May-21 14:30:12.756]  Erasing... 'EBB'...
+[25-May-21 14:30:12.881]  Erased block EBB (0x0000F000 - 0x0000FFFF)
+[25-May-21 14:30:12.881]  Erasing... 'EB3'...
+[25-May-21 14:30:13.093]  Erased block EB3 (0x000C0000 - 0x000CFFFF)
+[25-May-21 14:30:13.094]  Erasing... 'EB2'...
+[25-May-21 14:30:13.313]  Erased block EB2 (0x000D0000 - 0x000DFFFF)
+[25-May-21 14:30:13.314]  Erasing... 'EB1'...
+[25-May-21 14:30:13.540]  Erased block EB1 (0x000E0000 - 0x000EFFFF)
+[25-May-21 14:30:13.540]  Erasing... 'EB0'...
+[25-May-21 14:30:13.757]  Erased block EB0 (0x000F0000 - 0x000FFFFF)
+[25-May-21 14:30:13.758]  Erase complete
+[25-May-21 14:30:13.865]  
+[25-May-21 14:30:13.870]  Processing file :"c:\ft\beni_df,pf2.03\firmware\07_540k 17211\pf203_dadf&ipl&pttn_v231600.mot"
+[25-May-21 14:30:13.901]  [User Flash 2] - No Data Loaded
+[25-May-21 14:30:14.074]  Operation on User Flash 1
+[25-May-21 14:30:14.074]  Writing image to device... [0x000C0000 - 0x000C00FF]
+[25-May-21 14:30:14.091]  Writing image to device... [0x000C0600 - 0x000E7CFF]
+[25-May-21 14:30:25.501]  Writing image to device... [0x000E7D00 - 0x000E7DFF]
+[25-May-21 14:30:25.513]  Writing image to device... [0x000E7E00 - 0x000E7EFF]
+[25-May-21 14:30:25.525]  Writing image to device... [0x000E7F00 - 0x000E80FF]
+[25-May-21 14:30:25.546]  Writing image to device... [0x000E8100 - 0x000E81FF]
+[25-May-21 14:30:25.557]  Writing image to device... [0x000E8200 - 0x000E82FF]
+[25-May-21 14:30:25.567]  Writing image to device... [0x000E8300 - 0x000EAEFF]
+[25-May-21 14:30:26.361]  Writing image to device... [0x000EAF00 - 0x000EBAFF]
+[25-May-21 14:30:26.576]  Writing image to device... [0x000FC000 - 0x000FC1FF]
+[25-May-21 14:30:26.607]  Writing image to device... [0x000FC800 - 0x000FFFFF]
+[25-May-21 14:30:27.622]  Data programmed at the following positions:
+[25-May-21 14:30:27.622]   0x000C0000 - 0x000C00FF      Length : 0x00000100
+[25-May-21 14:30:27.623]   0x000C0600 - 0x000E7CFF      Length : 0x00027700
+[25-May-21 14:30:27.623]   0x000E7D00 - 0x000E7DFF      Length : 0x00000100
+[25-May-21 14:30:27.624]   0x000E7E00 - 0x000E7EFF      Length : 0x00000100
+[25-May-21 14:30:27.624]   0x000E7F00 - 0x000E80FF      Length : 0x00000200
+[25-May-21 14:30:27.624]   0x000E8100 - 0x000E81FF      Length : 0x00000100
+[25-May-21 14:30:27.625]   0x000E8200 - 0x000E82FF      Length : 0x00000100
+[25-May-21 14:30:27.626]   0x000E8300 - 0x000EAEFF      Length : 0x00002C00
+[25-May-21 14:30:27.626]   0x000EAF00 - 0x000EBAFF      Length : 0x00000C00
+[25-May-21 14:30:27.626]   0x000FC000 - 0x000FC1FF      Length : 0x00000200
+[25-May-21 14:30:27.627]   0x000FC800 - 0x000FFFFF      Length : 0x00003800
+[25-May-21 14:30:27.627]  188 K programmed in 13 seconds
+[25-May-21 14:30:27.628]  
+[25-May-21 14:30:27.630]  Operation on Data Flash
+[25-May-21 14:30:27.630]  Writing image to device... [0x0000FF00 - 0x0000FFFF]
+[25-May-21 14:30:27.642]  Data programmed at the following positions:
+[25-May-21 14:30:27.642]   0x0000FF00 - 0x0000FFFF      Length : 0x00000100
+[25-May-21 14:30:27.643]  256 Bytes programmed in 0 seconds
+[25-May-21 14:30:27.644]  Image written to device
+[25-May-21 14:30:27.753]  
+[25-May-21 14:30:27.753]  FSF: disconnect
+[25-May-21 14:30:28.436]  Disconnecting
+[25-May-21 14:30:28.437]  Disconnected
+[25-May-21 14:30:28.611]  
+[25-May-21 14:30:28.611]  FSF: delete $script
+[25-May-21 14:30:28.611]  FSF: exit
+[25-May-21 14:30:28.612]  Exiting...
+[25-May-21 14:30:28.612]  FSF: delete C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+[25-May-21 14:30:28.613]  Deleted: c:\ft\beni_df,pf2.03\firmware\fdt\beni_df,pf2.03.fsf
+[25-May-21 14:30:28.613]  Script Execution COMPLETED
+
+[25-May-21 14:30:28.618]  Job Number 0 completed
+[FT] åüç∏FWèëçû                     COMPLETED            ... OK (P759 -> U1)
+-- 14:30:28 --   19.18 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP14 êªïiFW ãNìÆ -- 
+[FT] 14:30:28 Åyìdåπ OFFÅz
+[FT] √ﬁ®Ω¡¨∞ºﬁ  äÆóπ
+[FT] 14:30:29 Åyìdåπ ON Åz
+ DUT->FT: 16 7F 16 ,3 [16] FT->DUT:06(ACK)
+[FT] êªïiFWãNìÆ(SYNC:16 7F 16)      (DADF$STS+/-,DADF#CMD+/-) ... OK (U1 <-> P751-5Å`8)
+ DUT->FT: F0 01 86 77 ,4 [77] FT->DUT:06(ACK)
+ FT->DUT: F0 01 86 77  DUT->FT[ACK]: 06
+ DUT->FT: F0 01 87 F8 ,4 [F8] FT->DUT:86(ACK)
+ DUT->FT: F0 02 45 01 38 ,5 [38] FT->DUT:06(ACK)
+ DUT->FT: F0 02 41 00 B3 ,5 [B3] FT->DUT:86(ACK)
+ DUT->FT: F0 04 3D 02 81 02 36 ,7 [36] FT->DUT:06(ACK)
+ DUT->FT: F0 03 3B 01 00 AF ,6 [AF] FT->DUT:86(ACK)
+ FT->DUT: F0 01 87 F8  DUT->FT[ACK]: 86
+ FT->DUT: F0 01 66 57  DUT->FT[ACK]: 06
+ DUT->FT: F0 07 76 05 78 00 97 00 14 15 ,10 [15] FT->DUT:06(ACK)
+[FT] êªïiFWãNìÆ                     ADF MAINTENANCE RESPONSE ... OK
+-- 14:30:30 --    1.48 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP15 êªïiROM VersionämîF [êªïiFW] -- 
+ FT->DUT: F0 02 61 00 D3  DUT->FT[ACK]: 86
+ DUT->FT: F0 0A 71 01 02 01 08 A4 02 17 10 00 C4 ,13 [C4] FT->DUT:86(ACK)
+[FT] ROM Version                   (23.16.0) ... 23.16.0 OK
+-- 14:30:30 --    0.06 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP16 NVM Test/ê›íË [êªïiFW] -- 
+ FT->DUT: F0 03 A1 01 03 18  DUT->FT[ACK]: 06
+[FT] ADF NVM WRITE ëóêM             (Initialize_1st)     ... OK
+ DUT->FT: F0 04 B1 01 03 00 29 ,7 [29] FT->DUT:06(ACK)
+ FT->DUT: F0 05 A0 02 C7 00 C7 A5  DUT->FT[ACK]: 86
+ DUT->FT: F0 0E B0 02 C7 00 C7 00 00 01 00 03 00 00 00 01 C3 ,17 [C3] FT->DUT:86(ACK)
+ FT->DUT: F0 08 A1 00 02 C7 00 C7 00 02 2B  DUT->FT[ACK]: 06
+ DUT->FT: F0 07 B1 00 02 C7 00 C7 00 38 ,10 [38] FT->DUT:06(ACK)
+[FT] ADF NVM WRITE                  (771-119 -> 00 02)   ... OK
+ FT->DUT: F0 05 A0 02 C7 00 C7 A5  DUT->FT[ACK]: 86
+ DUT->FT: F0 0E B0 02 C7 00 C7 00 00 02 00 03 00 00 00 01 C4 ,17 [C4] FT->DUT:86(ACK)
+ FT->DUT: F0 03 A1 01 03 18  DUT->FT[ACK]: 06
+ DUT->FT: F0 04 B1 01 03 00 29 ,7 [29] FT->DUT:06(ACK)
+[FT] ADF NVM WRITE                  (Initialize_2nd)     ... OK
+ FT->DUT: F0 05 A0 02 C7 00 C7 A5  DUT->FT[ACK]: 86
+ DUT->FT: F0 0E B0 02 C7 00 C7 00 00 01 00 03 00 00 00 01 C3 ,17 [C3] FT->DUT:86(ACK)
+ FT->DUT: F0 08 A1 00 02 C7 00 C7 00 01 2A  DUT->FT[ACK]: 06
+ DUT->FT: F0 07 B1 00 02 C7 00 C7 00 38 ,10 [38] FT->DUT:06(ACK)
+[FT] ADF NVM WRITE                  (771-119 -> 00 01Åyèoâ◊ê›íËÅz) ... OK
+ FT->DUT: F0 05 A0 02 C7 00 C7 A5  DUT->FT[ACK]: 86
+ DUT->FT: F0 0E B0 02 C7 00 C7 00 00 01 00 03 00 00 00 01 C3 ,17 [C3] FT->DUT:86(ACK)
+-- 14:30:32 --    2.06 Sec
+PASS 
+
+-- Beni_DF,PF2.03  STEP17 ìdåπOFF -- 
+[FT] 14:30:32 Åyìdåπ OFFÅz
+[FT] √ﬁ®Ω¡¨∞ºﬁ  äÆóπ
+[FT] SLP_5V                         P752-B11 > P758-15   (-0.300VÅ` 0.300V) ...  0.000V OK
+[FT] 5V                             P752-A4/A5 > TP1     (-0.300VÅ` 0.300V) ...  0.002V OK
+[FT] 24V                            P752-A13/A14 > TP3   (-0.300VÅ` 0.300V) ...  0.006V OK
+[FT] 24V_INTLK                      P753-1 > -2 >TP5     (-0.300VÅ` 0.300V) ...  0.012V OK
+[FT] 24V_FMOT                       P792-6               (-0.300VÅ` 0.300V) ...  0.012V OK
+-- 14:30:33 --    0.85 Sec
+PASS 
+
+[FT] 14:30:33 Åyìdåπ OFFÅz
+[FT] √ﬁ®Ω¡¨∞ºﬁ  äÆóπ
+--- åüç∏éûä‘èÓïÒ ---
+[FT]          STEP01 ìdåπìdà≥Test                       ...   1.700 ïb
+[FT]          STEP02 RESET Test 1                       ...   1.667 ïb
+[FT]          STEP03 åüç∏FW D/L                         ...   7.422 ïb
+[FT]          STEP04 åüç∏FW ãNìÆ                        ...   1.795 ïb
+[FT]          STEP05 RESET Test 2 (WDT)                 ...   0.457 ïb
+[FT]          STEP06 INPUT Test                         ...   2.944 ïb
+[FT]          STEP07 OUTPUT Test1 (I/O)                 ...   1.002 ïb
+[FT]          STEP08 OUTPUT Test2 (THRU)                ...   0.033 ïb
+[FT]          STEP09 OUTPUT Test3 (MOTOR1)              ...   0.676 ïb
+[FT]          STEP10 OUTPUT Test4 (MOTOR2)              ...   1.076 ïb
+[FT]          STEP11 OUTPUT Test5 (MOT-VREF)            ...   1.523 ïb
+[FT]          STEP12 OUTPUT Test6 (SOL)                 ...   1.154 ïb
+[FT]          STEP13 êªïiFW D/L                         ...  19.178 ïb
+[FT]          STEP14 êªïiFW ãNìÆ                        ...   1.481 ïb
+[FT]          STEP15 êªïiROM VersionämîF [êªïiFW]       ...   0.059 ïb
+[FT]          STEP16 NVM Test/ê›íË [êªïiFW]             ...   2.057 ïb
+[FT]          STEP17 ìdåπOFF                            ...   0.853 ïb
+[FT]          STEP91 ìdåπON (debug)ÅyâêÕópÅz           ...  îÒé¿é{   
+[FT]          STEP92 E8a ê⁄ë±ÅyâêÕópÅz                 ...  îÒé¿é{   
+[FT]          STEP99 ìdåπOFF (debug)ÅyâêÕópÅz          ...  îÒé¿é{   
+[FT]          STEP101 (í êMâï˙) ÅyâêÕópÅz             ...  îÒé¿é{   
+[FT]          STEP102 (í êMê⁄ë±) ÅyâêÕópÅz             ...  îÒé¿é{   
+[FT] STEP** ëçåüç∏éûä‘                               ...  45.077 ïb

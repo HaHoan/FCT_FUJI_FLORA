@@ -1,0 +1,824 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# Date created = 19:04:06  October 18, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		test1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone 10 LP"
+set_global_assignment -name DEVICE 10CL016YF484I7G
+set_global_assignment -name TOP_LEVEL_ENTITY MID_TypeA
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:04:06  OCTOBER 18, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 8
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 1
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 7
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 6
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 5
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 4
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 3
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 2
+set_location_assignment PIN_J3 -to INSU0
+set_location_assignment PIN_K8 -to INSL0
+set_location_assignment PIN_E4 -to RESERVE
+set_location_assignment PIN_E5 -to LED0
+set_location_assignment PIN_A5 -to LED1
+set_location_assignment PIN_B5 -to LED2
+set_location_assignment PIN_D6 -to LED3
+set_location_assignment PIN_A4 -to LED4
+set_location_assignment PIN_B4 -to LED5
+set_location_assignment PIN_A3 -to LED6
+set_location_assignment PIN_B3 -to LED7
+set_location_assignment PIN_H11 -to MONI0
+set_location_assignment PIN_F9 -to MONI1
+set_location_assignment PIN_G9 -to MONI2
+set_location_assignment PIN_A10 -to MONI3
+set_location_assignment PIN_B10 -to MONI4
+set_location_assignment PIN_A9 -to MONI5
+set_location_assignment PIN_B9 -to MONI6
+set_location_assignment PIN_E9 -to MONI7
+set_location_assignment PIN_G11 -to MONI8
+set_location_assignment PIN_A8 -to MONI9
+set_location_assignment PIN_B8 -to MONI10
+set_location_assignment PIN_A7 -to MONI11
+set_location_assignment PIN_B7 -to MONI12
+set_location_assignment PIN_A6 -to MONI13
+set_location_assignment PIN_B6 -to MONI14
+set_location_assignment PIN_C8 -to MONI15
+set_location_assignment PIN_C7 -to MONI16
+set_location_assignment PIN_T21 -to DIFFCLK_3p
+set_location_assignment PIN_C21 -to IO0
+set_location_assignment PIN_D21 -to IO2
+set_location_assignment PIN_E21 -to IO4
+set_location_assignment PIN_F21 -to IO6
+set_location_assignment PIN_H21 -to IO8
+set_location_assignment PIN_J21 -to IO10
+set_location_assignment PIN_K21 -to IO12
+set_location_assignment PIN_L21 -to IO14
+set_location_assignment PIN_B21 -to IO48
+set_location_assignment PIN_D20 -to IO50
+set_location_assignment PIN_F19 -to IO52
+set_location_assignment PIN_G17 -to IO54
+set_location_assignment PIN_H19 -to IO56
+set_location_assignment PIN_H16 -to IO58
+set_location_assignment PIN_K18 -to IO60
+set_location_assignment PIN_L15 -to IO62
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_M21 -to IO16
+set_location_assignment PIN_N21 -to IO18
+set_location_assignment PIN_P21 -to IO20
+set_location_assignment PIN_R21 -to IO22
+set_location_assignment PIN_U21 -to IO24
+set_location_assignment PIN_V21 -to IO26
+set_location_assignment PIN_W21 -to IO28
+set_location_assignment PIN_AA21 -to IO30
+set_location_assignment PIN_M19 -to IO64
+set_location_assignment PIN_N19 -to IO66
+set_location_assignment PIN_N18 -to IO68
+set_location_assignment PIN_P16 -to IO70
+set_location_assignment PIN_R19 -to IO72
+set_location_assignment PIN_U19 -to IO74
+set_location_assignment PIN_W19 -to IO76
+set_location_assignment PIN_Y21 -to IO78
+set_location_assignment PIN_Y2 -to IO32
+set_location_assignment PIN_W2 -to IO34
+set_location_assignment PIN_V2 -to IO36
+set_location_assignment PIN_U2 -to IO38
+set_location_assignment PIN_R2 -to IO40
+set_location_assignment PIN_P2 -to IO42
+set_location_assignment PIN_N2 -to IO44
+set_location_assignment PIN_M2 -to IO46
+set_location_assignment PIN_R7 -to IO80
+set_location_assignment PIN_M8 -to IO82
+set_location_assignment PIN_T5 -to IO84
+set_location_assignment PIN_P6 -to IO86
+set_location_assignment PIN_P4 -to IO88
+set_location_assignment PIN_F12 -to IO100
+set_location_assignment PIN_B11 -to DIFFCLK_4p
+set_location_assignment PIN_AA11 -to DIFFCLK_6p
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASDO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DATA0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TDI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TDO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TMS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nCE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nCONFIG
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nCSO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nSTATUS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to INSL0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to INSU0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RESERVE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI16
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI15
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI14
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI13
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI12
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI11
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI10
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI9
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI8
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI7
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI6
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED7
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED6
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DIFFCLK_4p
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO62
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO60
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO58
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO56
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO54
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO52
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO48
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO14
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO12
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO10
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO8
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO6
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO16
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO18
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO20
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO22
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO24
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO26
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO28
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO30
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DIFFCLK_3p
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO64
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO66
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO68
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO70
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO72
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO74
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO76
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO78
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO32
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO34
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO36
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO38
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO40
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO42
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO44
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO46
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO80
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO82
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO84
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO86
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO88
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO90
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO92
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO94
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO100
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO102
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO104
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO106
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO108
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO110
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO112
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO114
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO116
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO148
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO150
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO152
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO154
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO156
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO158
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO160
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO162
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO118
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO120
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO122
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO124
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO126
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO128
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO130
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO164
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO166
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO168
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO170
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO172
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO174
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO178
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO180
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO182
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO184
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO186
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO188
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO190
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO192
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO194
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO132
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO134
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO136
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO138
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO140
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO142
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO144
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO146
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DIFFCLK_6p
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO176
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO177
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO195
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO101
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO103
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO105
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO107
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO109
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO111
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO113
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO115
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO117
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO119
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO121
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO123
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO125
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO127
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO129
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO131
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO133
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO135
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO137
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO139
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO141
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO143
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO145
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO147
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO149
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO151
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO153
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO155
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO157
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO159
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO161
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO163
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO165
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO167
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO169
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO171
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO173
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO175
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO179
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO181
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO183
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO185
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO187
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO189
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO191
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO193
+set_location_assignment PIN_AB11 -to DIFFCLK_6n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DIFFCLK_6n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to "IO32(n)"
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DIFFCLK_3n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO95
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO93
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO91
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO89
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO87
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO85
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO83
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO81
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO79
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO77
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO75
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO73
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO71
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO69
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO67
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO65
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO63
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO61
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO59
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO57
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO55
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO53
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO51
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO49
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO47
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO45
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO43
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO41
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO39
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO37
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO35
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO33
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO31
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO29
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO27
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO25
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO23
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO21
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO19
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO17
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO15
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO13
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO11
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO9
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO7
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO5
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IO1
+set_location_assignment PIN_T22 -to DIFFCLK_3n
+set_location_assignment PIN_M22 -to IO17
+set_location_assignment PIN_N22 -to IO19
+set_location_assignment PIN_P22 -to IO21
+set_location_assignment PIN_R22 -to IO23
+set_location_assignment PIN_U22 -to IO25
+set_location_assignment PIN_V22 -to IO27
+set_location_assignment PIN_W22 -to IO29
+set_location_assignment PIN_AA22 -to IO31
+set_location_assignment PIN_M20 -to IO65
+set_location_assignment PIN_N20 -to IO67
+set_location_assignment PIN_N17 -to IO69
+set_location_assignment PIN_P15 -to IO71
+set_location_assignment PIN_R18 -to IO73
+set_location_assignment PIN_U20 -to IO75
+set_location_assignment PIN_W20 -to IO77
+set_location_assignment PIN_Y22 -to IO79
+set_location_assignment PIN_C22 -to IO1
+set_location_assignment PIN_D22 -to IO3
+set_location_assignment PIN_E22 -to IO5
+set_location_assignment PIN_F22 -to IO7
+set_location_assignment PIN_H22 -to IO9
+set_location_assignment PIN_J22 -to IO11
+set_location_assignment PIN_K22 -to IO13
+set_location_assignment PIN_L22 -to IO15
+set_location_assignment PIN_B22 -to IO49
+set_location_assignment PIN_C20 -to IO51
+set_location_assignment PIN_F20 -to IO53
+set_location_assignment PIN_F17 -to IO55
+set_location_assignment PIN_H20 -to IO57
+set_location_assignment PIN_J17 -to IO59
+set_location_assignment PIN_K17 -to IO61
+set_location_assignment PIN_L16 -to IO63
+set_location_assignment PIN_Y1 -to IO33
+set_location_assignment PIN_W1 -to IO35
+set_location_assignment PIN_V1 -to IO37
+set_location_assignment PIN_U1 -to IO39
+set_location_assignment PIN_R1 -to IO41
+set_location_assignment PIN_P1 -to IO43
+set_location_assignment PIN_N1 -to IO45
+set_location_assignment PIN_M1 -to IO47
+set_location_assignment PIN_T7 -to IO81
+set_location_assignment PIN_N8 -to IO83
+set_location_assignment PIN_R6 -to IO85
+set_location_assignment PIN_R5 -to IO87
+set_location_assignment PIN_P3 -to IO89
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_location_assignment PIN_C3 -to LED8
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED8
+set_global_assignment -name BDF_FILE MID_TypeA.bdf
+set_global_assignment -name QIP_FILE MidPLL.qip
+set_global_assignment -name VHDL_FILE I2C_Core_16.vhd
+set_global_assignment -name VHDL_FILE I2C_IO_OUT_192.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE TEST_ami.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/TEST_ami.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/Waveform.vwf
+set_global_assignment -name VHDL_FILE OUTCTL.vhd
+set_global_assignment -name VHDL_FILE I2C_CLK_OUT_8.vhd
+set_global_assignment -name VHDL_FILE CK_GEN.vhd
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ALARM
+set_location_assignment PIN_G5 -to ALARM
+set_global_assignment -name VHDL_FILE I2C_CLK_IN_8.vhd
+set_global_assignment -name VHDL_FILE DIVCLK.vhd
+set_global_assignment -name VHDL_FILE FILTER.vhd
+set_global_assignment -name VHDL_FILE frequency.vhd
+set_global_assignment -name VHDL_FILE WIDTH_FUNC.vhd
+set_global_assignment -name VHDL_FILE WIDTH_CTRL.vhd
+set_global_assignment -name VHDL_FILE WIDTH_COUNT.vhd
+set_global_assignment -name VHDL_FILE FPGA_VERSION.vhd
+set_location_assignment PIN_C4 -to LED9
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED9
+set_location_assignment PIN_C6 -to MONI17
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MONI17
+set_location_assignment PIN_J7 -to INSL1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to INSL1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to INSU1
+set_location_assignment PIN_J2 -to INSU1
+set_location_assignment PIN_H6 -to SW1
+set_location_assignment PIN_J6 -to SW2
+set_location_assignment PIN_G2 -to 24MHz_A
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to 24MHz_A
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ID0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ID1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ID2
+set_location_assignment PIN_E3 -to ID0
+set_location_assignment PIN_D2 -to ID1
+set_location_assignment PIN_H7 -to ID2
+set_location_assignment PIN_B2 -to SCL_I
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SCL_I
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW2
+set_location_assignment PIN_B1 -to SDA_I
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SDA_I
+set_location_assignment PIN_H5 -to nI2C_OE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nI2C_OE
+set_location_assignment PIN_J1 -to nSI2C_MASTAER
+set_location_assignment PIN_G3 -to SCL_S_IOB0
+set_location_assignment PIN_L8 -to SCL_S_IOB1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nSI2C_MASTAER
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SCL_S_IOB0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SCL_S_IOB1
+set_location_assignment PIN_N7 -to IO90
+set_location_assignment PIN_P7 -to IO91
+set_location_assignment PIN_M4 -to IO92
+set_location_assignment PIN_M3 -to IO93
+set_location_assignment PIN_L6 -to IO94
+set_location_assignment PIN_M6 -to IO95
+set_location_assignment PIN_E14 -to IO101
+set_location_assignment PIN_E15 -to IO102
+set_location_assignment PIN_D15 -to IO103
+set_location_assignment PIN_D19 -to IO104
+set_location_assignment PIN_C19 -to IO105
+set_location_assignment PIN_D13 -to IO106
+set_location_assignment PIN_C13 -to IO107
+set_location_assignment PIN_F13 -to IO108
+set_location_assignment PIN_G12 -to IO109
+set_location_assignment PIN_E16 -to IO110
+set_location_assignment PIN_F16 -to IO111
+set_location_assignment PIN_F14 -to IO112
+set_location_assignment PIN_G15 -to IO113
+set_location_assignment PIN_H14 -to IO114
+set_location_assignment PIN_H15 -to IO115
+set_location_assignment PIN_H12 -to IO116
+set_location_assignment PIN_H13 -to IO117
+set_location_assignment PIN_U12 -to IO118
+set_location_assignment PIN_T12 -to IO119
+set_location_assignment PIN_T14 -to IO120
+set_location_assignment PIN_T15 -to IO121
+set_location_assignment PIN_R14 -to IO122
+set_location_assignment PIN_R15 -to IO123
+set_location_assignment PIN_U13 -to IO124
+set_location_assignment PIN_V14 -to IO125
+set_location_assignment PIN_U15 -to IO126
+set_location_assignment PIN_U14 -to IO127
+set_location_assignment PIN_W17 -to IO128
+set_location_assignment PIN_Y17 -to IO129
+set_location_assignment PIN_V15 -to IO130
+set_location_assignment PIN_W15 -to IO131
+set_location_assignment PIN_T10 -to IO132
+set_location_assignment PIN_U10 -to IO133
+set_location_assignment PIN_V11 -to IO134
+set_location_assignment PIN_W10 -to IO135
+set_location_assignment PIN_R10 -to IO136
+set_location_assignment PIN_T9 -to IO137
+set_location_assignment PIN_U9 -to IO138
+set_location_assignment PIN_V8 -to IO139
+set_location_assignment PIN_U7 -to IO140
+set_location_assignment PIN_U8 -to IO141
+set_location_assignment PIN_W7 -to IO142
+set_location_assignment PIN_Y7 -to IO143
+set_location_assignment PIN_W6 -to IO144
+set_location_assignment PIN_V7 -to IO145
+set_location_assignment PIN_V6 -to IO146
+set_location_assignment PIN_V5 -to IO147
+set_location_assignment PIN_F11 -to IO148
+set_location_assignment PIN_E11 -to IO149
+set_location_assignment PIN_B15 -to IO150
+set_location_assignment PIN_A15 -to IO151
+set_location_assignment PIN_B14 -to IO152
+set_location_assignment PIN_A14 -to IO153
+set_location_assignment PIN_B13 -to IO154
+set_location_assignment PIN_A13 -to IO155
+set_location_assignment PIN_B18 -to IO156
+set_location_assignment PIN_A18 -to IO157
+set_location_assignment PIN_B17 -to IO158
+set_location_assignment PIN_A17 -to IO159
+set_location_assignment PIN_B16 -to IO160
+set_location_assignment PIN_A16 -to IO161
+set_location_assignment PIN_G16 -to IO162
+set_location_assignment PIN_F15 -to IO163
+set_location_assignment PIN_W13 -to IO164
+set_location_assignment PIN_Y13 -to IO165
+set_location_assignment PIN_AA14 -to IO166
+set_location_assignment PIN_AB14 -to IO167
+set_location_assignment PIN_AA13 -to IO168
+set_location_assignment PIN_AB13 -to IO169
+set_location_assignment PIN_AA15 -to IO170
+set_location_assignment PIN_AB15 -to IO171
+set_location_assignment PIN_AA16 -to IO172
+set_location_assignment PIN_AB16 -to IO173
+set_location_assignment PIN_AA20 -to IO174
+set_location_assignment PIN_AB20 -to IO175
+set_location_assignment PIN_AA19 -to IO176
+set_location_assignment PIN_AB19 -to IO177
+set_location_assignment PIN_Y3 -to IO178
+set_location_assignment PIN_Y6 -to IO179
+set_location_assignment PIN_R9 -to IO180
+set_location_assignment PIN_T8 -to IO181
+set_location_assignment PIN_Y10 -to IO182
+set_location_assignment PIN_AA10 -to IO183
+set_location_assignment PIN_AA9 -to IO184
+set_location_assignment PIN_AB9 -to IO185
+set_location_assignment PIN_AA8 -to IO186
+set_location_assignment PIN_AB8 -to IO187
+set_location_assignment PIN_AA7 -to IO188
+set_location_assignment PIN_AB7 -to IO189
+set_location_assignment PIN_AA5 -to IO190
+set_location_assignment PIN_AB5 -to IO191
+set_location_assignment PIN_AA4 -to IO192
+set_location_assignment PIN_AB4 -to IO193
+set_location_assignment PIN_R11 -to IO194
+set_location_assignment PIN_R12 -to IO195
+set_location_assignment PIN_K7 -to IOU_0
+set_location_assignment PIN_J4 -to IOU_1
+set_location_assignment PIN_H2 -to IOU_2
+set_location_assignment PIN_H1 -to IOU_3
+set_location_assignment PIN_E1 -to IOL_0
+set_location_assignment PIN_F2 -to IOL_1
+set_location_assignment PIN_F1 -to IOL_2
+set_location_assignment PIN_G4 -to IOL_3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IOL_0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IOL_1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IOL_2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IOL_3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IOU_0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IOU_1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IOU_2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IOU_3
+set_global_assignment -name VHDL_FILE SELECTOR.vhd
+set_global_assignment -name VHDL_FILE BLINK_SIG.vhd
+set_global_assignment -name VHDL_FILE IOx_CTL.vhd
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IOL_0
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IOL_1
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IOL_2
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IOL_3
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IOU_0
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IOU_1
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IOU_2
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IOU_3
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO100
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO101
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO102
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO103
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO104
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO105
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO106
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO107
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO108
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO109
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO110
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO111
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO112
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO113
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO114
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO115
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO116
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO117
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO118
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO119
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO120
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO121
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO122
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO123
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IO124
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO125
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IO126
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IO127
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO128
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO129
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to IO130
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO131
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO132
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO133
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO134
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO135
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO136
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO137
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO138
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO139
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO140
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO141
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO142
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO143
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO144
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO145
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO146
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO147
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO148
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO149
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO150
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO151
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO152
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO153
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO154
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO155
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO156
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO157
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO158
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO159
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO160
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO161
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO162
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO163
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO164
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO165
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO166
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO167
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO168
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO169
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO170
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO171
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO172
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO173
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO174
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO175
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO176
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO177
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO178
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO179
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO180
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO181
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO182
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO183
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO184
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO185
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO186
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO187
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO188
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO189
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO190
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO191
+set_global_assignment -name VHDL_FILE FREQ16A.vhd
+set_global_assignment -name VHDL_FILE BASE_VALID.vhd
+set_global_assignment -name VHDL_FILE CLK_GEN.vhd
+set_global_assignment -name VHDL_FILE FILTERSEL.vhd
+set_global_assignment -name VHDL_FILE WIDTHCTL.vhd
+set_global_assignment -name VHDL_FILE WDCLKSEL.vhd
+set_global_assignment -name VHDL_FILE WIDTHCOUNT.vhd
+set_global_assignment -name VHDL_FILE PatternGenerate16A.vhd
+set_global_assignment -name VHDL_FILE Generator.vhd
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO192
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO193
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO194
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO195
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO0
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO1
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO2
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO3
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO4
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO5
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO6
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO7
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO8
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO9
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO10
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO11
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO12
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO13
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO14
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO15
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO16
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO17
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO18
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO19
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO20
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO21
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO22
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO23
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO24
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO25
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO26
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO27
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO28
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO29
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO30
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO31
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO32
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO33
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO34
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO35
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO36
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO37
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO38
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO39
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO40
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO41
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO42
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO43
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO44
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO45
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO46
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO47
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO48
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO49
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO50
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO51
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO52
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO53
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO54
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO55
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO56
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO57
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO58
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO59
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO60
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO61
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO62
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO63
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO64
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO65
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO66
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO67
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO68
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO69
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO70
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO71
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO72
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO73
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO74
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO75
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO76
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO77
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO78
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO79
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO80
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO81
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO82
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO83
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO84
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO85
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO86
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO87
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO88
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO89
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO90
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO91
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO92
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO93
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO94
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR OFF -to IO95
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

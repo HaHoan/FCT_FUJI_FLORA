@@ -1,0 +1,37 @@
+MID_ND-Fin_ST_K03_20200423から作成
+
+変更点
+・MOTモジュール 0/1/2/3 への接続変更
+　　変更前
+　　Mot_Sch0
+　　　Mot_A	MOTI[0]
+　　　Mot_nA	MOTI[1]
+　　　Mot_B	MOTI[2]
+　　　Mot_nB	MOTI[3]
+　　↓
+　　ユニポーラ駆動により入力回路を8回路使用して対応
+　　（バイポーラ駆動は4回路を使用している)
+　　Mot_Sch0	; PRMOT
+　　　Mot_A	MOTI[0]
+　　　Mot_nA	MOTI[2]
+　　　Mot_B	MOTI[4]
+　　　Mot_nB	MOTI[6]
+　　Mot_Sch1	; 未使用
+　　　Mot_A	MOTI[1]
+　　　Mot_nA	MOTI[3]
+　　　Mot_B	MOTI[5]
+　　　Mot_nB	MOTI[7]
+　　Mot_Sch2	; RMOT
+　　　Mot_A	MOTI[8]
+　　　Mot_nA	MOTI[10]
+　　　Mot_B	MOTI[12]
+　　　Mot_nB	MOTI[14]
+　　Mot_Sch3	; 未使用
+　　　Mot_A	MOTI[9]
+　　　Mot_nA	MOTI[11]
+　　　Mot_B	MOTI[13]
+　　　Mot_nB	MOTI[15]
+・WeakPullupの追加
+   IO124/126/127/130 WeakPulup追加(O.C.出力のため)
+
+

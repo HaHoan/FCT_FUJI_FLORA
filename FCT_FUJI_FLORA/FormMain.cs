@@ -69,7 +69,7 @@ namespace FCT_FUJI_FLORA
                 watcher = new FileSystemWatcher();
                 string path = Ultils.GetValueRegistryKey(KeyName.PATH_INPUT);
                 string machine = Ultils.GetValueRegistryKey(KeyName.MACHINE);
-                if(machine == Machine.FLORA)
+                if (machine == Machine.FLORA)
                 {
                     DateTime currentDate = DateTime.Now;
                     string dateConvert = currentDate.ToString("yyyyMMdd");
@@ -79,19 +79,11 @@ namespace FCT_FUJI_FLORA
                         Directory.CreateDirectory(path);
                     }
                 }
-              
+
                 watcher.Path = path;
                 watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.CreationTime
                                              | NotifyFilters.FileName | NotifyFilters.DirectoryName;
-                if (machine == Machine.FLORA)
-                {
-                    watcher.Filter = Constants.FILE_INPUT_EXTENSION;
-                }
-                else if (machine == Machine.ZAKURO)
-                {
-                    watcher.Filter = Constants.FILE_OUTPUT_EXTENSION;
-                }
-                else ShowMessage("FAIL", "NG", "Chưa chọn loại máy ở Setting!");
+                watcher.Filter = Constants.FILE_INPUT_EXTENSION;
                 watcher.IncludeSubdirectories = false;
                 // watcher.Created += OnChanged;
                 watcher.Changed += OnChanged;
@@ -164,47 +156,89 @@ namespace FCT_FUJI_FLORA
         {
             try
             {
-                string line = Ultils.ReadLastLine(fullPath);
-                var lines = line.Split(',');
-                var barcode = lines[0];
                 string machine = Ultils.GetValueRegistryKey(KeyName.MACHINE);
-                var timeChangeFile = "";
-                if (machine == Machine.FLORA)
-                {
-                    timeChangeFile = lines[2];
-                }
-                else if (machine == Machine.ZAKURO)
-                {
-                    timeChangeFile = lines[3];
-                }
-
-                if (timeChangeFile == _timeChangedFile) return;
-                _timeChangedFile = timeChangeFile;
-                string stationCurrent = Ultils.GetValueRegistryKey(KeyName.STATION_NO);
+                string barcode = "";
                 var productId = "";
                 var boardState = "";
+                string station = Ultils.GetValueRegistryKey(KeyName.STATION_NO);
+                var dateSqlServer = _pvs_service.GetDateTime();
+                PVSServiceReferences.SCANNING_LOGSEntity item = new PVSServiceReferences.SCANNING_LOGSEntity();
                 if (machine == Machine.FLORA)
                 {
+                    string line = Ultils.ReadLastLine(fullPath);
+                    var lines = line.Split(',');
+                    barcode = lines[0];
+
+                    var timeChangeFile = "";
+                    if (machine == Machine.FLORA)
+                    {
+                        timeChangeFile = lines[2];
+                    }
+                    else if (machine == Machine.ZAKURO)
+                    {
+                        timeChangeFile = lines[3];
+                    }
+                    if (timeChangeFile == _timeChangedFile) return;
+                    _timeChangedFile = timeChangeFile;
                     int indexOfUnderscore = barcode.IndexOf("_");
                     productId = barcode.Substring(indexOfUnderscore + 1, barcode.Length - indexOfUnderscore - 1);
                     boardState = lines[4].ToUpper();
+                    item = new PVSServiceReferences.SCANNING_LOGSEntity()
+                    {
+                        BOARD_NO = barcode,
+                        PRODUCT_ID = productId,
+                        STATION_NO = station,
+                        UPDATE_TIME = dateSqlServer,
+                        BOARD_STATE = boardState == Constants.PASS ? 1 : 0,
+                    };
+                   
                 }
                 else if (machine == Machine.ZAKURO)
                 {
-                    productId = barcode;
-                    boardState = lines[5].ToUpper();
+                    var allLine = Ultils.ReadAllLines(fullPath);
+                    if (allLine == null)
+                    {
+                        ShowMessage("FAIL", "NG", "Log không có dữ liệu!");
+                        return;
+                    };
+                    boardState = allLine[allLine.Length - 1];
+                    if (boardState != Constants.ALLPASS && boardState != Constants.FAIL)
+                    {
+                       // ShowMessage("FAIL", "NG", "Log không có dữ liệu!");
+                        return;
+                    };
+
+                    for (int i = allLine.Length - 1; i >= 0; i--)
+                    {
+                        string[] line = allLine[i].Split(',');
+                        if (line.Length > 0 && string.IsNullOrEmpty(line[0]))
+                        {
+                            try
+                            {
+                                string[] lineInfo = allLine[i+1].Split(',');
+                                string serial = lineInfo[3];
+                                productId = lineInfo[4];
+                                barcode = serial + "_" + productId;
+                                break;
+                            }
+                            catch (Exception e)
+                            {
+                                ShowMessage("FAIL", "NG", "Log dữ liệu bị sai!" + e.Message.ToString());
+                                return;
+                            }
+                           
+                        }
+                    }
+                    item = new PVSServiceReferences.SCANNING_LOGSEntity()
+                    {
+                        BOARD_NO = barcode,
+                        PRODUCT_ID = productId,
+                        STATION_NO = station,
+                        UPDATE_TIME = dateSqlServer,
+                        BOARD_STATE = boardState == Constants.ALLPASS ? 1 : 0,
+                    };
+
                 }
-               
-                var station = Ultils.GetValueRegistryKey(KeyName.STATION_NO);
-                var dateSqlServer = _pvs_service.GetDateTime();
-                PVSServiceReferences.SCANNING_LOGSEntity item = new PVSServiceReferences.SCANNING_LOGSEntity()
-                {
-                    BOARD_NO = barcode,
-                    PRODUCT_ID = productId,
-                    STATION_NO = station,
-                    UPDATE_TIME = dateSqlServer,
-                    BOARD_STATE = boardState == Constants.PASS ? 1 : 0,
-                };
                 total++;
                 if (item.BOARD_STATE == 1)
                 {
@@ -241,6 +275,7 @@ namespace FCT_FUJI_FLORA
 
                 }));
 
+
             }
             catch (Exception e)
             {
@@ -254,7 +289,7 @@ namespace FCT_FUJI_FLORA
         private void lbl_Setting_Click(object sender, EventArgs e)
         {
             var frmSetting = new frmSetting();
-          
+
             frmSetting.updateAfterSetting = new Action(() =>
             {
                 string machine = Ultils.GetValueRegistryKey(KeyName.MACHINE);
@@ -269,7 +304,7 @@ namespace FCT_FUJI_FLORA
                         Directory.CreateDirectory(path);
                     }
                 }
-               
+
                 watcher.Path = path;
             });
             frmSetting.ShowDialog();

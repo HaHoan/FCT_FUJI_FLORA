@@ -1,0 +1,133 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 200 232)
+	(text "IO8_I2CA" (rect 5 0 46 12)(font "Arial" ))
+	(text "inst" (rect 8 152 25 164)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DATAI[7..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "DATAI[7..0]" (rect 24 24 81 36)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "nCS" (rect 0 0 21 12)(font "Arial" ))
+		(text "nCS" (rect 24 104 45 116)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "nWR" (rect 0 0 24 12)(font "Arial" ))
+		(text "nWR" (rect 24 120 48 132)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "nRD" (rect 0 0 22 12)(font "Arial" ))
+		(text "nRD" (rect 24 136 46 148)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "RESET" (rect 24 88 61 102)(font "Arial" (font_size 8)))
+		(text "RESET" (rect 24 88 59 100)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(output)
+		(text "DATAO[7..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "DATAO[7..0]" (rect 24 40 86 52)(font "Arial" ))
+		(line (pt 16 48)(pt 0 48)(line_width 3))
+	)
+	(port
+		(pt 136 144)
+		(output)
+		(text "OUTP[7]" (rect 86 40 132 54)(font "Arial" (font_size 8)))
+		(text "OUTP[7]" (rect 80 136 122 148)(font "Arial" ))
+		(line (pt 136 144)(pt 120 144)(line_width 1))
+	)
+	(port
+		(pt 136 128)
+		(output)
+		(text "OUTP[6]" (rect 86 56 132 70)(font "Arial" (font_size 8)))
+		(text "OUTP[6]" (rect 80 120 122 132)(font "Arial" ))
+		(line (pt 136 128)(pt 120 128)(line_width 1))
+	)
+	(port
+		(pt 136 112)
+		(output)
+		(text "OUTP[5]" (rect 86 72 132 86)(font "Arial" (font_size 8)))
+		(text "OUTP[5]" (rect 80 104 122 116)(font "Arial" ))
+		(line (pt 136 112)(pt 120 112)(line_width 1))
+	)
+	(port
+		(pt 136 96)
+		(output)
+		(text "OUTP[4]" (rect 86 72 132 86)(font "Arial" (font_size 8)))
+		(text "OUTP[4]" (rect 80 88 122 100)(font "Arial" ))
+		(line (pt 136 96)(pt 120 96)(line_width 1))
+	)
+	(port
+		(pt 136 80)
+		(output)
+		(text "OUTP[3]" (rect 86 88 132 102)(font "Arial" (font_size 8)))
+		(text "OUTP[3]" (rect 80 72 122 84)(font "Arial" ))
+		(line (pt 136 80)(pt 120 80)(line_width 1))
+	)
+	(port
+		(pt 136 64)
+		(output)
+		(text "OUTP[2]" (rect 86 104 132 118)(font "Arial" (font_size 8)))
+		(text "OUTP[2]" (rect 80 56 122 68)(font "Arial" ))
+		(line (pt 136 64)(pt 120 64)(line_width 1))
+	)
+	(port
+		(pt 136 48)
+		(output)
+		(text "OUTP[1]" (rect 86 120 132 134)(font "Arial" (font_size 8)))
+		(text "OUTP[1]" (rect 80 40 122 52)(font "Arial" ))
+		(line (pt 136 48)(pt 120 48)(line_width 1))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "OUTP[0]" (rect 86 136 132 150)(font "Arial" (font_size 8)))
+		(text "OUTP[0]" (rect 80 24 122 36)(font "Arial" ))
+		(line (pt 136 32)(pt 120 32)(line_width 1))
+	)
+	(parameter
+		"INITD"
+		"00000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 120 152)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 200 32 400 64))
+)

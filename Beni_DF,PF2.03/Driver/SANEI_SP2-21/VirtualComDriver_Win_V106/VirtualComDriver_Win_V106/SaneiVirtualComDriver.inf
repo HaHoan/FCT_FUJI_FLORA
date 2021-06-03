@@ -1,0 +1,92 @@
+
+; Windows USB CDC ACM Setup File
+; Copyright (c) 2000 Microsoft Corporation
+; Copyright (C) 2009 SANEI ELECTRIC INC.
+
+[Version] 
+Signature="$Windows NT$" 
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318} 
+Provider=%SANEI% 
+LayoutFile=layout.inf
+DriverVer=12/27/2012,2012,1.0.0.0
+CatalogFile=VirtualComDriver.cat
+
+[Manufacturer]
+%MfgName%=SANEI, NTamd64
+
+[SANEI]
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1007   ;SK1-31
+%DESCRIPTION%=DriverInstall, USB\VID_10c5&PID_1009   ;SK1-21
+%DESCRIPTION%=DriverInstall, USB\VID_10c5&PID_100A   ;BL2-58 
+%DESCRIPTION%=DriverInstall, USB\VID_10c5&PID_100B   ;SP1-21 
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1008   ;SP2-21
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_100D   ;SD1-31
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_100E   ;SK1-41
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_100F   ;SP3-21
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1010   ;SD3-21
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1011   ;SD3-22
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1013   ;SK4-31
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1014   ;SK4-21
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1015   ;SM4-21
+%DESCRIPTION%=DriverInstall, USB\VID_10c5&PID_0100   ;DPPxxx
+
+[SANEI.NTamd64]
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1007   ;SK1-31
+%DESCRIPTION%=DriverInstall, USB\VID_10c5&PID_1009   ;SK1-21
+%DESCRIPTION%=DriverInstall, USB\VID_10c5&PID_100A   ;BL2-58 
+%DESCRIPTION%=DriverInstall, USB\VID_10c5&PID_100B   ;SP1-21 
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1008   ;SP2-21
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_100D   ;SD1-31
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_100E   ;SK1-41
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_100F   ;SP3-21
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1010   ;SD3-21
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1011   ;SD3-22
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1013   ;SK4-31
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1014   ;SK4-21
+%DESCRIPTION%=DriverInstall, USB\VID_10C5&PID_1015   ;SM4-21
+%DESCRIPTION%=DriverInstall, USB\VID_10c5&PID_0100   ;DPPxxx
+
+[DestinationDirs] 
+DefaultDestDir=12 
+
+[SourceDisksFiles]
+
+[SourceDisksNames]
+
+;------------------------------------------------------------------------------
+;  Windows 2000/XP/Vista/Windows7 Sections
+;------------------------------------------------------------------------------
+
+[DriverInstall.nt] 
+include=mdmcpq.inf
+CopyFiles=DriverCopyFiles
+AddReg=DriverInstall.nt.AddReg 
+
+[DriverCopyFiles]
+usbser.sys,,,0x20
+
+[DriverInstall.nt.AddReg] 
+HKR,,DevLoader,,*ntkern 
+HKR,,NTMPDriver,,usbser.sys 
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider" 
+
+[DriverInstall.nt.Services] 
+AddService=usbser, 0x00000002, DriverService
+
+[DriverService] 
+DisplayName=%SERVICE% 
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\usbser.sys 
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings] 
+SANEI="Sanei Electric Inc."
+MFGNAME="Sanei Electric Inc."
+DESCRIPTION="Sanei Printer Communications Port" 
+SERVICE="Sanei Printer USB Driver"

@@ -1,0 +1,9 @@
+[FDT Script Status v1.0]
+CurrentScript=C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+UserID=FXMFG
+Machine=DESKTOP-KJMF8UJ
+LastUpdate=03-Jun-21, 10:15:22
+CurrentStatus=
+PreviousScript=C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+PreviousState=COMPLETED
+JobNo=1

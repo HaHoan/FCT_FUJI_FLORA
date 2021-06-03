@@ -17,7 +17,7 @@ namespace FCT_FUJI_FLORA
         {
             return "富士施乐-" + u + "V基板M3";
         }
-
+        public static string ALLPASS = "ALL PASS";
     }
 
     public static class Machine

@@ -1,0 +1,148 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 232 368)
+	(text "Decode10" (rect 5 0 62 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 288 25 300)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Address[7..0]" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "Address[7..0]" (rect 21 27 98 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 168 160)
+		(output)
+		(text "nCS8x" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "nCS8x" (rect 112 152 149 166)(font "Arial" (font_size 8)))
+		(line (pt 168 160)(pt 152 160)(line_width 1))
+	)
+	(port
+		(pt 168 176)
+		(output)
+		(text "nCS9x" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "nCS9x" (rect 112 168 149 182)(font "Arial" (font_size 8)))
+		(line (pt 168 176)(pt 152 176)(line_width 1))
+	)
+	(port
+		(pt 168 192)
+		(output)
+		(text "nCSAx" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "nCSAx" (rect 112 184 152 198)(font "Arial" (font_size 8)))
+		(line (pt 168 192)(pt 152 192)(line_width 1))
+	)
+	(port
+		(pt 168 208)
+		(output)
+		(text "nCSBx" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "nCSBx" (rect 112 200 150 214)(font "Arial" (font_size 8)))
+		(line (pt 168 208)(pt 152 208)(line_width 1))
+	)
+	(port
+		(pt 168 224)
+		(output)
+		(text "nCSCx" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "nCSCx" (rect 112 216 150 230)(font "Arial" (font_size 8)))
+		(line (pt 168 224)(pt 152 224)(line_width 1))
+	)
+	(port
+		(pt 168 240)
+		(output)
+		(text "nCSDx" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "nCSDx" (rect 112 232 150 246)(font "Arial" (font_size 8)))
+		(line (pt 168 240)(pt 152 240)(line_width 1))
+	)
+	(port
+		(pt 168 256)
+		(output)
+		(text "nCSEx" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "nCSEx" (rect 112 248 149 262)(font "Arial" (font_size 8)))
+		(line (pt 168 256)(pt 152 256)(line_width 1))
+	)
+	(port
+		(pt 168 272)
+		(output)
+		(text "nCSFx" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "nCSFx" (rect 112 264 149 278)(font "Arial" (font_size 8)))
+		(line (pt 168 272)(pt 152 272)(line_width 1))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "nCS0x" (rect 118 152 155 166)(font "Arial" (font_size 8)))
+		(text "nCS0x" (rect 112 24 149 38)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 1))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "nCS1x" (rect 118 40 155 54)(font "Arial" (font_size 8)))
+		(text "nCS1x" (rect 112 40 149 54)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48)(line_width 1))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "nCS2x" (rect 118 56 155 70)(font "Arial" (font_size 8)))
+		(text "nCS2x" (rect 112 56 149 70)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64)(line_width 1))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "nCS3x" (rect 118 64 155 78)(font "Arial" (font_size 8)))
+		(text "nCS3x" (rect 112 72 149 86)(font "Arial" (font_size 8)))
+		(line (pt 168 80)(pt 152 80)(line_width 1))
+	)
+	(port
+		(pt 168 96)
+		(output)
+		(text "nCS4x" (rect 118 80 155 94)(font "Arial" (font_size 8)))
+		(text "nCS4x" (rect 112 88 149 102)(font "Arial" (font_size 8)))
+		(line (pt 168 96)(pt 152 96)(line_width 1))
+	)
+	(port
+		(pt 168 112)
+		(output)
+		(text "nCS5x" (rect 118 104 155 118)(font "Arial" (font_size 8)))
+		(text "nCS5x" (rect 112 104 149 118)(font "Arial" (font_size 8)))
+		(line (pt 168 112)(pt 152 112)(line_width 1))
+	)
+	(port
+		(pt 168 128)
+		(output)
+		(text "nCS6x" (rect 118 120 155 134)(font "Arial" (font_size 8)))
+		(text "nCS6x" (rect 112 120 149 134)(font "Arial" (font_size 8)))
+		(line (pt 168 128)(pt 152 128)(line_width 1))
+	)
+	(port
+		(pt 168 144)
+		(output)
+		(text "nCS7x" (rect 118 136 155 150)(font "Arial" (font_size 8)))
+		(text "nCS7x" (rect 112 136 149 150)(font "Arial" (font_size 8)))
+		(line (pt 168 144)(pt 152 144)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 288)(line_width 1))
+	)
+)

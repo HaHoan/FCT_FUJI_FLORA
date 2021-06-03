@@ -1,0 +1,8 @@
+# Renesas書込スクリプト
+workspace S:\Ft\FX\Beni\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.AWS
+disconnect
+connect USB|E8a|8JS076753|0.0|0.0
+download S:\Ft\FX\Beni\Beni_DF,PF2.03\Firmware\TestROM\BENI_DF.mot
+disconnect
+delete $script
+exit

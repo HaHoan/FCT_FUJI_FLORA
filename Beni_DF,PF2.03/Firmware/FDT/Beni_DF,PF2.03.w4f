@@ -1,0 +1,13 @@
+[FDT Wait For File Config v1.0]
+Desc=for TestROM file write to Beni_DF,P2.03
+ScriptFile=C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+PollTime=250
+WaitTime=100
+LogDir=C:\Ft\Beni_DF,PF2.03\Firmware\FDT\
+LogFile=FDT_Log.txt
+LogAppend=FALSE
+StatusEnable=TRUE
+StatusDir=C:\Ft\Beni_DF,PF2.03\Firmware\FDT\
+StatusFile=FDT_Status.txt
+ErrorHandler=abort
+ErrorScript=

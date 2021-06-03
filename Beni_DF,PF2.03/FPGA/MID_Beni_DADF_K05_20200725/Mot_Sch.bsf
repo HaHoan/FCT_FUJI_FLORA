@@ -1,0 +1,120 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 232 288)
+	(text "Mot_Sch" (rect 5 0 54 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(port
+		(pt 0 56)
+		(input)
+		(text "RESET" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "RESET" (rect 21 51 58 65)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "Add[3..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "Add[3..0]" (rect 21 147 72 161)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 16 152)(line_width 3))
+	)
+	(port
+		(pt 0 184)
+		(input)
+		(text "DATI[7..0]" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "DATI[7..0]" (rect 21 179 76 193)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 16 184)(line_width 3))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "REFCLK" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "REFCLK" (rect 21 35 67 49)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 168 80)
+		(input)
+		(text "Mot_A" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "Mot_A" (rect 108 72 144 86)(font "Arial" (font_size 8)))
+		(line (pt 152 80)(pt 168 80))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "RDe" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "RDe" (rect 21 115 44 129)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 16 120))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "CS" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "CS" (rect 21 83 37 97)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "WRe" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "WRe" (rect 21 99 48 113)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104))
+	)
+	(port
+		(pt 168 96)
+		(input)
+		(text "Mot_nA" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "Mot_nA" (rect 101 88 144 102)(font "Arial" (font_size 8)))
+		(line (pt 152 96)(pt 168 96))
+	)
+	(port
+		(pt 168 112)
+		(input)
+		(text "Mot_B" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "Mot_B" (rect 109 104 144 118)(font "Arial" (font_size 8)))
+		(line (pt 152 112)(pt 168 112))
+	)
+	(port
+		(pt 168 128)
+		(input)
+		(text "Mot_nB" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "Mot_nB" (rect 102 120 144 134)(font "Arial" (font_size 8)))
+		(line (pt 152 128)(pt 168 128))
+	)
+	(port
+		(pt 0 168)
+		(output)
+		(text "DATO[7..0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "DATO[7..0]" (rect 24 160 86 174)(font "Arial" (font_size 8)))
+		(line (pt 16 168)(pt 0 168)(line_width 3))
+	)
+	(port
+		(pt 168 168)
+		(output)
+		(text "DBG[5..0]" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "DBG[5..0]" (rect 102 163 156 177)(font "Arial" (font_size 8)))
+		(line (pt 168 168)(pt 152 168)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 208))
+	)
+)

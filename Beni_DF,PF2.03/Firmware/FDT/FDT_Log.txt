@@ -1,0 +1,205 @@
+****************************************************
+
+ ****   Flash Development Toolkit log file
+ ****   Ver  : 4.09.03.00
+ ****   User : FXMFG
+ ****   PC   : DESKTOP-KJMF8UJ
+ ****   Thu Jun 03 2021, 10:15:05
+
+****************************************************
+
+[03-Jun-21 10:15:05.296]  
+Loaded Wait For File config: "C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.w4f"
+Waiting...                
+[03-Jun-21 10:15:05.430]  
+File Opened: "C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf" (Last Modified: 03-Jun-21 10:15:05)
+
+
+*************************
+**     LOG FILE        **
+*************************
+# Renesas書込スクリプト
+workspace C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+disconnect
+ connect USB|E8a|9HS078016|0.0|0.0
+download C:\FT\Beni_DF,PF2.03\Firmware\07_540K 17211\PF203_DADF&IPL&PTTN_V231600.mot
+disconnect
+delete $script
+exit
+*************************
+
+[03-Jun-21 10:15:05.437]  FSF: workspace C:\FT\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.aws
+
+[03-Jun-21 10:15:05.450]  Flash Development Toolkit and flash programming components
+are provided without support
+
+[03-Jun-21 10:15:05.451]  OS: Windows 10 (Windows 8) [Non-Admin]
+
+[03-Jun-21 10:15:05.452]  FDT API initialised: version 4, 09, 02, 000
+
+[03-Jun-21 10:15:05.497]  FCF Settings Applied: R5F364AE_7Line, (C:\Program Files (x86)\Renesas\FDT4.09\kernels\ProtD\R5F364AE\Renesas\1_2_00\)
+
+[03-Jun-21 10:15:05.516]  FSF: disconnect
+
+[03-Jun-21 10:15:05.516]  FSF:  connect USB|E8a|9HS078016|0.0|0.0
+
+[03-Jun-21 10:15:05.541]  Clock Frequency (External) = N/A, Clock Mode = N/A, CKM = N/A, and CKP = N/A
+
+[03-Jun-21 10:15:05.541]  Connecting to device 'R5F364AE_7Line' on 'E8a'
+
+[03-Jun-21 10:15:05.542]  Configuration:
+
+[03-Jun-21 10:15:05.543]  'BOOT Mode' connection - using emulated interface
+
+[03-Jun-21 10:15:05.543]  Opening port 'E8a' ...
+
+[03-Jun-21 10:15:05.746]  Checking for E8/E8a update...
+
+[03-Jun-21 10:15:06.132]  Adaptor checksum OK
+
+[03-Jun-21 10:15:06.137]  Processing Data file :'c:\program files (x86)\renesas\fdt4.09\ADPFiles\E8-Rel-Img2-a.mot'
+
+[03-Jun-21 10:15:06.152]  Adaptor version number OK
+
+[03-Jun-21 10:15:06.152]   (current E8/E8a Bootstub (Level 0) version = 1.00.00.000, FDT holds version 1.00.00.000, FDT requires version 1.00.XX.XXX)
+
+[03-Jun-21 10:15:06.153]  Adaptor version type OK
+
+[03-Jun-21 10:15:06.154]   (current type = E8aEMULATOR)
+
+[03-Jun-21 10:15:06.157]  Processing Data file :'c:\program files (x86)\renesas\fdt4.09\ADPFiles\E8-Rel-Img2-a.mot'
+
+[03-Jun-21 10:15:06.173]  Adaptor version number OK
+
+[03-Jun-21 10:15:06.173]   (current E8/E8a Adaptor Software (Level 1) version = 2.17.00.000, FDT holds version 2.17.00.000, FDT requires version 2.17.XX.XXX)
+
+[03-Jun-21 10:15:06.199]  Version Information: VER.1.00
+
+[03-Jun-21 10:15:06.211]  ID code check successful
+
+[03-Jun-21 10:15:06.212]  Connection complete
+
+[03-Jun-21 10:15:06.332]  All blocks marked as unknown written status
+
+
+[03-Jun-21 10:15:06.332]  FSF: download C:\FT\Beni_DF,PF2.03\Firmware\07_540K 17211\PF203_DADF&IPL&PTTN_V231600.mot
+
+[03-Jun-21 10:15:06.846]  Erasing 5 blocks from device
+
+[03-Jun-21 10:15:06.847]  Erasing... 'EBB'...
+
+[03-Jun-21 10:15:06.977]  Erased block EBB (0x0000F000 - 0x0000FFFF)
+
+[03-Jun-21 10:15:06.977]  Erasing... 'EB3'...
+
+[03-Jun-21 10:15:07.190]  Erased block EB3 (0x000C0000 - 0x000CFFFF)
+
+[03-Jun-21 10:15:07.190]  Erasing... 'EB2'...
+
+[03-Jun-21 10:15:07.404]  Erased block EB2 (0x000D0000 - 0x000DFFFF)
+
+[03-Jun-21 10:15:07.404]  Erasing... 'EB1'...
+
+[03-Jun-21 10:15:07.611]  Erased block EB1 (0x000E0000 - 0x000EFFFF)
+
+[03-Jun-21 10:15:07.612]  Erasing... 'EB0'...
+
+[03-Jun-21 10:15:07.824]  Erased block EB0 (0x000F0000 - 0x000FFFFF)
+
+[03-Jun-21 10:15:07.825]  Erase complete
+
+[03-Jun-21 10:15:07.927]  
+
+[03-Jun-21 10:15:07.932]  Processing file :"c:\ft\beni_df,pf2.03\firmware\07_540k 17211\pf203_dadf&ipl&pttn_v231600.mot"
+
+[03-Jun-21 10:15:07.964]  [User Flash 2] - No Data Loaded
+
+[03-Jun-21 10:15:08.152]  Operation on User Flash 1
+
+[03-Jun-21 10:15:08.152]  Writing image to device... [0x000C0000 - 0x000C00FF]
+
+[03-Jun-21 10:15:08.170]  Writing image to device... [0x000C0600 - 0x000E7CFF]
+
+[03-Jun-21 10:15:19.618]  Writing image to device... [0x000E7D00 - 0x000E7DFF]
+
+[03-Jun-21 10:15:19.630]  Writing image to device... [0x000E7E00 - 0x000E7EFF]
+
+[03-Jun-21 10:15:19.642]  Writing image to device... [0x000E7F00 - 0x000E80FF]
+
+[03-Jun-21 10:15:19.663]  Writing image to device... [0x000E8100 - 0x000E81FF]
+
+[03-Jun-21 10:15:19.674]  Writing image to device... [0x000E8200 - 0x000E82FF]
+
+[03-Jun-21 10:15:19.685]  Writing image to device... [0x000E8300 - 0x000EAEFF]
+
+[03-Jun-21 10:15:20.482]  Writing image to device... [0x000EAF00 - 0x000EBAFF]
+
+[03-Jun-21 10:15:20.699]  Writing image to device... [0x000FC000 - 0x000FC1FF]
+
+[03-Jun-21 10:15:20.728]  Writing image to device... [0x000FC800 - 0x000FFFFF]
+
+[03-Jun-21 10:15:21.748]  Data programmed at the following positions:
+
+[03-Jun-21 10:15:21.748]   0x000C0000 - 0x000C00FF      Length : 0x00000100
+
+[03-Jun-21 10:15:21.749]   0x000C0600 - 0x000E7CFF      Length : 0x00027700
+
+[03-Jun-21 10:15:21.749]   0x000E7D00 - 0x000E7DFF      Length : 0x00000100
+
+[03-Jun-21 10:15:21.750]   0x000E7E00 - 0x000E7EFF      Length : 0x00000100
+
+[03-Jun-21 10:15:21.750]   0x000E7F00 - 0x000E80FF      Length : 0x00000200
+
+[03-Jun-21 10:15:21.750]   0x000E8100 - 0x000E81FF      Length : 0x00000100
+
+[03-Jun-21 10:15:21.751]   0x000E8200 - 0x000E82FF      Length : 0x00000100
+
+[03-Jun-21 10:15:21.751]   0x000E8300 - 0x000EAEFF      Length : 0x00002C00
+
+[03-Jun-21 10:15:21.751]   0x000EAF00 - 0x000EBAFF      Length : 0x00000C00
+
+[03-Jun-21 10:15:21.752]   0x000FC000 - 0x000FC1FF      Length : 0x00000200
+
+[03-Jun-21 10:15:21.752]   0x000FC800 - 0x000FFFFF      Length : 0x00003800
+
+[03-Jun-21 10:15:21.753]  188 K programmed in 13 seconds
+
+[03-Jun-21 10:15:21.753]  
+
+[03-Jun-21 10:15:21.755]  Operation on Data Flash
+
+[03-Jun-21 10:15:21.756]  Writing image to device... [0x0000FF00 - 0x0000FFFF]
+
+[03-Jun-21 10:15:21.767]  Data programmed at the following positions:
+
+[03-Jun-21 10:15:21.767]   0x0000FF00 - 0x0000FFFF      Length : 0x00000100
+
+[03-Jun-21 10:15:21.768]  256 Bytes programmed in 0 seconds
+
+[03-Jun-21 10:15:21.769]  Image written to device
+
+[03-Jun-21 10:15:21.873]  
+
+[03-Jun-21 10:15:21.873]  FSF: disconnect
+
+[03-Jun-21 10:15:22.527]  Disconnecting
+
+[03-Jun-21 10:15:22.529]  Disconnected
+
+[03-Jun-21 10:15:22.702]  
+
+[03-Jun-21 10:15:22.703]  FSF: delete $script
+
+[03-Jun-21 10:15:22.703]  FSF: exit
+
+[03-Jun-21 10:15:22.704]  Exiting...
+
+[03-Jun-21 10:15:22.704]  FSF: delete C:\Ft\Beni_DF,PF2.03\Firmware\FDT\Beni_DF,PF2.03.fsf
+
+[03-Jun-21 10:15:22.705]  Deleted: c:\ft\beni_df,pf2.03\firmware\fdt\beni_df,pf2.03.fsf
+
+[03-Jun-21 10:15:22.705]  Script Execution COMPLETED
+
+
+[03-Jun-21 10:15:22.710]  Job Number 0 completed
+

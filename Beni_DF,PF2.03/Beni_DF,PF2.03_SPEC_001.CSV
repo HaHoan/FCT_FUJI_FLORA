@@ -1,0 +1,140 @@
+;
+; Beni_DF,PF2.03 F/T用検査ｽﾍﾟｯｸ 設定ﾌｧｲﾙ
+;
+; 2020.03.13    新規作成
+
+/"961K10600_BENI_DF,PF2.03-TOSHIBA-RS",        "機種情報"
+
+                            設定値, 変数名,                 項目
+                    "(2020.07.21)", szReCompileDate,        "対応検査プログラム日付 (この日以降の検査ﾌﾟﾛｸﾞﾗﾑに対応)"
+                             "000", szSoftwareVer,          "対応検査プログラムバージョン (このﾊﾞｰｼﾞｮﾝ以降の検査ﾌﾟﾛｸﾞﾗﾑに対応)"
+
+                            "PASS", szResultPassText,       "PASS表示文字列"
+                         "0,176,0", szPassColor,            "PASS表示色 RGB10進数表記 緑:0,176,0" ; R,G,B
+                            "FAIL", szResultFailText,       "FAIL表示文字列",
+                         "192,0,0", szFailColor,            "FAIL表示色 RGB10進数表記 赤:192,0,0" ; R,G,B
+
+                   "961K10600K501", szPartsNo,              "部番"                          ;960K99999Kxxx
+                            "TEE0", szSN_Info,              "機種ｺｰﾄﾞ (ｼﾘｱﾙ下4桁確認)"      ;
+                            0x0001, Model,                  "モデル種別 0x0001のみ対応 (2020.03.13現在)"
+
+;--- STEP01 電源電圧 Test ---
+                             0.300, dOff_Max,               "DUT OFF  電圧  Max(単位 V)"
+                            -0.300, dOff_Min,               "DUT OFF  電圧  Min(単位 V)"
+
+                            25.700, dP24V_Max,              "DUT +24.5V電圧 Max(単位 V)"
+                            22.000, dP24V_Min,              "DUT +24.5V電圧 Min(単位 V)"
+                             5.3397,dP5V_Max,               "DUT +5.1V電圧  Max(単位 V) +4.7%"
+                             4.8603,dP5V_Min,               "DUT +5.1V電圧  Min(単位 V) -4.7%"
+                             3.500, dP3_3V_Max,             "DUT +3.3V電圧  Max(単位 V)"
+                             3.100, dP3_3V_Min,             "DUT +3.3V電圧  Min(単位 V)"
+
+;--- STEP02 RESET Test 1 ---
+                             140.0, dRstPls_Max,            "RESET パルス幅 Max(ms)"
+                              60.0, dRstPls_Min,            "RESET パルス幅 Min(ms)"
+
+;--- STEP02 検査FW D/L ---                         ;★ﾃﾞﾌｫﾙﾄ値(""の時)はSYSTEM.CFGの値が使用される
+                                "", szProgrammerDir,        "書込ﾌﾟﾛｸﾞﾗﾑ Renesas FLASH Development Toolkit(FDT)がｲﾝｽﾄｰﾙされているﾌｫﾙﾀﾞ",
+                                "", szConnect,              "接続設定文字列　connect USB|E8a|8JS076753|0.0|0.0\n"
+
+                                "", szPRJ_Dir,              "Renesas FLASH Development Toolkit(FDT)用設定ﾌｧｲﾙ(*.w4f/.fsf/.awsなど)が存在するﾌｫﾙﾀﾞ",
+                                "", szPRJ_File,             "Renesas FLASH Development Toolkit(FDT)用設定ﾌｧｲﾙ(*.w4f/.fsf/.awsなどの拡張子を除いた部分)",
+
+                "Firmware\TestROM", szFW_Dir[0],            "検査FW (TestROM) ﾃﾞｰﾀﾌｧｲﾙ(MOT)が存在するﾌｫﾙﾀﾞ (機種別ﾌｫﾙﾀﾞの下に置かれる)"
+                     "Beni_DF.mot", szFW_File[0],           "検査FW (TestROM) ﾃﾞｰﾀﾌｧｲﾙ(MOT) ﾌｧｲﾙ名"
+                        0x00000000, dwFW_Address[0],        "検査FW先頭アドレス"
+                             30000, dwFW_Wait[0],           "検査FW書き込み待ち時間 (単位ms)"
+                        0x00000000, dwFW_CheckSum[0],       "検査FWチェックサム(CRC-32)"
+
+;--- STEP03 検査FW 起動 ---
+                 "Program Wake Up", szWakeupMessage[0],     "起動確認ﾒｯｾｰｼﾞ[0]"
+                            "SFX>", szWakeupMessage[1],     "起動確認ﾒｯｾｰｼﾞ[1]"
+                                "", szWakeupMessage[2],     "起動確認ﾒｯｾｰｼﾞ[2]"
+                                "", szWakeupMessage[3],     "起動確認ﾒｯｾｰｼﾞ[3]"
+                                "", szWakeupMessage[4],     "起動確認ﾒｯｾｰｼﾞ[4]"
+                                "", szWakeupMessage[5],     "起動確認ﾒｯｾｰｼﾞ[5]"
+                                "", szWakeupMessage[6],     "起動確認ﾒｯｾｰｼﾞ[6]"
+                                "", szWakeupMessage[7],     "起動確認ﾒｯｾｰｼﾞ[7]"
+                                "", szWakeupMessage[8],     "起動確認ﾒｯｾｰｼﾞ[8]"
+                                "", szWakeupMessage[9],     "起動確認ﾒｯｾｰｼﾞ[9]"
+
+;--- STEP10 OUTPUT Test1(STP-MOTOR) ---
+                              62.6, dFreqSTPCW_Max,         "周波数(CW) (kHz)"
+                              62.4, dFreqSTPCW_Min,
+                              62.6, dDutySTPCW_Max,         "Duty   (%)"
+                              62.4, dDutySTPCW_Min,
+                            0xA55A, wPhaseSTPCW,            "位相 　(5AA5/A55A)"
+                              62.6, dFreqSTPCCW_Max,        "周波数 (kHz)"
+                              62.4, dFreqSTPCCW_Min,
+                              62.6, dDutySTPCCW_Max,        "Duty   (%)"
+                              62.4, dDutySTPCCW_Min,
+                            0x5AA5, wPhaseSTPCCW,           "位相 　(5AA5/A55A)"
+
+
+                             0.100, dRef_Lo_Max,            "Vref_Lo(V ) Max",	; 0.000 Center
+                            -0.100, dRef_Lo_Min,            "Vref_Lo(V ) Min",	; 0.000 Center
+                             1.574, dRef_Md_Max,            "Vref_Md(V ) Max",	; 1.499 Center
+                             1.424, dRef_Md_Min,            "Vref_Md(V ) Min",	; 1.499 Center
+                             3.148, dRef_Hi_Max,            "Vref_Hi(V ) Max",	; 2.998 Center
+                             2.848, dRef_Hi_Min,            "Vref_Hi(V ) Min",	; 2.998 Center
+
+                             500.1, dFMOTCLK_Freq_Max,      "周波数 (Hz) Max"
+                             499.9, dFMOTCLK_Freq_Min,      "周波数 (Hz) Min"
+                              50.1, dFMOTCLK_Duty_Max,      "Duty   (% ) Max",
+                              49.9, dFMOTCLK_Duty_Min,      "Duty   (% ) Min",
+
+;--- STEP13 製品FW D/L ---                         ;★ﾃﾞﾌｫﾙﾄ値(""の時)はSYSTEM.CFGの値が使用される
+          "Firmware\07_540K 17211", szFW_Dir[1],            "製品FW (TestROM) ﾃﾞｰﾀﾌｧｲﾙ(MOT)が存在するﾌｫﾙﾀﾞ (機種別ﾌｫﾙﾀﾞの下に置かれる)"
+ "PF203_DADF&IPL&PTTN_V231600.mot", szFW_File[1],           "製品FW (TestROM) ﾃﾞｰﾀﾌｧｲﾙ(MOT) ﾌｧｲﾙ名[1]"
+                        0x00000000, dwFW_Address[1],        "製品FW先頭アドレス[1]"
+                             40000, dwFW_Wait[1],           "製品FW書き込み待ち時間[1] (単位ms)"
+                        0xB921A342, dwFW_CheckSum[1],       "製品FWチェックサム (CRC-32)"
+
+;--- STEP15 製品ROM Version確認 [製品FW] ---
+                         "23.16.0", szRomVersion,          "製品ROMバージョン (例. 23.16.0)",
+
+
+;--- 以下各STEPを実行するか  1:する 0:しない ----------------------------------------------------------------------------------------------------------------
+                                 1, fStep01,                "STEP01 電源電圧Test                      を実施するか"
+                                 1, fStep02,                "STEP02 RESET Test 1                      を実施するか"
+                                 1, fStep03,                "STEP03 検査FW D/L                        を実施するか"
+                                 1, fStep04,                "STEP04 検査FW 起動                       を実施するか"
+                                 1, fStep05,                "STEP05 RESET Test 2 (WDT)                を実施するか"
+                                 1, fStep06,                "STEP06 INPUT Test                        を実施するか"
+                                 1, fStep07,                "STEP07 OUTPUT Test1 (I/O)                を実施するか"
+                                 1, fStep08,                "STEP08 OUTPUT Test2 (THRU)               を実施するか"
+                                 1, fStep09,                "STEP09 OUTPUT Test3 (MOTOR1)             を実施するか"
+                                 1, fStep10,                "STEP10 OUTPUT Test4 (MOTOR2)             を実施するか"
+                                 1, fStep11,                "STEP11 OUTPUT Test5 (MOT-VREF)           を実施するか"
+                                 1, fStep12,                "STEP12 OUTPUT Test6 (SOL)                を実施するか"
+                                 1, fStep13,                "STEP13 製品FW D/L                        を実施するか"
+                                 1, fStep14,                "STEP14 製品FW 起動                       を実施するか"
+                                 1, fStep15,                "STEP15 製品ROM Version確認 [製品FW]      を実施するか"
+                                 1, fStep16,                "STEP16 NVM Test/設定 [製品FW]            を実施するか"
+                                 1, fStep17,                "STEP17 電源OFF                           を実施するか"
+
+                                 0, fStep90,                "STEP90 製品FW起動【解析用】              を実施するか"
+                                 0, fStep91,                "STEP91 電源ON (debug)【解析用】          を実施するか"
+                                 0, fStep99,                "STEP99 電源OFF (debug)【解析用】         を実施するか"
+
+                                 0, dwRtyS01,               "STEP01 電源電圧Test                      を実施するか"
+                                 2, dwRtyS02,               "STEP02 RESET Test 1                      を実施するか"
+                                 0, dwRtyS03,               "STEP03 検査FW D/L                        を実施するか"
+                                 2, dwRtyS04,               "STEP04 検査FW 起動                       を実施するか"
+                                 0, dwRtyS05,               "STEP05 RESET Test 2 (WDT)                を実施するか"
+                                 0, dwRtyS06,               "STEP06 INPUT Test                        を実施するか"
+                                 0, dwRtyS07,               "STEP07 OUTPUT Test1 (I/O)                を実施するか"
+                                 0, dwRtyS08,               "STEP08 OUTPUT Test2 (THRU)               を実施するか"
+                                 0, dwRtyS09,               "STEP09 OUTPUT Test3 (MOTOR1)             を実施するか"
+                                 0, dwRtyS10,               "STEP10 OUTPUT Test4 (MOTOR2)             を実施するか"
+                                 2, dwRtyS11,               "STEP11 OUTPUT Test5 (MOT-VREF)           を実施するか"
+                                 0, dwRtyS12,               "STEP12 OUTPUT Test6 (SOL)                を実施するか"
+                                 0, dwRtyS13,               "STEP13 製品FW D/L                        を実施するか"
+                                 2, dwRtyS14,               "STEP14 製品FW 起動                       を実施するか"
+                                 2, dwRtyS15,               "STEP15 製品ROM Version確認 [製品FW]      を実施するか"
+                                 2, dwRtyS16,               "STEP16 NVM Test/設定 [製品FW]            を実施するか"
+                                 0, dwRtyS17,               "STEP17 電源OFF                           を実施するか"
+
+                                 0, dwRtyS90,               "STEP90 製品FW起動【解析用】              を実施するか"
+                                 0, dwRtyS91,               "STEP91 電源ON (debug)【解析用】          を実施するか"
+                                 0, dwRtyS99,               "STEP99 電源OFF (debug)【解析用】         を実施するか"

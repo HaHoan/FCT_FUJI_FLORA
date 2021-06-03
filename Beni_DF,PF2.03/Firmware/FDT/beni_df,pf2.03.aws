@@ -1,0 +1,29 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"5.0" 
+[WORKSPACE_DETAILS]
+"Beni_DF,PF2.03_Test" "c:\ft\beni_df,pf2.03\firmware\fdt" "c:\ft\beni_df,pf2.03\firmware\fdt\beni_df,pf2.03.aws" "All Flash Devices" "" 
+[SHARED_WORKSPACE_CONTROL_STATUS]
+"" "" "" 
+"" "" "" 
+[PROJECTS]
+"Beni_DF,PF203" "C:\FT\Beni_DF,PF2.03\Firmware\FDT" "C:\FT\Beni_DF,PF2.03\Firmware\FDT\beni_df,pf2.03.fwp" 0 
+[INFORMATION]
+"No workspace information available" 
+[SCRAP]
+[PROJECT_DEPENDENCY]
+[WORKSPACE_PROPERTIES]
+[VCS]
+"" "" "" 0 
+[VCS_PROJECT]
+[HELP_FILES]
+[GENERAL_DATA_PROJECT]
+[SYSMENUTOOLS]
+[USERMENUTOOLS]
+[CUSTOMPLACEHOLDERS]
+[MAKEFILE_BUILD_INFO]
+"$(WORKSPDIR)\make\$(PROJECTNAME).mak" "" 0 0 
+[VD_CONFIGURATION_OPTIONS]
+[VD_CONFIGURATIONS]
+[END]
